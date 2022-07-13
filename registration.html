@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <title>Registration</title>
+</head>
+<body>
+<!--
+  Things needed:
+
+  1. Email
+  2. Password
+  3. Name
+  4. Surname
+  5. Ticket code
+  6. Alcohol
+  7. Diet
+  8. Which Events?
+-->
+
+<h1> Vítej na palubě letadla společnosti FW Agency!</h1>
+<h2> Než si prosím vybereš sedadlo, vyplň nám tento krátký formulář.</h2>
+
+
+<form method="post" class="infoQuestions">
+  <fieldset class="introForm introForm--accountDetails">
+    <legend class="introForm__legend introForm__legend--first"> Informace k tvému účtu </legend>
+    <ol>
+      <li>
+        <label for="name">Celé jméno:</label>
+        <input type="text" id="name" name="name" placeholder="Jan Novák" required>
+      </li> 
+      <li>
+        <label for="email">Tvoje uživatelské jméno (email):</label>
+        <input type="email" id="email" name="email" placeholder="novak@gmail.com" required>
+      </li>
+      <li>
+        <label for="password">Heslo:</label>
+        <input type="password" id="password" name="password" placeholder="nejméně 8 znaků" minlength="8" required>
+      </li>
+      <li>
+        <label for="ticketNumber">Číslo pasu:</label>
+        <input type="text" id="ticketNumber" name="ticketNumber" placeholder="např. 123XY" required>
+      </li>
+      <li>
+        <label for="covidFile">COVID-19 očkování:</label>
+        <input type="file" id="covidFile" name="covidFile">
+      </li>
+    </ol>
+  </fieldset>
+
+  <fieldset class="introForm introForm--preferences">
+    <legend class="introForm__legend">Tvoje preference</legend>
+      <div class="multipleQ multipleQ--diet">
+          <label class="label label--main">Jsi vegetarián/vegan?</label><br>
+          <input type="radio" id="student_diet_yes" name="student_diet" value="1" required>
+          <label  class="label label--secondary" for="student_diet_yes">Ano</label><br>
+          <input type="radio" id="student_diet_no" name="student_diet" value="0">
+          <label class="label label--secondary" for="student_diet_no">Ne</label><br>
+        </div>
+      <div class="multipleQ multipleQ--alcohol">
+        <label class="label label--main">Piješ alkohol?</label><br>
+              <input type="radio" id="student_alcohol_yes" name="student_alcohol" value="1" required>
+              <label class="label label--secondary"for="student_alcohol_yes">Ano</label><br>
+              <input type="radio" id="student_alcohol_no" name="student_alcohol" value="0">
+              <label class="label label--secondary" for="student_alcohol_no">Ne</label><br>
+      </div>
+  </fieldset>
+
+  <div class="introForm introForm--events">
+    <legend class="introForm__legend">Na kterou z akcí půjdeš (nezávazně)?</legend>
+    <div class="checkbox">    
+      <div class="questionsList">
+        <h4>Pondělí (26/09):</h4>
+        <div class="checkboxQuestions"> 
+          <input type="checkbox" id="pubcrawl" name="pubcrawl">
+          <label for="pubcrawl">Pubcrawl</label>
+        </div> 
+      </div>
+      <div class="questionsList">
+        <h4>Úterý (27/09):</h4>
+        <div class="checkboxQuestions">
+          <input type="checkbox" id="daytrip" name="daytrip">
+          <label for="daytrip">Denní výlet</label>
+        </div>
+      </div>
+      <div class="questionsList">
+        <h4>Středa (28/09):</h4>
+        <div class="checkboxQuestions">
+          <input type="checkbox" id="cinema" name="cinema">
+          <label for="cinema">Párty na Lodi </label>
+        </div>
+      </div>
+      <div class="questionsList">
+        <h4>Čtvrtek (29/09):</h4>
+        <div class="questionDouble">
+          <div class="checkboxQuestions">
+            <input type="checkbox" id="sports" name="sports">
+            <label for="sports">Sportovní den</label>
+          </div>
+          <div class="checkboxQuestions">
+            <input type="checkbox" id="sports" name="sports">
+            <label for="sports"> Šlapadla</label>
+          </div>
+        </div>
+      </div>
+      <div class="questionsList">
+        <h4>Pátek (30/09):</h4>
+        <div class="checkboxQuestions">
+          <input type="checkbox" id="boat" name="boat">
+          <label for="boat">Mezifakultní párty </label>
+        </div>
+      </div>
+      <div class="questionsList">
+        <h4>Sobota (01/10):</h4>
+        <div class="checkboxQuestions">
+          <input type="checkbox" id="dinner" name="dinner">
+          <label for="dinner">Food & Drinks </label>
+        </div>
+      </div>
+      <div class="questionsList">
+        <h4>Nedele (02/10):</h4>
+        <div class="questionDouble">
+          <div class="checkboxQuestions">
+            <input type="checkbox" id="orientation" name="orientation">
+            <label for="orientation">Orientační den </label>
+          </div>
+          <div class="checkboxQuestions">
+            <input type="checkbox" id="beanies" name="beanies">
+            <label for="beanies">Beánie</label>
+          </div>
+        </div>
+      </div>      
+    </div>   
+  </div>
+  <div class="introForm introForm--button">
+    <input type="submit" class="btn btn-primary" value="Send information">
+  </div>
+</form>
+
+</body>
+</html>
+
+<!--
+  Úkoly na středu:
+  -header a footer
+  Úkoly na čtvrtek:
+  -responsive design
+-->

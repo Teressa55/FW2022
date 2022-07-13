@@ -1,0 +1,48 @@
+/*!
+ * Theme Name: 		   FW Theme
+ * Theme URI:          https://www.fw3lf.com
+ * Description:        FW Theme
+ * Author:             IT LF3
+ * Author URI:         https://www.fw3lf.com
+ * Version:            1.0.0
+ */
+
+ html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+body{
+  text-align: center;
+}
+fieldset{
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+}
+ol{
+  list-style-type: none;
+}
+li{
+  text-align: left;
+}
+
+.preferences{
+  justify-content: space-between;
+}
+
+.info_questions{
+  background-color: #dddddd;
+}
