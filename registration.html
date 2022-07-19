@@ -34,22 +34,28 @@
     <legend class="introForm__legend introForm__legend--first"> About your account </legend>
     <ol>
       <li>
-        <label for="name">Full name:</label>
-        <input type="text" id="name" name="name" placeholder="Jan Novák" required>
-      </li> 
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Jan" required>
+      </li>
+      <li>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Novák" required>
+      </li>
       <li>
         <label for="email">Username (email):</label>
-        <input type="email" id="email" name="email" placeholder="novak@gmail.com" required>
+        <input class="validInput" type="email" id="email" name="email" placeholder="novak@gmail.com" required ><br>
+        <span class="warning"> This email was already registered.</span>
       </li>
       <li>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" placeholder="min 8 characters" minlength="8" required>
       </li>
-      <li>
+      <li id="ticketContainer">
         <label for="ticketNumber">Number of your FW passport:</label>
-        <input type="text" id="ticketNumber" name="ticketNumber" placeholder=" 123XY" required>
+        <input class="validInput" type="text" onkeyup="addFields()" id="ticketNumber" name="ticketNumber" placeholder=" 123XY" min="5" max="5" required > 
+        <span class="warning">This number was already used.</span>
       </li>
-      <li>
+      <li id="fileUpload">
         <label for="covidFile">COVID-19 vaccination:</label>
         <input type="file" id="covidFile" name="covidFile">
       </li>
@@ -59,17 +65,21 @@
   <fieldset class="introForm introForm--preferences">
     <legend class="introForm__legend">Your Preferences</legend>
       <div class="multipleQ">
-          <label class="label label--main">Are you vegetarian/vegan?</label><br>
-          <input type="radio" id="student_diet_yes" name="student_diet" value="1" required>
-          <label  class="label" for="student_diet_yes">Yes</label><br>
-          <input type="radio" id="student_diet_no" name="student_diet" value="0">
-          <label class="label" for="student_diet_no">No</label><br>
+          <label class="label label--main">Do you have a special diet?</label><br>
+          <input type="radio" name="student_diet" value="1" required>
+          <label  class="label" for="student_diet_yes">No, I eat everything.</label><br>
+          <input type="radio"  name="student_diet" value="2" required>
+          <label  class="label" for="student_diet_yes">I'm a Vegetarian.</label><br>
+          <input type="radio" name="student_diet" value="3" required>
+          <label class="label" for="student_diet_no">I'm a Vegan.</label><br>
+          <input type="radio" name="student_diet" value="4" required>
+          <label class="label" for="student_diet_no">I have other type of diet.</label><br>
         </div>
       <div class="multipleQ">
         <label class="label label--main">Do you drink alcohol?</label><br>
               <input type="radio" id="student_alcohol_yes" name="student_alcohol" value="1" required>
-              <label class="label"for="student_alcohol_yes">Yes</label><br>
-              <input type="radio" id="student_alcohol_no" name="student_alcohol" value="0">
+              <label class="label"  for="student_alcohol_yes">Yes</label><br>
+              <input type="radio" id="student_alcohol_no" name="student_alcohol" value="0" required>
               <label class="label" for="student_alcohol_no">No</label><br>
       </div>
   </fieldset>
@@ -80,21 +90,21 @@
       <div class="questionsList">
         <h4>Monday (26.9):</h4>
         <div class="checkboxQuestions"> 
-          <input type="checkbox" id="pubcrawl" name="pubcrawl">
+          <input type="checkbox" id="pubcrawl" name="pubcrawl" disabled>
           <label for="pubcrawl">Pubcrawl</label>
         </div> 
       </div>
       <div class="questionsList">
         <h4>Tuesday (27.9):</h4>
         <div class="checkboxQuestions">
-          <input type="checkbox" id="daytrip" name="daytrip">
+          <input type="checkbox" id="daytrip" name="daytrip" disabled>
           <label for="daytrip">Day Trip</label>
         </div>
       </div>
       <div class="questionsList">
         <h4>Wednesday (28.9):</h4>
         <div class="checkboxQuestions">
-          <input type="checkbox" id="cinema" name="cinema">
+          <input type="checkbox" id="cinema" name="cinema" disabled>
           <label for="cinema">Boat Party </label>
         </div>
       </div>
@@ -102,26 +112,26 @@
         <h4>Thursday (29.9):</h4>
         <div class="questionDouble">
           <div class="checkboxQuestions">
-            <input type="checkbox" id="sports" name="sports">
+            <input type="checkbox" id="sports" name="sports" disabled>
             <label for="sports">Sports Day</label>
           </div>
           <div class="checkboxQuestions">
-            <input type="checkbox" id="sports" name="sports">
-            <label for="sports"> Paddles</label>
+            <input type="checkbox" id="paddles" name="paddles" disabled>
+            <label for="paddles"> Paddles</label>
           </div>
         </div>
       </div>
       <div class="questionsList">
         <h4>Friday (30.9):</h4>
         <div class="checkboxQuestions">
-          <input type="checkbox" id="boat" name="boat">
+          <input type="checkbox" id="boat" name="boat" disabled>
           <label for="boat">Interfaculty Party </label>
         </div>
       </div>
       <div class="questionsList">
         <h4>Saturday (1.10):</h4>
         <div class="checkboxQuestions">
-          <input type="checkbox" id="dinner" name="dinner">
+          <input type="checkbox" id="dinner" name="dinner" disabled>
           <label for="dinner">Food & Drinks </label>
         </div>
       </div>
@@ -129,11 +139,11 @@
         <h4>Sunday (2.10):</h4>
         <div class="questionDouble">
           <div class="checkboxQuestions">
-            <input type="checkbox" id="orientation" name="orientation">
+            <input type="checkbox" id="orientation" name="orientation" disabled>
             <label for="orientation">Orientation Day </label>
           </div>
           <div class="checkboxQuestions">
-            <input type="checkbox" id="beanies" name="beanies">
+            <input type="checkbox" id="beanies" name="beanies" disabled>
             <label for="beanies">Beanies</label>
           </div>
         </div>
@@ -143,14 +153,9 @@
   <div class="introForm introForm--button">
     <input type="submit" class="btn btn-primary" value="Send information">
   </div>
+
 </form>
 
+<script src="registration.js"></script>
 </body>
 </html>
-
-<!--
-  Úkoly na středu:
-  -header a footer
-  Úkoly na čtvrtek:
-  -responsive design
--->

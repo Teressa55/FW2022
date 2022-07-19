@@ -374,4 +374,10 @@ h2 {
     width: 14px;
     height: 14px;
   }
+}
+
+.warning {
+  display: none;
+  color: rgb(221, 71, 71);
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
