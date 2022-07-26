@@ -12,21 +12,9 @@
   <title>Registration</title>
 </head>
 <body>
-<!--
-  Things needed:
-
-  1. Email
-  2. Password
-  3. Name
-  4. Surname
-  5. Ticket code
-  6. Alcohol
-  7. Diet
-  8. Which Events?
--->
 
 <h1> Welcome aboard this FW Agency flight!</h1>
-<h2> Before you check out our flight patch, please, fill this little form.</h2>
+<h2 class="registrationNote"> Before you check out our flight patch, please, fill this little form.</h2>
 
 
 <form method="post" class="infoQuestions">
@@ -51,7 +39,7 @@
         <input type="password" id="password" name="password" placeholder="min 8 characters" minlength="8" required>
       </li>
       <li id="ticketContainer">
-        <label for="ticketNumber">Number of your FW passport:</label>
+        <label for="ticketNumber">Number of your ticket number:</label>
         <input class="validInput" type="text" onkeyup="addFields()" id="ticketNumber" name="ticketNumber" placeholder=" 123XY" min="5" max="5" required > 
         <span class="warning">This number was already used.</span>
       </li>

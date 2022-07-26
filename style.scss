@@ -1,3 +1,15 @@
 
+$font-main:'Raleway', sans-serif;
+$font-second: 'Open Sans', sans-serif;
+$colour-grey:	#FFF2F2F2;
+$colour-blue: #008ECC;
+$colour-neo-blue:#0473e3;
+
 
 @import "registration";
+
+@import "myProfile";
+
+@import "forgottenPassword";
+
+@import "headerFooter";

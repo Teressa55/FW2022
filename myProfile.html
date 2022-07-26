@@ -1,0 +1,318 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Charmonman&family=Ibarra+Real+Nova:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <title>My Profile</title>
+</head>
+<body>
+  <header>
+    <a href=""><img class="logo" src="/FW2022.png" alt="logo of 2022"></a>
+    <div class="userlogin" onclick="">
+      <img class="login_img" src="/person_circle_icon_159926.png" alt="logo of 2022">
+      <p>Log in</p>
+    </div>
+  </header>
+
+
+
+<h1> Your Account</h1>
+
+<h2 class="aboveFieldsets"> About your account </h2>
+<div class="profileDetailes">
+  <ol>
+    <li class="nameContainer">
+      <div class="name">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" disabled>
+      </div>
+      <div class="name">
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" disabled>
+      </div>
+      <div class="name">
+        <label for="email">Username:</label>
+        <input class="validInput" type="email" id="email" name="email" disabled>
+      </div>
+    </li>
+    <li class="nameContainer nameContainer--password">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" minlength="8" disabled><br>
+      <button class="optionButton optionButton--password" type="button" onclick="addPassword()">
+        <i class="gg-add"></i>Change the password
+      </button>
+    </li>
+    <li id="hiddenPassword" class="nopassword">
+      <h3 class="optionDetails">Your password must be more than 8 characters long. Don't enter your old password.</h3>
+      <div class="nameContainer">
+        <div class="name">
+        <label for="newPassword">Enter new password: </label>
+        <input class="add__password" type="password" id="newPassword" name="newPassword" placeholder="1234567E" minlength="8">
+        </div>
+        <div class="name">
+          <label for="newPassword_no2">Enter new password again: </label>
+          <input class="add__password" type="password" id="newPassword_no2" name="newPassword_no2" onkeyup="checkPassword()" placeholder="new password" minlength="8">
+        </div>
+      </div>
+      <h3 class="passwordMatchResult"></h3>
+    </li>
+    <li class="nameContainer">Your ticket number:</label>
+      <input class="validInput" type="text" id="ticketNumber_added" name="ticketNumber" disabled> <br>
+      <button class="optionButton optionButton--fwPassport" onclick="addFW()" type="button"><i class="gg-add"></i>Add a new ticket number</button>
+      <button class="optionButton optionButton--fwPassport-remove" onclick="removeFW()" type="button"><i class="gg-remove"></i>Remove a new ticket number</button>
+    </li>
+    <li id="fileUpload">
+      <label for="covidFile">Your COVID-19 vaccination:</label>
+      <input type="file" id="covidFile" name="covidFile">
+    </li>
+  </ol>
+</div>
+
+<h2 class="aboveFieldsets"> Food and Alcohol</h2>
+<div class="preferences">
+  <div class="multipleQ multipleQ--myProfile">
+    <label class="preferences__legend">Do you have a special diet?</label>
+    <select name="diet" id="diet">
+      <option value="no-diet">No, I eat everything.</option>
+      <option value="vegetarian">I'm a Vegetarian.</option>
+      <option value="vegan">I'm a Vegan.</option>
+      <option value="other-diet">I have other type of diet.</option>
+    </select> 
+  </div>
+
+
+  <div class="multipleQ multipleQ--myProfile">
+    <label class="preferences__legend">Do you drink alcohol?</label>
+    <select name="diet" id="diet">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  </div>
+</div>
+<div class="otherDiet">
+      <label class="otherDiet_label">If you selected other type of diet, what is it?</label>
+      <input type="text" id="otherDiet" name="otherDiet" placeholder="Raw">
+</div>
+
+<h2 class="aboveFieldsets"> Which events do you plan on joining?</h2>
+<div class="profileForm profileForm--events">    
+  <div class="profileForm_parts">
+    <div class="questionsList questionsList--myProfile">
+      <h4>Monday (26.9):</h4>
+      <div class="checkboxQuestions checkboxQuestions--myProfile"> 
+        <input type="checkbox" id="pubcrawl" name="pubcrawl" disabled>
+        <label for="pubcrawl">Pubcrawl (groups available below)</label>
+      </div> 
+    </div>
+    <div class="questionsList questionsList--myProfile">
+      <h4>Tuesday (27.9):</h4>
+      <div class="checkboxQuestions checkboxQuestions--myProfile">
+        <input type="checkbox" id="daytrip" name="daytrip" disabled>
+        <label for="daytrip">Day Trip</label>
+      </div>
+    </div>
+    <div class="questionsList questionsList--myProfile">
+      <h4>Wednesday (28.9):</h4>
+      <div class="checkboxQuestions checkboxQuestions--myProfile">
+        <input type="checkbox" id="cinema" name="cinema" disabled>
+        <label for="cinema">Boat Party </label>
+      </div>
+    </div>
+    <div class="questionsList questionsList--myProfile">
+      <h4>Thursday (29.9):</h4>
+      <div class="questionDouble">
+        <div class="checkboxQuestions checkboxQuestions--myProfile">
+          <input type="checkbox" id="sports" name="sports" disabled>
+          <label for="sports">Sports Day</label>
+        </div>
+        <div class="checkboxQuestions checkboxQuestions--myProfile">
+          <input type="checkbox" id="paddles" name="paddles" disabled>
+          <label for="paddles"> Paddles (groups available below)</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="profileForms_parts">
+    <div class="questionsList questionsList--myProfile">
+      <h4>Friday (30.9):</h4>
+      <div class="checkboxQuestions checkboxQuestions--myProfile">
+        <input type="checkbox" id="boat" name="boat" disabled>
+        <label for="boat">Interfaculty Party </label>
+      </div>
+    </div>
+    <div class="questionsList questionsList--myProfile">
+      <h4>Saturday (1.10):</h4>
+      <div class="checkboxQuestions checkboxQuestions--myProfile">
+        <input type="checkbox" id="dinner" name="dinner" disabled>
+        <label for="dinner">Food & Drinks </label>
+      </div>
+    </div>
+    <div class="questionsList questionsList--myProfile">
+      <h4>Sunday (2.10):</h4>
+      <div class="questionDouble">
+        <div class="checkboxQuestions checkboxQuestions--myProfile">
+          <input type="checkbox" id="orientation" name="orientation" disabled>
+          <label for="orientation">Orientation Day </label>
+        </div>
+        <div class="checkboxQuestions checkboxQuestions--myProfile">
+          <input type="checkbox" id="beanies" name="beanies" disabled>
+          <label for="beanies">Beanies</label>
+        </div>
+      </div>
+    </div>
+  </div>        
+</div>
+
+<div class="signGroups">
+  <h2 class="aboveFieldsets"> Choosing your group</h2>
+  <h3> Are you going with friends to either pubcrawl or paddles? Choose your team, so you will enjoy these events together.</h3>
+  <div class="groupButton groupButton--pubcrawl" onclick="addPubcrawl()">
+    <p>Groups for Pubcrawl<i class="gg-arrows-scroll-v"></i></p>
+  </div>
+  <div id="hiddenPubcrawl" class="noPubcrawl">
+    <form class="groupChoose groupChoose--pubcrawl">
+      <ul>
+        <li>
+          <input type="radio" value="1" name="groupPubcrawl" required><label for="group1">Group No. 1<span> Available 10 places</span></label>
+        </li>
+        <li>
+          <input type="radio" value="2" name="groupPubcrawl" required><label for="group2">Group No. 2</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="3" name="groupPubcrawl" required><label for="group3">Group No. 3</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="4" name="groupPubcrawl" required><label for="group4">Group No. 4</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="5" name="groupPubcrawl" required><label for="group5">Group No. 5</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="6" name="groupPubcrawl" required><label for="group6">Group No. 6</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="7" name="groupPubcrawl" required><label for="group7">Group No. 7</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="8" name="groupPubcrawl" required><label for="group8">Group No. 8</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="9" name="groupPubcrawl" required><label for="group9">Group No. 9</label><span></span>
+        </li>
+      </ul>
+    </form>
+  </div>
+  <div class="groupButton groupButton--paddles" onclick="addPaddles()">
+    <p>Groups for Paddles<i class="gg-arrows-scroll-v"></i></p>
+  </div>
+  <div id="hiddenPaddles" class="noPaddles">
+    <fieldset class="groupChoose groupChoose--paddles">
+      <ul>
+        <li>
+          <input type="radio" value="1" name="groupPaddles" required><label for="group1">Group No. 1<span> Available 4 places</span></label>
+        </li>
+        <li>
+          <input type="radio" value="2" name="groupPaddles" required><label for="group2">Group No. 2</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="3" name="groupPaddles" required><label for="group3">Group No. 3</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="4" name="groupPaddles" required><label for="group4">Group No. 4</label><span></span>
+        </li>
+        <li>
+         <input type="radio" value="5" name="groupPaddles" required><label for="group5">Group No. 5</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="6" name="groupPaddles" required><label for="group6">Group No. 6</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="7" name="groupPaddles" required><label for="group7">Group No. 7</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="8" name="groupPaddles" required><label for="group8">Group No. 8</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="9" name="groupPaddles" required><label for="group9">Group No. 9</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="10" name="groupPaddles" required><label for="group10">Group No. 10</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="10" name="groupPaddles" required><label for="group11">Group No. 11</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="10" name="groupPaddles" required><label for="group12">Group No. 12</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="10" name="groupPaddles" required><label for="group13">Group No. 13</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="10" name="groupPaddles" required><label for="group14">Group No. 14</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="10" name="groupPaddles" required><label for="group15">Group No. 15</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="10" name="groupPaddles" required><label for="group16">Group No. 16</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="10" name="groupPaddles" required><label for="group17">Group No. 17</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="10" name="groupPaddles" required><label for="group18">Group No. 18</label><span></span>
+        </li>
+        <li>
+          <input type="radio" value="10" name="groupPaddles" required><label for="group19">Group No. 19</label><span></span>
+        </li>
+      </ul>
+    </fieldset>
+  </div>
+</div>
+
+<button id="uploadInfo" class="seeInfo" onclick="upload()" role="button">Upload your information</button>
+<span id="uploadInfo_span" class="noInfo_span">Upload is done.</span>
+<div class="contact">
+  <p>
+    If you have any troubles, please, contact us on fw@trimed.cz or +1234567
+  </p>
+</div>
+
+<footer>
+  <p>
+    Copyright 2022 Fresher's Week Trimed<br>
+    For any technical issues email: <a href="mailto:"></a> or call: <a href="tel:"></a> 
+  </p>
+</footer>
+
+<script src="registration.js"></script>
+</body>
+</html>
+
+<!--
+  -novy pas bude v novem li
+  -js vyhodit skupiny ktere jsou plne
+
+
+  STREDA
+  0. udelat prehled v pojmenovani
+  1. responsivni design 2x
+  3. header a footer
+  4. zaklad pro sponzory
+
+  CTVRTEK
+  1. stranka s mapou
+  2. responsivni design
+
+  PATEK
+  1.responsivni design mapa
+  2. zaklad tlacitek pro index
+
+
+-->
