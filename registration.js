@@ -35,23 +35,57 @@ function addFields(){
 }
 
 // myProfile
+// function addFW(){
+//   // let hiddenFW = document.querySelector("#hiddenFW");
+//   // hiddenFW.classList.remove("noFW")
+//   // hiddenFW.classList.add("seeFW")
+
+//   let ol = document.querySelector("ol")
+//   let newLi = document.createElement("li")
+
+//   ol.appendChild(newLi)
+//   ol.insertBefore(newLi, fileUpload)
+//   newLi.id = "hiddenFW"
+//   newLi.className = "seeFW"
+
+//   let newLabel = document.createElement("label")
+//   newLabel.innerHTML = "Add ticket number: "
+//   newLabel.setAttribute('for', 'ticketNumber ticketNumber')
+//   newLi.appendChild(newLabel)
+
+//   var input = document.createElement("input")
+//   input.type = "text"
+//   input.name = "ticketNumber"
+//   input.id = "ticketNumber"
+//   input.placeholder = "123XY"
+//   input.className = "validInput"
+//   input.minLength = "5"
+//   input.maxLength = "5"
+//   newLi.appendChild(input)
+//     }
+
+// function removeFW(){
+//   let hiddenFW = document.querySelector("#hiddenFW")
+//   let ol = document.querySelector("ol")
+
+//   ol.removeChild(hiddenFW)
+
+//     }
+
 function addFW(){
-  // let hiddenFW = document.querySelector("#hiddenFW");
-  // hiddenFW.classList.remove("noFW")
-  // hiddenFW.classList.add("seeFW")
 
-  let ol = document.querySelector("ol")
-  let newLi = document.createElement("li")
+  let profileDetails = document.querySelector(".profileDetailes")
+  let newDiv = document.createElement("div")
 
-  ol.appendChild(newLi)
-  ol.insertBefore(newLi, fileUpload)
-  newLi.id = "hiddenFW"
-  newLi.className = "seeFW"
+  profileDetails.appendChild(newDiv)
+  profileDetails.insertBefore(newDiv, fileUpload)
+  newDiv.id = "hiddenFW"
+  newDiv.className = "seeFW"
 
   let newLabel = document.createElement("label")
   newLabel.innerHTML = "Add ticket number: "
   newLabel.setAttribute('for', 'ticketNumber ticketNumber')
-  newLi.appendChild(newLabel)
+  newDiv.appendChild(newLabel)
 
   var input = document.createElement("input")
   input.type = "text"
@@ -61,14 +95,14 @@ function addFW(){
   input.className = "validInput"
   input.minLength = "5"
   input.maxLength = "5"
-  newLi.appendChild(input)
+  newDiv.appendChild(input)
     }
 
 function removeFW(){
   let hiddenFW = document.querySelector("#hiddenFW")
-  let ol = document.querySelector("ol")
+  let profileDetails = document.querySelector(".profileDetailes")
 
-  ol.removeChild(hiddenFW)
+  profileDetails.removeChild(hiddenFW)
 
     }
 
@@ -96,11 +130,11 @@ function checkPassword() {
   let passwordMatchResult = document.querySelector(".passwordMatchResult")
   
     if (password2.startsWith(password1) && password2 == password1) {
-      passwordMatchResult.innerHTML = "They are the same."
+      passwordMatchResult.innerHTML = "They are the same &#9989"
       return false;
     }
     else{
-      passwordMatchResult.innerHTML = "They are not the same."
+      passwordMatchResult.innerHTML = "They are not the same &#10060"
       return true;
     }
   
@@ -115,7 +149,6 @@ function upload(){
   }
 }
 
-
 //forgottenPassword
 function checkPassword2a() {
   let password1 = document.getElementById("newPassword1a").value
@@ -123,12 +156,67 @@ function checkPassword2a() {
   let passwordMatchResult = document.querySelector(".passwordMatchResult2a")
   
     if (password2.startsWith(password1) && password2 == password1) {
-      passwordMatchResult.innerHTML = "They are the same."
+      passwordMatchResult.innerHTML = "They are the same &#9989"
       return false;
     }
     else{
-      passwordMatchResult.innerHTML = "They are not the same."
+      passwordMatchResult.innerHTML = "They are not the same &#10060"
       return true;
     }
   
+}
+
+//header
+function openLogin() {
+  let hiddenLogin = document.querySelector("#loginForm");
+  hiddenLogin.classList.toggle("noLogin")
+  hiddenLogin.classList.toggle("seeLogin")
+}
+
+//itinerary
+
+function openPubcrawl() {
+  let hiddenPubcrawl = document.querySelector("#pubcrawl-hidden");
+  hiddenPubcrawl.classList.toggle("noPubcrawlInfo")
+  hiddenPubcrawl.classList.toggle("seePubcrawlInfo")
+}
+function openDaytrip() {
+  let hiddenDaytrip = document.querySelector("#daytrip-hidden");
+  hiddenDaytrip.classList.toggle("noDaytripInfo")
+  hiddenDaytrip.classList.toggle("seeDaytripInfo")
+}
+function openBoatparty() {
+  let hiddenBoatparty = document.querySelector("#boatparty-hidden");
+  hiddenBoatparty.classList.toggle("noBoatparty")
+  hiddenBoatparty.classList.toggle("seeBoatparty")
+}
+function openSportsday() {
+  let hiddenSposrtsday = document.querySelector("#sportsday-hidden");
+  hiddenSposrtsday.classList.toggle("noSposrtsday")
+  hiddenSposrtsday.classList.toggle("seeSportsday")
+}
+function openPaddles() {
+  let hiddenPaddles = document.querySelector("#paddles-hidden");
+  hiddenPaddles.classList.toggle("noPaddles")
+  hiddenPaddles.classList.toggle("seePaddles")
+}
+function openInterfaculty() {
+  let hiddenInterfaculty = document.querySelector("#interfaculty-hidden");
+  hiddenInterfaculty.classList.toggle("noInterfaculty")
+  hiddenInterfaculty.classList.toggle("seeInterfaculty")
+}
+function openFooddrinks() {
+  let hiddenFooddrinks = document.querySelector("#fooddrinks-hidden");
+  hiddenFooddrinks.classList.toggle("noFooddrinks")
+  hiddenFooddrinks.classList.toggle("seeFooddrinks")
+}
+function openOrientation() {
+  let hiddenOrientation = document.querySelector("#orientation-hidden");
+  hiddenOrientation.classList.toggle("noOrientation")
+  hiddenOrientation.classList.toggle("seeOrientation")
+}
+function openBeanies() {
+  let hiddenBeanies = document.querySelector("#beanies-hidden");
+  hiddenBeanies.classList.toggle("noBeanies")
+  hiddenBeanies.classList.toggle("seeBeanies")
 }

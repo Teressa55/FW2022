@@ -1,5 +1,3 @@
-
-
 header,
 .userLogin{
   display: flex;
@@ -8,8 +6,8 @@ header,
 
 header{
   justify-content: space-between;
-  border-bottom: 2px solid grey;
-  
+  border-bottom: 1px solid rgb(186, 186, 186);
+  box-shadow: rgb(0 0 0 / 8%) 0px 10px 31px 0px, rgb(0 0 0 / 0%) 0px 0px 0px -9px;
 }
 
 .logo{
@@ -23,14 +21,124 @@ header{
 }
 
 .userLogin{
-  padding: 5px 20px 5px 20px;
-  background-color: rgba(51, 51, 51, 0.05);
-  border-radius: 10px;
+  padding: 3px 15px 3px 15px;
+  margin: 5px;
+  background-color: rgba(135, 135, 135, 0.05);
+  &:active{
+    background-color: rgba(135, 135, 135, 0.458);
+  }
+  p{
+    @media (max-width:850px) {
+      font-size: 13px;
+    }
+    @media(max-width:620px){
+      font-size: 12px;
+    }
+    @media (max-width:450px) {
+      font-size: 11px;
+    }
+  }
 }
 
 footer{
   margin-top:100px;
   margin-bottom: 10px;
-  border-top: 2px solid grey;
+  padding-bottom: 10px;
+  border-top: 1px solid rgba(128, 128, 128, 0.678);
+  line-height: 23px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 10px 31px 0px, rgb(0 0 0 / 0%) 0px 0px 0px -9px;
+}
+
+.noLogin{
+  display: none;
+}
+
+.seeLogin{
+  display: block;
+}
+
+#loginForm {
+  position: fixed;
+  top: 73px;
+  right: 23px;
+  border: 1px solid #d7d7d7;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.loginContainer {
+  max-width: 300px;
+  padding: 0px 10px 10px 10px;
+  background-color: white;
+  label{
+    text-align: start;
+    display: block;
+    font-family: $font-main;
+    &:after{
+      content:" *";
+      color: red;
+      font-size: 40px;
+      position: relative;
+      top: 18px;
+      left: -10px;
+    }
+    @media (max-width:850px) {
+      font-size: 13px;
+    }
+    @media(max-width:620px){
+      font-size: 12px;
+    }
+    @media (max-width:450px) {
+      font-size: 11px;
+    }
+  }
+}
+
+/* Full-width input fields */
+.loginContainer input[type=email], .loginContainer
+  input[type=password] {
+  width: 100%;
+  padding: 4px;
+  margin: 5px 0 12px 0;
+  border: none;
+  border-bottom: 1px solid grey;
+  font-family: $font-second;
+  font-size: 13px;
+}
+
+/* When the inputs get focus, do something */
+.loginContainer input[type=email]:focus, .loginContainer input[type=password]:focus {
+  background-color: rgb(236, 236, 236);
+  outline: none;
+  border-radius: 4px 4px 0px 0px;
+}
+
+/* Set a style for the submit/login button */
+.loginContainer .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 11px 6px;
+  border: none;
+  cursor: pointer;
+  width: 58%;
+  margin-bottom:10px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* Add some hover effects to buttons */
+.loginContainer .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.loginIssues{
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+}
+
+a{
+  font-family: $font-second;
+  text-decoration: none;
 }
 

@@ -1,0 +1,129 @@
+
+.map{
+  height: 500px;
+  width: 800px;
+  margin-top: 50px;
+  
+}
+
+.eventInformation{
+  width: 790px;
+  margin: 50px auto;
+  font-size: 16px;
+  ol{
+    padding-inline-start: 0px;
+  }
+  @media(max-width:930px){
+    font-size: 15px;
+    width: 717px;
+  }
+  @media(max-width:800px){
+    width: 564px;
+    font-size: 13px;
+  }
+  @media(max-width:640px){
+    width: 444px;
+    font-size: 11px;
+  }
+  @media(max-width:550px){
+    width: 380px;
+    font-size: 10px;
+  } 
+  @media(max-width:450px){
+    width: 330px;
+    font-size: 9px;
+  }
+}
+
+.event{
+  display: grid;
+  position: relative;
+  text-align: left;
+  grid-template-columns: 170px 176px 207px 218px  18px;
+  border-bottom: 1px solid rgb(185, 185, 185);
+  align-items:center;
+  @media(max-width:930px){
+    grid-template-columns:131px 176px 174px 218px 18px;
+  }
+  @media(max-width:800px){
+    grid-template-columns: 94px 152px 132px 166px 18px;
+  }
+  @media(max-width:640px){
+    grid-template-columns: 94px 116px 97px 121px 18px;
+  }
+  @media(max-width:550px){
+    grid-template-columns: 70px 105px 85px 105px 14px;
+  } 
+  @media(max-width:450px){
+    grid-template-columns: 56px 78px 67px 114px 15px;
+  }
+  p{
+    margin: 5px 0px;
+  }
+  img{
+    width: 15px;
+    height:15px;
+    align-items:center;
+    @media(max-width:800px){
+      width:13px;
+      height: 13px;
+    } 
+    @media(max-width:550px){
+      width:10px;
+      height: 10px;
+    } 
+  }
+}
+
+.noPubcrawlInfo,
+.noDaytripInfo,
+.noBoatparty,
+.noSportsday,
+.noPaddles,
+.noInterfaculty,
+.noFooddrinks,
+.noOrientation,
+.noBeanies{
+  display: none;
+}
+
+.seePubcrawlInfo,
+.seeDaytripInfo,
+.seeBoatparty,
+.seeSportsday,
+.seePaddles,
+.seeInterfaculty,
+.seeFooddrinks,
+.seeOrientation,
+.seeBeanies{
+  display: block;
+}
+
+#pubcrawl-hidden,
+#daytrip-hidden,
+#boatparty-hidden,
+#sportsday-hidden,
+#paddles-hidden,
+#interfaculty-hidden,
+#fooddrinks-hidden,
+#orientation-hidden,
+#beanies-hidden{
+  background-color: rgba(227, 227, 227, 0.3);
+  padding: 5px;
+  font-size: 15px;
+  @media(max-width:930px){
+    font-size: 14px;
+  }
+  @media(max-width:800px){
+    font-size: 12px;
+  }
+  @media(max-width:640px){
+  font-size: 10px;
+  }
+  @media(max-width:550px){
+  font-size:  9px;
+  } 
+  @media(max-width:450px){
+font-size: 8px;
+  }
+}

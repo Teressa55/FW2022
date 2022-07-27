@@ -1,4 +1,6 @@
-.gg-add {
+//icons in profileDetailes
+.gg-add,
+.gg-remove {
   box-sizing: border-box;
   position: relative;
   display: inline-block;
@@ -10,7 +12,15 @@
   color: $colour-blue;
   top: -1px;
   right: 5px;
- }
+  @media (max-width:980px){
+    width: 20px;
+    height: 20px;
+  }
+  @media (max-width:880px){
+    width: 16px;
+    height: 16px;
+  }
+}
  
  .gg-add::after,
  .gg-add::before {
@@ -23,29 +33,38 @@
   background: currentColor;
   border-radius: 5px;
   top: 8px;
-  left: 4px
+  left: 4px;
+  @media(max-width:980px){
+    width: 9px;
+    top: 7px;
+  }
+  @media(max-width:880px){
+    width: 8.5px;
+    top: 5.5;
+    left: 2px;
+    height: 1.5px;
+  }
  }
  
  .gg-add::after {
   width: 2px;
   height: 10px;
   top: 4px;
-  left: 8px
+  left: 8px;
+  @media(max-width:980px){
+    width: 2px;
+    height: 10px;
+    top: 3px;
+    left: 7px;
+  }
+  @media(max-width:880px){
+    width: 1.5px;
+    height: 9px;
+    top: 2px;
+    left: 5.5px;
  } 
-
- .gg-remove {
-  box-sizing: border-box;
-  position: relative;
-  display: block;
-  transform: scale(var(--ggs,1));
-  width: 22px;
-  height: 22px;
-  border: 2px solid;
-  border-radius: 22px;
-  color: $colour-blue;
-  top: -1px;
-  right: 5px;
 }
+
 .gg-remove::before {
   content: "";
   display: block;
@@ -56,9 +75,21 @@
   background: currentColor;
   border-radius: 5px;
   top: 8px;
-  left: 4px
+  left: 4px;
+  @media (max-width:980px){
+    width:8px;
+    top: 7px;
+    left: 4px;
+  }
+  @media (max-width:880px){
+    width: 6px;
+    top: 5px;
+    left: 3.5px;
+    height: 1.5px;
+  }
 }
 
+// arrows in groups
 .gg-arrows-scroll-v {
   box-sizing: border-box;
   position: relative;
@@ -67,7 +98,7 @@
   width: 6px;
   height: -9px;
   bottom: 10px;
-    left: 155px;
+  left: 155px;
 }
 .gg-arrows-scroll-v::after,
 .gg-arrows-scroll-v::before {
@@ -77,7 +108,32 @@
   position: absolute;
   width: 6px;
   height: 6px;
-  transform: rotate(-45deg)
+  transform: rotate(-45deg);
+  @media(max-width:980px){
+    width: 5px;
+    height: 5px;
+  }
+  @media(max-width:956px) {
+    right: 10px;
+  }
+  @media(max-width:901px) {
+    right: 19px;
+  }
+  @media(max-width:846px) {
+    right: 30px;
+  }
+  @media(max-width:816px) {
+    right: 43px;
+  }
+  @media(max-width:730px) {
+    right: 50px;
+  }
+  @media(max-width:690px) {
+    right: 30px;
+  }
+  @media(max-width:400px) {
+    right: 50px;
+  }
 }
 .gg-arrows-scroll-v::after {
   border-bottom: 2px solid;
@@ -89,29 +145,187 @@
   bottom: 0
 }
 
-
-ol{
-  list-style-type:none;
+//profileDetailes
+.myProfile{
+  padding-left: 40px;
+  @media(max-width:520px){
+    padding-left: 20px;
+  }
 }
 .profileDetailes{
-
-  li{
-    padding-top: 30px;
-    text-align: left;
-  }
   input{
     margin-left: 10px;
   }
 }
-.nameContainer{
+.nameContainer,
+#fileUpload{
   display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  text-align: left;
+  @media(max-width:980px){
+    padding-top: 25px;
+  }
+  @media(max-width:690px){
+    label{
+      font-size: 15px;
+    }
+    input{
+      height: 24px;
+      font-size:12px;
+    }
+  }
+  @media(max-width:620px){
+    padding:10px;
+    label{
+      font-size: 13px;
+    }
+    input{
+      height: 24px;
+      font-size:9px;
+    }
+  }
+  @media(max-width:400px){
+    label{
+      font-size: 11px;
+    }
+  }
+}
+.seeFW{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  text-align: left;
+  @media(max-width:980px){
+    padding-top: 25px;
+  }
+  @media(max-width:690px){
+    label{
+      font-size: 15px;
+    }
+    input{
+      height: 24px;
+      font-size:14px;
+    }
+  }
+  @media(max-width:620px){
+    label{
+      font-size: 10px;
+    }
+    input{
+      height: 24px;
+      font-size:8px;
+    }
+  }
+}
+
+.noPassword,
+.noFW,
+.noPaddles,
+.noPubcrawl{
+  display: none;
+}
+.seePassword,
+.seeFW,
+.seePaddles,
+.seePubcrawl{
+  display: block;
+}
+
+.optionButton--pubcrawl,
+.optionButton--paddles{
+  margin-top: 10px;
+  margin-left: 100px;
+  padding: 10px 15px;
+}
+
+#hiddenPassword,
+#hiddenFW{
+  padding: 4px 10px; 
+  margin:20px 20px; 
+  background-color: 	#e6e6e6bc; 
+  width: fit-content;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  @media(max-width:980px){
+    padding: 4px 0px 4px 8px;
+  }
+  @media(max-width: 600px){
+    box-shadow: none;
+    margin:0px 0px;
+  }
+}
+#hiddenPassword{
+  margin-top: 10px;
+  @media(max-width: 600px){
+    margin-right:40px;
+    .name{
+      padding-top: 0px;
+    }
+    .nameContainer{
+      padding-bottom: 0px;
+    }
+  }
+  @media(max-width: 425px){
+    .nameContainer{
+      padding: 0px;
+      width: fit-content;
+    }
+  }
+}
+.passwordMatchResult{
+  font-family: $font-second;
+  font-weight: 600;
+  margin: 12px;
+  font-size: 15px;
+  @media (max-width:850px) {
+    font-size: 13px;
+  }
+  @media(max-width:620px){
+    font-size: 12px;
+  }
+  @media (max-width:450px) {
+    font-size: 11px;
+  }
+  @media(max-width:300px){
+    font-size: 9px;
+  }
+}
+
+#hiddenFW{
+  padding: 10px;
+}
+
+.buttons-for-ticket{
+  display: flex;
+  flex-wrap: nowrap;
+  padding-right: 60px;
+  @media(max-width:803px){
+    margin-top: 20px;
+  }
+  @media(max-width:550px){
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media(max-width:450px){
+    flex-wrap: wrap;
+    justify-content: flex-start
+  }
 }
 
 .name{
   padding-right: 30px;
+  @media(max-width:980px){
+    padding-right:18px;
+  }
+  @media(max-width:790px){
+    padding-top: 20px;
+  }
 }
 
 .optionButton {
+  font-family: $font-second;
+  font-weight: 300;
   background-color: rgba(51, 51, 51, 0.05);
   border-radius: 8px;
   border-width: 0;
@@ -130,46 +344,259 @@ ol{
   padding: 2px 14px;
   font-size: 13px;
   border: 1px solid #d1d1d114;
+  &--password{
+    margin-right: 90px;
+  }
+  @media(max-width:980px){
+    font-size: 11px;
+  }
+  @media(max-width:650px){
+    font-size: 10px;
+    margin-left: 0px;
+    margin-right: 30px;
+    &--password{
+      margin-left: 45px;
+    }
+  }
+  @media(max-width:528px){
+    &--fwPassport-remove{
+      margin-top: 10px;
+    }
+  }
+  @media(max-width:478px){
+    &--password{
+      margin-top: 20px;
+    }
+  }
+
+  @media(max-width:463px){
+    &--password{
+      margin-right: 85px;
+      margin-left: 0px;
+    }
+  }
+
 }
 
 .optionDetails{
   font-size: 13px;
-  margin-top: 0px;
+  margin-top: 10px;
+  @media (max-width:980px){
+    font-size: 11px;
+  }
+  @media (max-width:840px){
+    font-size: 9px;
+    margin-bottom: 0px;
+  }
+  @media(max-width: 690px){
+    font-size: 11px;
+    margin-bottom: -10px;
+    overflow-wrap: normal;
+  }
+  @media(max-width: 620px){
+    display: none;
+  }
 }
+
+//food and alcohol
 
 .preferences{
   display: flex;
   justify-content: flex-start;
-  padding-left: 40px;
   padding-top: 30px;
+  @media(max-width:690px){
+    padding-top: 20px;
+  }
+  @media(max-width:540px) {
+    flex-wrap: wrap;
+  }
   .multipleQ--myProfile{
     margin-right: 50px;
+    @media(max-width:690px){
+      margin-right: 20px;
+    }
     label{
       padding-right: 10px;
+      @media(max-width:690px){
+        font-size: 15px;
+      }
+      @media (max-width: 620px){
+        font-size: 13px;
+      }
+      @media(max-width:400px){
+          font-size: 11px;
+      }
     } 
   }
 }
 
 .aboveFieldsets{
   text-align: start;
-  padding-left: 40px;
   font-family: $font-main;
-  font-weight: 300;
+  font-weight: 500;
   padding-top: 40px;
   margin-bottom: 0px;
+  font-weight: 400;
+  @media(max-width:890px){
+    padding-top: 50px;
+  }
+  @media(max-width:690px){
+    font-weight: 500;
+  }
+  @media(max-width:650px){
+    font-size: 16.5px;
+  }
 }
+
+.otherDiet{
+  text-align: left;
+  padding-top: 30px;
+  @media(max-width:980px){
+    padding-top: 25px;
+  }
+  @media(max-width:880px){
+    padding-top: 10px;
+  }
+}
+.otherDiet_label{
+  padding-right: 10px;
+  @media(max-width:690px){
+    font-size: 15px;
+  }
+  @media (max-width: 620px){
+    font-size: 13px;
+  }
+
+}
+
+.otherDiet,
+.profileDetailes{
+  input{
+    border: 1px solid 	#E5E5E5;
+    border-radius: 6px;
+    background-color: rgba(240, 240, 240, 0.832);
+    box-shadow: 0 2px 13px 0 rgb(0 0 0 / 7%), 0 -1px 5px 0 rgb(0 0 0 / 7%);
+    padding: 3px 5px;
+    font-size: 14px;
+    font-family: $font-second;
+    min-width: 186px;
+    @media (max-width:1100px){
+      font-size: 12px;
+    }
+    @media (max-width: 980px) {
+      min-width: 0px;
+      font-size: 11px;
+    }
+    @media (max-width: 650px) {
+      min-width: 0px;
+      font-size: 8.5px;
+      padding: 3px 4px;
+    }
+    @media (max-width:500px){
+      font-size: 9px;
+      padding: 3px 4px;
+    }
+    @media (max-width:450px){
+      font-size: 8px;
+      padding: 3px 4px;
+      width: fit-content;
+    }
+    @media (max-width:380px){
+      font-size: 8px;
+    }
+  }
+}
+
+.multipleQ--myProfile select {
+  position: relative;
+  -webkit-appearance: button;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  height: 2.2em;
+  margin: 2px;
+  padding: 0.3em 0.6em;
+  background: #f6f6f6;
+  border: 1px solid #d1d1d1;
+  border-radius: 0.3em;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.278), 0 1px 2px rgba(0, 0, 0, 0.216);
+  font-family: $font-second;
+  font-size: 0.85em;
+  font-weight: normal;
+  overflow: hidden;
+  text-shadow: 0 1px 0 white;
+  -webkit-transition: box-shadow 200ms, border-color 200ms;
+  -moz-transition: box-shadow 200ms, border-color 200ms;
+  transition: box-shadow 200ms, border-color 200ms;
+  white-space: nowrap; 
+  @media(max-width:690px){
+      font-size: 11px;
+  }
+  @media (max-width: 650px){
+    font-size: 9px;
+  }
+
+}
+.multipleQ--myProfile select option {
+  text-shadow: none; 
+}
+.multipleQ--myProfile select:disabled, .multipleQ select:disabled:hover {
+  color: #cccccc !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important; 
+}
+
+//events
+
 .questionsList--myProfile{
   grid-template-columns: 40px 34% 280px auto;
+  @media (max-width:980px){
+    grid-template-columns: 0px 32% 232px auto;
+  }
+  @media(max-width:690px){
+    grid-template-columns: 0px 140px 270px auto;
+  }
+  @media(max-width:620px){
+    grid-template-columns: 0px 120px 242px auto;
+  }
+  @media(max-width:430px){
+    label{
+      padding-left: 10px;
+    }
+  }
+  @media(max-width:400px){
+    grid-template-columns:0px 96px 200px auto;
+  }
+  @media(max-width:350px){
+    label{
+      padding-left: 3px;
+    }
+  }
+
 }
 .profileForm{
   display: flex;
   justify-content: flex-start;
   padding-top: 30px;
+  @media(max-width:690px){
+    font-size: 15px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+  @media(max-width:620px){
+    font-size: 13px;
+  }
+  @media(max-width:400px){
+    font-size: 11px;
+  }
   h4{
     text-align: start;
     font-weight: 500;
   }
 }
+
+//groups
 
 .groupChoose{
   border-style: none;
@@ -179,13 +606,28 @@ ol{
     width: fit-content;
     margin: -30px 0% 0px 32%;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 11%), 0 4px 3px 0 rgb(0 0 0 / 2%);
+    @media(max-width: 980px){
+      padding-inline-start: 20px;
+    }
+    @media(max-width: 690px){
+      margin:20px 0px 20px 0px;
+    }
+    @media(max-width: 400px){
+      padding-inline-start: 10px;
+    }
   }
-
   li{
     list-style: none;
     padding: 7px;
-    margin-right: 40px;
     border-bottom: 1px solid rgb(171, 171, 171);
+    margin-right: 20px;
+    @media(max-width: 980px){
+      margin-right: 20px;
+    }
+    @media(max-width: 400px){
+      margin-right: 10px;
+      padding: 3px 5px;
+    }
   }
   input[type=radio]{
     margin-left: 10px;
@@ -236,77 +678,29 @@ ol{
   }
   label{
     padding-left: 90px;
+    @media(max-width:690px){
+      font-size: 15px;
+    }
+    @media(max-width:620px){
+      font-size: 13px;
+    }
+    @media(max-width:480px){
+      padding-left: 30px;
+    }
+    @media(max-width:400px){
+      font-size: 11px;
+      padding-left: 20px;
+    }
   }
   span{
     padding-left: 90px;
+    @media(max-width: 980px){
+      padding-left: 50px;
+    }
+    @media(max-width:400px){
+      padding-left: 10px;
+    }
   }
-}
-
-.noPassword,
-.noFW,
-.noPaddles,
-.noPubcrawl{
-  display: none;
-}
-.seePassword,
-.seeFW,
-.seePaddles,
-.seePubcrawl{
-  display: block;
-}
-
-.optionButton--pubcrawl,
-.optionButton--paddles{
-  margin-top: 10px;
-  margin-left: 100px;
-  padding: 10px 15px;
-}
-
-#hiddenPassword,
-#hiddenFW{
-  padding: 4px 10px; 
-  margin:20px 20px; 
-  background-color: 	#e6e6e6bc; 
-  width: fit-content;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-
-#hiddenFW{
-  padding: 10px;
-}
-
-.multipleQ--myProfile select {
-  position: relative;
-  -webkit-appearance: button;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  height: 2.2em;
-  margin: 2px;
-  padding: 0.3em 0.6em;
-  background: #f6f6f6;
-  border: 1px solid #d1d1d1;
-  border-radius: 0.3em;
-  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.278), 0 1px 2px rgba(0, 0, 0, 0.216);
-  font-family: $font-second;
-  font-size: 0.85em;
-  font-weight: normal;
-  overflow: hidden;
-  text-shadow: 0 1px 0 white;
-  -webkit-transition: box-shadow 200ms, border-color 200ms;
-  -moz-transition: box-shadow 200ms, border-color 200ms;
-  transition: box-shadow 200ms, border-color 200ms;
-  white-space: nowrap; 
-}
-.multipleQ--myProfile select option {
-  text-shadow: none; 
-}
-.multipleQ--myProfile select:disabled, .multipleQ select:disabled:hover {
-  color: #cccccc !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important; 
 }
 
 .signGroups{
@@ -315,27 +709,56 @@ ol{
     font-size: 15px;
     font-weight:400;
     text-align: left;
-    padding-left: 40px;
+    color: grey;
+    padding-right: 30px;
+    @media(max-width:980px){
+      font-size: 12px;
+      font-weight: 300;
+    }
+    @media(max-width:690px){
+      font-size: 14px;
+    }
+    @media(max-width:620px){
+      font-size: 12px;
+    }
+    @media(max-width:400px){
+      font-size: 11px;
+    }
   }
 }
 
 .groupButton{
   position: relative;
-  margin-left: 40px;
   border-bottom: 1px solid rgb(177, 177, 177);
   width: 20%;
   background-color: #efefef5c;
   border-radius: 8px 8px 0px 0px;
+  @media(max-width:690px){
+    width: fit-content;
+    padding-right: 10px;
+  }
   p{
     text-align: left;
     padding: 10px 10px 0px 10px;
+    @media(max-width:690px){
+      font-size: 15px;
+      width: fit-content;
+    }
+    @media(max-width:690px){
+      font-size: 13px;
+    }
+    @media(max-width:400px){
+      font-size: 11px;
+    }
+  }
+  &:hover{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 11%), 0 4px 3px 0 rgb(0 0 0 / 2%);
   }
 }
 
-.groupButton:hover{
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 11%), 0 4px 3px 0 rgb(0 0 0 / 2%);
-}
 
+
+//upload button
 #uploadInfo {
   background-color: initial;
   background-image: linear-gradient(#8614f8 0, #760be0 100%);
@@ -361,25 +784,32 @@ ol{
   vertical-align: bottom;
   width: 190px;
   border-radius: 31px;
+  &:hover{
+    opacity: .7;
+  }
   @media screen and (max-width: 1000px){
     font-size: 14px;
     height: 55px;
     line-height: 55px;
-    width: 150px;
+    width: 180px;
+  }
+  @media(max-width:970px){
+    font-size: 12px;
+    height: 48px;
+    line-height: 48px;
+  }
+  @media(max-width:700px){
+    font-size: 12px;
+    height: 43px;
+    line-height: 43px;
+  }
+  @media(max-width:400px){
+    font-size: 11px;
+    height: 40px;
+    line-height: 40px;
   }
 }
 
-#uploadInfo:hover {
-  opacity: .7;
-}
-
-.seeInfo{
-  display: inline-block;
-}
-.noInfo,
-.noInfo_span{
-  display: none;
-}
 .seeInfo_span{
   display: block;
   width: fit-content;
@@ -399,48 +829,25 @@ ol{
   border-radius: 31px;
   @media screen and (max-width: 1000px){
     font-size: 14px;
-    height: 55px;
-    line-height: 55px;
   }
-}
-.otherDiet{
-  padding-left: 40px;
-  text-align: left;
-  padding-top: 30px;
-}
-.otherDiet_label{
-  padding-right: 10px;
+  @media(max-width:970px){
+    font-size: 12px;
+  }
+  @media(max-width:400px){
+    font-size: 11px;
+  }
 }
 
-.otherDiet,
-.profileDetailes{
-  input{
-    border: 1px solid 	#E5E5E5;
-    border-radius: 6px;
-    background-color: rgba(240, 240, 240, 0.832);
-    box-shadow: 0 2px 13px 0 rgb(0 0 0 / 7%), 0 -1px 5px 0 rgb(0 0 0 / 7%);
-    padding: 3px 5px;
-    font-size: 14px;
-    font-family: $font-second;
-    min-width: 186px;
-    @media (max-width:1100px){
-      font-size: 12px;
-    }
-    @media (max-width: 980px) {
-      min-width: 0px;
-      font-size: 9px;
-    }
-    @media (max-width: 650px) {
-      min-width: 0px;
-      font-size: 8px;
-      padding: 3px 4px;
-    }
-    @media (max-width:500px){
-      font-size: 7px;
-      padding: 3px 4px;
-    }
-    @media (max-width:380px){
-      font-size: 5px;
-    }
-  }
+.seeInfo{
+  display: inline-block;
 }
+.noInfo,
+.noInfo_span{
+  display: none;
+}
+
+
+
+
+
+

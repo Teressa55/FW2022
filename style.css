@@ -382,7 +382,8 @@ h1 {
   font-weight: 400;
 }
 
-.gg-add {
+.gg-add,
+.gg-remove {
   box-sizing: border-box;
   position: relative;
   display: inline-block;
@@ -394,6 +395,20 @@ h1 {
   color: #008ECC;
   top: -1px;
   right: 5px;
+}
+@media (max-width: 980px) {
+  .gg-add,
+.gg-remove {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 880px) {
+  .gg-add,
+.gg-remove {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .gg-add::after,
@@ -409,6 +424,22 @@ h1 {
   top: 8px;
   left: 4px;
 }
+@media (max-width: 980px) {
+  .gg-add::after,
+.gg-add::before {
+    width: 9px;
+    top: 7px;
+  }
+}
+@media (max-width: 880px) {
+  .gg-add::after,
+.gg-add::before {
+    width: 8.5px;
+    top: 5.5;
+    left: 2px;
+    height: 1.5px;
+  }
+}
 
 .gg-add::after {
   width: 2px;
@@ -416,19 +447,21 @@ h1 {
   top: 4px;
   left: 8px;
 }
-
-.gg-remove {
-  box-sizing: border-box;
-  position: relative;
-  display: block;
-  transform: scale(var(--ggs, 1));
-  width: 22px;
-  height: 22px;
-  border: 2px solid;
-  border-radius: 22px;
-  color: #008ECC;
-  top: -1px;
-  right: 5px;
+@media (max-width: 980px) {
+  .gg-add::after {
+    width: 2px;
+    height: 10px;
+    top: 3px;
+    left: 7px;
+  }
+}
+@media (max-width: 880px) {
+  .gg-add::after {
+    width: 1.5px;
+    height: 9px;
+    top: 2px;
+    left: 5.5px;
+  }
 }
 
 .gg-remove::before {
@@ -442,6 +475,21 @@ h1 {
   border-radius: 5px;
   top: 8px;
   left: 4px;
+}
+@media (max-width: 980px) {
+  .gg-remove::before {
+    width: 8px;
+    top: 7px;
+    left: 4px;
+  }
+}
+@media (max-width: 880px) {
+  .gg-remove::before {
+    width: 6px;
+    top: 5px;
+    left: 3.5px;
+    height: 1.5px;
+  }
 }
 
 .gg-arrows-scroll-v {
@@ -465,6 +513,55 @@ h1 {
   height: 6px;
   transform: rotate(-45deg);
 }
+@media (max-width: 980px) {
+  .gg-arrows-scroll-v::after,
+.gg-arrows-scroll-v::before {
+    width: 5px;
+    height: 5px;
+  }
+}
+@media (max-width: 956px) {
+  .gg-arrows-scroll-v::after,
+.gg-arrows-scroll-v::before {
+    right: 10px;
+  }
+}
+@media (max-width: 901px) {
+  .gg-arrows-scroll-v::after,
+.gg-arrows-scroll-v::before {
+    right: 19px;
+  }
+}
+@media (max-width: 846px) {
+  .gg-arrows-scroll-v::after,
+.gg-arrows-scroll-v::before {
+    right: 30px;
+  }
+}
+@media (max-width: 816px) {
+  .gg-arrows-scroll-v::after,
+.gg-arrows-scroll-v::before {
+    right: 43px;
+  }
+}
+@media (max-width: 730px) {
+  .gg-arrows-scroll-v::after,
+.gg-arrows-scroll-v::before {
+    right: 50px;
+  }
+}
+@media (max-width: 690px) {
+  .gg-arrows-scroll-v::after,
+.gg-arrows-scroll-v::before {
+    right: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .gg-arrows-scroll-v::after,
+.gg-arrows-scroll-v::before {
+    right: 50px;
+  }
+}
 
 .gg-arrows-scroll-v::after {
   border-bottom: 2px solid;
@@ -477,27 +574,235 @@ h1 {
   bottom: 0;
 }
 
-ol {
-  list-style-type: none;
+.myProfile {
+  padding-left: 40px;
+}
+@media (max-width: 520px) {
+  .myProfile {
+    padding-left: 20px;
+  }
 }
 
-.profileDetailes li {
-  padding-top: 30px;
-  text-align: left;
-}
 .profileDetailes input {
   margin-left: 10px;
 }
 
-.nameContainer {
+.nameContainer,
+#fileUpload {
   display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  text-align: left;
+}
+@media (max-width: 980px) {
+  .nameContainer,
+#fileUpload {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 690px) {
+  .nameContainer label,
+#fileUpload label {
+    font-size: 15px;
+  }
+  .nameContainer input,
+#fileUpload input {
+    height: 24px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 620px) {
+  .nameContainer,
+#fileUpload {
+    padding: 10px;
+  }
+  .nameContainer label,
+#fileUpload label {
+    font-size: 13px;
+  }
+  .nameContainer input,
+#fileUpload input {
+    height: 24px;
+    font-size: 9px;
+  }
+}
+@media (max-width: 400px) {
+  .nameContainer label,
+#fileUpload label {
+    font-size: 11px;
+  }
+}
+
+.seeFW {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  text-align: left;
+}
+@media (max-width: 980px) {
+  .seeFW {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 690px) {
+  .seeFW label {
+    font-size: 15px;
+  }
+  .seeFW input {
+    height: 24px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .seeFW label {
+    font-size: 10px;
+  }
+  .seeFW input {
+    height: 24px;
+    font-size: 8px;
+  }
+}
+
+.noPassword,
+.noFW,
+.noPaddles,
+.noPubcrawl {
+  display: none;
+}
+
+.seePassword,
+.seeFW,
+.seePaddles,
+.seePubcrawl {
+  display: block;
+}
+
+.optionButton--pubcrawl,
+.optionButton--paddles {
+  margin-top: 10px;
+  margin-left: 100px;
+  padding: 10px 15px;
+}
+
+#hiddenPassword,
+#hiddenFW {
+  padding: 4px 10px;
+  margin: 20px 20px;
+  background-color: rgba(230, 230, 230, 0.737254902);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+@media (max-width: 980px) {
+  #hiddenPassword,
+#hiddenFW {
+    padding: 4px 0px 4px 8px;
+  }
+}
+@media (max-width: 600px) {
+  #hiddenPassword,
+#hiddenFW {
+    box-shadow: none;
+    margin: 0px 0px;
+  }
+}
+
+#hiddenPassword {
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  #hiddenPassword {
+    margin-right: 40px;
+  }
+  #hiddenPassword .name {
+    padding-top: 0px;
+  }
+  #hiddenPassword .nameContainer {
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 425px) {
+  #hiddenPassword .nameContainer {
+    padding: 0px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.passwordMatchResult {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin: 12px;
+  font-size: 15px;
+}
+@media (max-width: 850px) {
+  .passwordMatchResult {
+    font-size: 13px;
+  }
+}
+@media (max-width: 620px) {
+  .passwordMatchResult {
+    font-size: 12px;
+  }
+}
+@media (max-width: 450px) {
+  .passwordMatchResult {
+    font-size: 11px;
+  }
+}
+@media (max-width: 300px) {
+  .passwordMatchResult {
+    font-size: 9px;
+  }
+}
+
+#hiddenFW {
+  padding: 10px;
+}
+
+.buttons-for-ticket {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-right: 60px;
+}
+@media (max-width: 803px) {
+  .buttons-for-ticket {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .buttons-for-ticket {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 450px) {
+  .buttons-for-ticket {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 .name {
   padding-right: 30px;
 }
+@media (max-width: 980px) {
+  .name {
+    padding-right: 18px;
+  }
+}
+@media (max-width: 790px) {
+  .name {
+    padding-top: 20px;
+  }
+}
 
 .optionButton {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   background-color: rgba(51, 51, 51, 0.05);
   border-radius: 8px;
   border-width: 0;
@@ -519,42 +824,316 @@ ol {
   font-size: 13px;
   border: 1px solid rgba(209, 209, 209, 0.0784313725);
 }
+.optionButton--password {
+  margin-right: 90px;
+}
+@media (max-width: 980px) {
+  .optionButton {
+    font-size: 11px;
+  }
+}
+@media (max-width: 650px) {
+  .optionButton {
+    font-size: 10px;
+    margin-left: 0px;
+    margin-right: 30px;
+  }
+  .optionButton--password {
+    margin-left: 45px;
+  }
+}
+@media (max-width: 528px) {
+  .optionButton--fwPassport-remove {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 478px) {
+  .optionButton--password {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 463px) {
+  .optionButton--password {
+    margin-right: 85px;
+    margin-left: 0px;
+  }
+}
 
 .optionDetails {
   font-size: 13px;
-  margin-top: 0px;
+  margin-top: 10px;
+}
+@media (max-width: 980px) {
+  .optionDetails {
+    font-size: 11px;
+  }
+}
+@media (max-width: 840px) {
+  .optionDetails {
+    font-size: 9px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 690px) {
+  .optionDetails {
+    font-size: 11px;
+    margin-bottom: -10px;
+    overflow-wrap: normal;
+  }
+}
+@media (max-width: 620px) {
+  .optionDetails {
+    display: none;
+  }
 }
 
 .preferences {
   display: flex;
   justify-content: flex-start;
-  padding-left: 40px;
   padding-top: 30px;
+}
+@media (max-width: 690px) {
+  .preferences {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .preferences {
+    flex-wrap: wrap;
+  }
 }
 .preferences .multipleQ--myProfile {
   margin-right: 50px;
 }
+@media (max-width: 690px) {
+  .preferences .multipleQ--myProfile {
+    margin-right: 20px;
+  }
+}
 .preferences .multipleQ--myProfile label {
   padding-right: 10px;
+}
+@media (max-width: 690px) {
+  .preferences .multipleQ--myProfile label {
+    font-size: 15px;
+  }
+}
+@media (max-width: 620px) {
+  .preferences .multipleQ--myProfile label {
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .preferences .multipleQ--myProfile label {
+    font-size: 11px;
+  }
 }
 
 .aboveFieldsets {
   text-align: start;
-  padding-left: 40px;
   font-family: "Raleway", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   padding-top: 40px;
   margin-bottom: 0px;
+  font-weight: 400;
+}
+@media (max-width: 890px) {
+  .aboveFieldsets {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 690px) {
+  .aboveFieldsets {
+    font-weight: 500;
+  }
+}
+@media (max-width: 650px) {
+  .aboveFieldsets {
+    font-size: 16.5px;
+  }
+}
+
+.otherDiet {
+  text-align: left;
+  padding-top: 30px;
+}
+@media (max-width: 980px) {
+  .otherDiet {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 880px) {
+  .otherDiet {
+    padding-top: 10px;
+  }
+}
+
+.otherDiet_label {
+  padding-right: 10px;
+}
+@media (max-width: 690px) {
+  .otherDiet_label {
+    font-size: 15px;
+  }
+}
+@media (max-width: 620px) {
+  .otherDiet_label {
+    font-size: 13px;
+  }
+}
+
+.otherDiet input,
+.profileDetailes input {
+  border: 1px solid #E5E5E5;
+  border-radius: 6px;
+  background-color: rgba(240, 240, 240, 0.832);
+  box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.07), 0 -1px 5px 0 rgba(0, 0, 0, 0.07);
+  padding: 3px 5px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  min-width: 186px;
+}
+@media (max-width: 1100px) {
+  .otherDiet input,
+.profileDetailes input {
+    font-size: 12px;
+  }
+}
+@media (max-width: 980px) {
+  .otherDiet input,
+.profileDetailes input {
+    min-width: 0px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 650px) {
+  .otherDiet input,
+.profileDetailes input {
+    min-width: 0px;
+    font-size: 8.5px;
+    padding: 3px 4px;
+  }
+}
+@media (max-width: 500px) {
+  .otherDiet input,
+.profileDetailes input {
+    font-size: 9px;
+    padding: 3px 4px;
+  }
+}
+@media (max-width: 450px) {
+  .otherDiet input,
+.profileDetailes input {
+    font-size: 8px;
+    padding: 3px 4px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (max-width: 380px) {
+  .otherDiet input,
+.profileDetailes input {
+    font-size: 8px;
+  }
+}
+
+.multipleQ--myProfile select {
+  position: relative;
+  -webkit-appearance: button;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  height: 2.2em;
+  margin: 2px;
+  padding: 0.3em 0.6em;
+  background: #f6f6f6;
+  border: 1px solid #d1d1d1;
+  border-radius: 0.3em;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.278), 0 1px 2px rgba(0, 0, 0, 0.216);
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85em;
+  font-weight: normal;
+  overflow: hidden;
+  text-shadow: 0 1px 0 white;
+  transition: box-shadow 200ms, border-color 200ms;
+  white-space: nowrap;
+}
+@media (max-width: 690px) {
+  .multipleQ--myProfile select {
+    font-size: 11px;
+  }
+}
+@media (max-width: 650px) {
+  .multipleQ--myProfile select {
+    font-size: 9px;
+  }
+}
+
+.multipleQ--myProfile select option {
+  text-shadow: none;
+}
+
+.multipleQ--myProfile select:disabled, .multipleQ select:disabled:hover {
+  color: #cccccc !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
 }
 
 .questionsList--myProfile {
   grid-template-columns: 40px 34% 280px auto;
+}
+@media (max-width: 980px) {
+  .questionsList--myProfile {
+    grid-template-columns: 0px 32% 232px auto;
+  }
+}
+@media (max-width: 690px) {
+  .questionsList--myProfile {
+    grid-template-columns: 0px 140px 270px auto;
+  }
+}
+@media (max-width: 620px) {
+  .questionsList--myProfile {
+    grid-template-columns: 0px 120px 242px auto;
+  }
+}
+@media (max-width: 430px) {
+  .questionsList--myProfile label {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .questionsList--myProfile {
+    grid-template-columns: 0px 96px 200px auto;
+  }
+}
+@media (max-width: 350px) {
+  .questionsList--myProfile label {
+    padding-left: 3px;
+  }
 }
 
 .profileForm {
   display: flex;
   justify-content: flex-start;
   padding-top: 30px;
+}
+@media (max-width: 690px) {
+  .profileForm {
+    font-size: 15px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 620px) {
+  .profileForm {
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .profileForm {
+    font-size: 11px;
+  }
 }
 .profileForm h4 {
   text-align: start;
@@ -573,11 +1152,39 @@ ol {
   margin: -30px 0% 0px 32%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.11), 0 4px 3px 0 rgba(0, 0, 0, 0.02);
 }
+@media (max-width: 980px) {
+  .groupChoose ul {
+    -webkit-padding-start: 20px;
+            padding-inline-start: 20px;
+  }
+}
+@media (max-width: 690px) {
+  .groupChoose ul {
+    margin: 20px 0px 20px 0px;
+  }
+}
+@media (max-width: 400px) {
+  .groupChoose ul {
+    -webkit-padding-start: 10px;
+            padding-inline-start: 10px;
+  }
+}
 .groupChoose li {
   list-style: none;
   padding: 7px;
-  margin-right: 40px;
   border-bottom: 1px solid rgb(171, 171, 171);
+  margin-right: 20px;
+}
+@media (max-width: 980px) {
+  .groupChoose li {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .groupChoose li {
+    margin-right: 10px;
+    padding: 3px 5px;
+  }
 }
 .groupChoose input[type=radio] {
   margin-left: 10px;
@@ -635,76 +1242,39 @@ ol {
 .groupChoose label {
   padding-left: 90px;
 }
+@media (max-width: 690px) {
+  .groupChoose label {
+    font-size: 15px;
+  }
+}
+@media (max-width: 620px) {
+  .groupChoose label {
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .groupChoose label {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .groupChoose label {
+    font-size: 11px;
+    padding-left: 20px;
+  }
+}
 .groupChoose span {
   padding-left: 90px;
 }
-
-.noPassword,
-.noFW,
-.noPaddles,
-.noPubcrawl {
-  display: none;
+@media (max-width: 980px) {
+  .groupChoose span {
+    padding-left: 50px;
+  }
 }
-
-.seePassword,
-.seeFW,
-.seePaddles,
-.seePubcrawl {
-  display: block;
-}
-
-.optionButton--pubcrawl,
-.optionButton--paddles {
-  margin-top: 10px;
-  margin-left: 100px;
-  padding: 10px 15px;
-}
-
-#hiddenPassword,
-#hiddenFW {
-  padding: 4px 10px;
-  margin: 20px 20px;
-  background-color: rgba(230, 230, 230, 0.737254902);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-
-#hiddenFW {
-  padding: 10px;
-}
-
-.multipleQ--myProfile select {
-  position: relative;
-  -webkit-appearance: button;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  height: 2.2em;
-  margin: 2px;
-  padding: 0.3em 0.6em;
-  background: #f6f6f6;
-  border: 1px solid #d1d1d1;
-  border-radius: 0.3em;
-  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.278), 0 1px 2px rgba(0, 0, 0, 0.216);
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.85em;
-  font-weight: normal;
-  overflow: hidden;
-  text-shadow: 0 1px 0 white;
-  transition: box-shadow 200ms, border-color 200ms;
-  white-space: nowrap;
-}
-
-.multipleQ--myProfile select option {
-  text-shadow: none;
-}
-
-.multipleQ--myProfile select:disabled, .multipleQ select:disabled:hover {
-  color: #cccccc !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+@media (max-width: 400px) {
+  .groupChoose span {
+    padding-left: 10px;
+  }
 }
 
 .signGroups h3 {
@@ -712,22 +1282,68 @@ ol {
   font-size: 15px;
   font-weight: 400;
   text-align: left;
-  padding-left: 40px;
+  color: grey;
+  padding-right: 30px;
+}
+@media (max-width: 980px) {
+  .signGroups h3 {
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+@media (max-width: 690px) {
+  .signGroups h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .signGroups h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .signGroups h3 {
+    font-size: 11px;
+  }
 }
 
 .groupButton {
   position: relative;
-  margin-left: 40px;
   border-bottom: 1px solid rgb(177, 177, 177);
   width: 20%;
   background-color: rgba(239, 239, 239, 0.3607843137);
   border-radius: 8px 8px 0px 0px;
 }
+@media (max-width: 690px) {
+  .groupButton {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-right: 10px;
+  }
+}
 .groupButton p {
   text-align: left;
   padding: 10px 10px 0px 10px;
 }
-
+@media (max-width: 690px) {
+  .groupButton p {
+    font-size: 15px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (max-width: 690px) {
+  .groupButton p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .groupButton p {
+    font-size: 11px;
+  }
+}
 .groupButton:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.11), 0 4px 3px 0 rgba(0, 0, 0, 0.02);
 }
@@ -760,26 +1376,37 @@ ol {
   width: 190px;
   border-radius: 31px;
 }
+#uploadInfo:hover {
+  opacity: 0.7;
+}
 @media screen and (max-width: 1000px) {
   #uploadInfo {
     font-size: 14px;
     height: 55px;
     line-height: 55px;
-    width: 150px;
+    width: 180px;
   }
 }
-
-#uploadInfo:hover {
-  opacity: 0.7;
+@media (max-width: 970px) {
+  #uploadInfo {
+    font-size: 12px;
+    height: 48px;
+    line-height: 48px;
+  }
 }
-
-.seeInfo {
-  display: inline-block;
+@media (max-width: 700px) {
+  #uploadInfo {
+    font-size: 12px;
+    height: 43px;
+    line-height: 43px;
+  }
 }
-
-.noInfo,
-.noInfo_span {
-  display: none;
+@media (max-width: 400px) {
+  #uploadInfo {
+    font-size: 11px;
+    height: 40px;
+    line-height: 40px;
+  }
 }
 
 .seeInfo_span {
@@ -805,75 +1432,181 @@ ol {
 @media screen and (max-width: 1000px) {
   .seeInfo_span {
     font-size: 14px;
-    height: 55px;
-    line-height: 55px;
+  }
+}
+@media (max-width: 970px) {
+  .seeInfo_span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .seeInfo_span {
+    font-size: 11px;
   }
 }
 
-.otherDiet {
-  padding-left: 40px;
-  text-align: left;
-  padding-top: 30px;
+.seeInfo {
+  display: inline-block;
 }
 
-.otherDiet_label {
-  padding-right: 10px;
+.noInfo,
+.noInfo_span {
+  display: none;
 }
 
-.otherDiet input,
-.profileDetailes input {
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+}
+@media (max-width: 1150px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 850px) {
+  h1 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 620px) {
+  h1 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 300px) {
+  h1 {
+    font-size: 13px;
+  }
+}
+
+.forgottenPassword li {
+  list-style: none;
+  padding-top: 10px;
+}
+.forgottenPassword label {
+  font-size: 14px;
+}
+@media (max-width: 850px) {
+  .forgottenPassword label {
+    font-size: 13px;
+  }
+}
+@media (max-width: 620px) {
+  .forgottenPassword label {
+    font-size: 12px;
+  }
+}
+@media (max-width: 450px) {
+  .forgottenPassword label {
+    font-size: 11px;
+  }
+}
+.forgottenPassword input {
   border: 1px solid #E5E5E5;
   border-radius: 6px;
   background-color: rgba(240, 240, 240, 0.832);
   box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.07), 0 -1px 5px 0 rgba(0, 0, 0, 0.07);
   padding: 3px 5px;
   font-size: 14px;
+  margin-left: 10px;
+  margin-top: 10px;
   font-family: "Open Sans", sans-serif;
   min-width: 186px;
 }
 @media (max-width: 1100px) {
-  .otherDiet input,
-.profileDetailes input {
+  .forgottenPassword input {
     font-size: 12px;
   }
 }
 @media (max-width: 980px) {
-  .otherDiet input,
-.profileDetailes input {
+  .forgottenPassword input {
     min-width: 0px;
-    font-size: 9px;
+    font-size: 11px;
   }
 }
 @media (max-width: 650px) {
-  .otherDiet input,
-.profileDetailes input {
+  .forgottenPassword input {
     min-width: 0px;
-    font-size: 8px;
+    font-size: 8.5px;
     padding: 3px 4px;
   }
 }
 @media (max-width: 500px) {
-  .otherDiet input,
-.profileDetailes input {
-    font-size: 7px;
+  .forgottenPassword input {
+    font-size: 9px;
     padding: 3px 4px;
   }
 }
-@media (max-width: 380px) {
-  .otherDiet input,
-.profileDetailes input {
-    font-size: 5px;
+@media (max-width: 450px) {
+  .forgottenPassword input {
+    font-size: 8px;
+    padding: 3px 4px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
-
-.forgottenPassword li {
-  list-style: none;
-  padding-top: 20px;
+@media (max-width: 380px) {
+  .forgottenPassword input {
+    font-size: 8px;
+  }
 }
 
 .passwordMatchResult2a {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
+}
+@media (max-width: 850px) {
+  .passwordMatchResult2a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 620px) {
+  .passwordMatchResult2a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 450px) {
+  .passwordMatchResult2a {
+    font-size: 11px;
+  }
+}
+@media (max-width: 300px) {
+  .passwordMatchResult2a {
+    font-size: 9px;
+  }
+}
+
+.optionDetails--forgottenPassword {
+  display: block;
+  margin-top: 44px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+@media (max-width: 850px) {
+  .optionDetails--forgottenPassword {
+    font-size: 13px;
+  }
+}
+@media (max-width: 620px) {
+  .optionDetails--forgottenPassword {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .optionDetails--forgottenPassword {
+    font-size: 11px;
+  }
+}
+@media (max-width: 300px) {
+  .optionDetails--forgottenPassword {
+    font-size: 8px;
+  }
 }
 
 header,
@@ -884,7 +1617,8 @@ header,
 
 header {
   justify-content: space-between;
-  border-bottom: 2px solid grey;
+  border-bottom: 1px solid rgb(186, 186, 186);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 31px 0px, rgba(0, 0, 0, 0) 0px 0px 0px -9px;
 }
 
 .logo {
@@ -898,13 +1632,335 @@ header {
 }
 
 .userLogin {
-  padding: 5px 20px 5px 20px;
-  background-color: rgba(51, 51, 51, 0.05);
-  border-radius: 10px;
+  padding: 3px 15px 3px 15px;
+  margin: 5px;
+  background-color: rgba(135, 135, 135, 0.05);
+}
+.userLogin:active {
+  background-color: rgba(135, 135, 135, 0.458);
+}
+@media (max-width: 850px) {
+  .userLogin p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 620px) {
+  .userLogin p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 450px) {
+  .userLogin p {
+    font-size: 11px;
+  }
 }
 
 footer {
   margin-top: 100px;
   margin-bottom: 10px;
-  border-top: 2px solid grey;
+  padding-bottom: 10px;
+  border-top: 1px solid rgba(128, 128, 128, 0.678);
+  line-height: 23px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 31px 0px, rgba(0, 0, 0, 0) 0px 0px 0px -9px;
+}
+
+.noLogin {
+  display: none;
+}
+
+.seeLogin {
+  display: block;
+}
+
+#loginForm {
+  position: fixed;
+  top: 73px;
+  right: 23px;
+  border: 1px solid #d7d7d7;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.loginContainer {
+  max-width: 300px;
+  padding: 0px 10px 10px 10px;
+  background-color: white;
+}
+.loginContainer label {
+  text-align: start;
+  display: block;
+  font-family: "Raleway", sans-serif;
+}
+.loginContainer label:after {
+  content: " *";
+  color: red;
+  font-size: 40px;
+  position: relative;
+  top: 18px;
+  left: -10px;
+}
+@media (max-width: 850px) {
+  .loginContainer label {
+    font-size: 13px;
+  }
+}
+@media (max-width: 620px) {
+  .loginContainer label {
+    font-size: 12px;
+  }
+}
+@media (max-width: 450px) {
+  .loginContainer label {
+    font-size: 11px;
+  }
+}
+
+/* Full-width input fields */
+.loginContainer input[type=email], .loginContainer input[type=password] {
+  width: 100%;
+  padding: 4px;
+  margin: 5px 0 12px 0;
+  border: none;
+  border-bottom: 1px solid grey;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+
+/* When the inputs get focus, do something */
+.loginContainer input[type=email]:focus, .loginContainer input[type=password]:focus {
+  background-color: rgb(236, 236, 236);
+  outline: none;
+  border-radius: 4px 4px 0px 0px;
+}
+
+/* Set a style for the submit/login button */
+.loginContainer .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 11px 6px;
+  border: none;
+  cursor: pointer;
+  width: 58%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* Add some hover effects to buttons */
+.loginContainer .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.loginIssues {
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+.map {
+  height: 500px;
+  width: 800px;
+  margin-top: 50px;
+}
+
+.eventInformation {
+  width: 790px;
+  margin: 50px auto;
+  font-size: 16px;
+}
+.eventInformation ol {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+@media (max-width: 930px) {
+  .eventInformation {
+    font-size: 15px;
+    width: 717px;
+  }
+}
+@media (max-width: 800px) {
+  .eventInformation {
+    width: 564px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 640px) {
+  .eventInformation {
+    width: 444px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 550px) {
+  .eventInformation {
+    width: 380px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .eventInformation {
+    width: 330px;
+    font-size: 9px;
+  }
+}
+
+.event {
+  display: grid;
+  position: relative;
+  text-align: left;
+  grid-template-columns: 170px 176px 207px 218px 18px;
+  border-bottom: 1px solid rgb(185, 185, 185);
+  align-items: center;
+}
+@media (max-width: 930px) {
+  .event {
+    grid-template-columns: 131px 176px 174px 218px 18px;
+  }
+}
+@media (max-width: 800px) {
+  .event {
+    grid-template-columns: 94px 152px 132px 166px 18px;
+  }
+}
+@media (max-width: 640px) {
+  .event {
+    grid-template-columns: 94px 116px 97px 121px 18px;
+  }
+}
+@media (max-width: 550px) {
+  .event {
+    grid-template-columns: 70px 105px 85px 105px 14px;
+  }
+}
+@media (max-width: 450px) {
+  .event {
+    grid-template-columns: 56px 78px 67px 114px 15px;
+  }
+}
+.event p {
+  margin: 5px 0px;
+}
+.event img {
+  width: 15px;
+  height: 15px;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .event img {
+    width: 13px;
+    height: 13px;
+  }
+}
+@media (max-width: 550px) {
+  .event img {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.noPubcrawlInfo,
+.noDaytripInfo,
+.noBoatparty,
+.noSportsday,
+.noPaddles,
+.noInterfaculty,
+.noFooddrinks,
+.noOrientation,
+.noBeanies {
+  display: none;
+}
+
+.seePubcrawlInfo,
+.seeDaytripInfo,
+.seeBoatparty,
+.seeSportsday,
+.seePaddles,
+.seeInterfaculty,
+.seeFooddrinks,
+.seeOrientation,
+.seeBeanies {
+  display: block;
+}
+
+#pubcrawl-hidden,
+#daytrip-hidden,
+#boatparty-hidden,
+#sportsday-hidden,
+#paddles-hidden,
+#interfaculty-hidden,
+#fooddrinks-hidden,
+#orientation-hidden,
+#beanies-hidden {
+  background-color: rgba(227, 227, 227, 0.3);
+  padding: 5px;
+  font-size: 15px;
+}
+@media (max-width: 930px) {
+  #pubcrawl-hidden,
+#daytrip-hidden,
+#boatparty-hidden,
+#sportsday-hidden,
+#paddles-hidden,
+#interfaculty-hidden,
+#fooddrinks-hidden,
+#orientation-hidden,
+#beanies-hidden {
+    font-size: 14px;
+  }
+}
+@media (max-width: 800px) {
+  #pubcrawl-hidden,
+#daytrip-hidden,
+#boatparty-hidden,
+#sportsday-hidden,
+#paddles-hidden,
+#interfaculty-hidden,
+#fooddrinks-hidden,
+#orientation-hidden,
+#beanies-hidden {
+    font-size: 12px;
+  }
+}
+@media (max-width: 640px) {
+  #pubcrawl-hidden,
+#daytrip-hidden,
+#boatparty-hidden,
+#sportsday-hidden,
+#paddles-hidden,
+#interfaculty-hidden,
+#fooddrinks-hidden,
+#orientation-hidden,
+#beanies-hidden {
+    font-size: 10px;
+  }
+}
+@media (max-width: 550px) {
+  #pubcrawl-hidden,
+#daytrip-hidden,
+#boatparty-hidden,
+#sportsday-hidden,
+#paddles-hidden,
+#interfaculty-hidden,
+#fooddrinks-hidden,
+#orientation-hidden,
+#beanies-hidden {
+    font-size: 9px;
+  }
+}
+@media (max-width: 450px) {
+  #pubcrawl-hidden,
+#daytrip-hidden,
+#boatparty-hidden,
+#sportsday-hidden,
+#paddles-hidden,
+#interfaculty-hidden,
+#fooddrinks-hidden,
+#orientation-hidden,
+#beanies-hidden {
+    font-size: 8px;
+  }
 }/*# sourceMappingURL=style.css.map */

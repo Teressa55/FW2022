@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Charmonman&family=Ibarra+Real+Nova:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Itinerary</title>
+</head>
+
+<body>
+  <header>
+    <a href=""><img class="logo" src="/FW2022.png" alt="logo of 2022"></a>
+    <div class="userlogin" onclick="openLogin()">
+      <!-- <img class="login_img" src="/person_circle_icon_159926.png" alt="logo of 2022"> -->
+      <p>LOG IN</p>
+    </div>
+    <div class="noLogin" id="loginForm">
+      <form action="/action_page.php" class="loginContainer">
+        <label for="username">Username</label>
+        <input type="email" placeholder="jan.novak@gmail.com" name="username" required>
+        <label for="psw">Password</label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit" class="btn">Login</button>
+        <div class="loginIssues">
+          <a href=""><p>Forgotten password</p></a>
+          <a href="mailto:freshersweek.lf3@gmail.com "><p>| Contact email</p></a>
+        </div>
+      </form>
+    </div>
+  </header>
+
+
+  <img class="map" src="/map.jpg">
+  <div class="eventInformation">
+    <h3></h3>
+    <ol>
+      <li id="pubcrawl" class="event" onclick="openPubcrawl()">
+        <p>26.9. (Mo)</p>
+        <p>Pubcrawl</p>
+        <p>16:45</p>
+        <p>Kampa Park</p>
+        <img src="/arrow-down-3101.png">
+      </li>
+      <li id="pubcrawl-hidden" class="noPubcrawlInfo">
+        <p>
+          Another year, another pubcrawl.<br>
+          <br>
+          📍 Kampa Park, in front of the Kampa Museum<br>
+          🍹Free showt at every pub and drinks on the way.<br>
+          💵 Pubs accept cash only!
+        </p>
+      </li>
+      <li id="daytrip" class="event" onclick="openDaytrip()">
+        <p>27.9. (Tu)</p>
+        <p>Day trip</p>
+        <p>10:45</p>
+        <p>Bohnice</p>
+        <img src="/arrow-down-3101.png">
+      </li>
+      <li id="daytrip-hidden" class="noDaytripInfo">
+        <p>
+          Another year, another day trip.<br>
+          <br>
+          📍 Smichov Main train station.<br>
+          🍹Free snacks and water.<br>
+        </p>
+      </li>
+      <li id="boatparty" class="event" onclick="openBoatparty()">
+        <p>28.9. (We)</p>
+        <p>Boat party</p>
+        <p>18:00</p>
+        <p>Dvořákovo nábřeží</p>
+        <img src="/arrow-down-3101.png">
+      </li>
+      <li id="boatparty-hidden" class="noBoatparty">
+        <p>
+          Another year, another boat party.<br>
+          <br>
+          📍 Dvořákovo nábřeží, close to Chekhovo bridge<br>
+          🍹Free shot at entrance.<br>
+        </p>
+      </li>
+      <li id="sportsday" class="event" onclick="openSportsday()">
+        <p>29.9. (Th)</p>
+        <p>Sports day</p>
+        <p>10:30 & 18:00</p>
+        <p>Sokol Vinohrady</p>
+        <img src="/arrow-down-3101.png">
+      </li>
+      <li id="sportsday-hidden" class="noSportsday">
+        <p>
+          Another year, another sports day.<br>
+          <br>
+          📍 Sokol Vinohrady, Riegrovy Sady and Slovansky ostrov<br>
+          🍹Refreshments & Snack bag with a cider or non-alcoholic drink.<br>
+        </p>
+      </li>
+      <li id="paddles" class="event" onclick="openPaddles()">
+        <p>29.9. (Th)</p>
+        <p>Paddles</p>
+        <p>18:00</p>
+        <p>Slovansky ostrov</p>
+        <img src="/arrow-down-3101.png">
+      </li>
+      <li id="paddles-hidden" class="noPaddles">
+        <p>
+          Another year, another sports day.<br>
+          <br>
+          📍Slovansky ostrov, Vltava<br>
+          🍹Pedal boats.<br>
+        </p>
+      </li>
+      <li id="interfaculty" class="event" onclick="openInterfaculty()">
+        <p>30.9. (Fr)</p>
+        <p>Interfaculty party</p>
+        <p>18:00</p>
+        <p>Slovansky ostrov</p>
+        <img src="/arrow-down-3101.png">
+      </li>
+      <li id="interfaculty-hidden" class="noInterfaculty">
+        <p>
+          Another year, another sports day.<br>
+          <br>
+          📍Slovansky ostrov, Vltava<br>
+          🍹Pedal boats.<br>
+        </p>
+      </li>
+      <li id="fooddrinks" class="event" onclick="openFooddrinks()">
+        <p>1.10. (Sa)</p>
+        <p>Food & Drinks</p>
+        <p>17:00</p>
+        <p>3.LF</p>
+        <img src="/arrow-down-3101.png">
+      </li>
+      <li id="fooddrinks-hidden" class="noFooddrinks">
+        <p>
+          Another year, another sports day.<br>
+          <br>
+          📍Slovansky ostrov, Vltava<br>
+          🍹Pedal boats.<br>
+        </p>
+      </li>
+      <li id="orientation" class="event" onclick="openOrientation()">
+        <p>2.10. (Su)</p>
+        <p>Orientation day</p>
+        <p>10:00</p>
+        <p>3.LF</p>
+        <img src="/arrow-down-3101.png">
+      </li>
+      <li id="orientation-hidden" class="noOrientation">
+        <p>
+          Another year, another sports day.<br>
+          <br>
+        </p>
+      </li>
+      <li id="beanies" class="event" onclick="openBeanies()">
+        <p>2.10. (Su)</p>
+        <p>Beanies</p>
+        <p>19:00</p>
+        <p>3.LF</p>
+        <img src="/arrow-down-3101.png">
+      </li>
+      <li id="beanies-hidden" class="noBeanies">
+        <p>
+          Another year, another sports day.<br>
+          <br>
+        </p>
+      </li>
+    </ol>
+  </div>
+
+
+  <footer>
+    <p>
+      Copyright 2022 Fresher's Week Trimed<br>
+      For any technical issues email us <a href="mailto:freshersweek.lf3@gmail.com ">freshersweek.lf3@gmail.com</a> or call <a href="tel:0420608175076">+420 608 175 076</a> 
+    </p>
+  </footer>
+  <script src="registration.js"></script>
+</body>
+</html>
