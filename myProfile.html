@@ -33,13 +33,34 @@
     </div>
   </header>
 
+<!-- <div class="flightInfo">
+  <h1> PRG &#x2192 WORLD</h1>
+<h2> GATE: 3LF</h2>
+<div class="flight">
+<h2> FLIGHT: TR0003</h2>
+<h5>TRIMED AIRLINES</h5>
+</div>
+</div>
+<h5>Check out our itinerary here.</h5> -->
 
-<div class="myProfile">
-<h1> Your Account</h1>
+<div class="body">
+<div class="flightInfo">
+  <div class="flight">
+    <h1> PRG &#x2192 WORLD</h1>
+    <h2>26.9-2.10.22</h2>
+  </div>
+  <a href="">
+    <div class="flight">
+    <img src="/barcode-scanning-solutions-for-dynamics-nav-dynamics-19.png">
+    <h3>Get ready!</h3>
+  </a>
+</div>
+</div>
 
-<h2 class="aboveFieldsets"> About your account </h2>
-<div class="profileDetailes">
-    <div class="nameContainer">
+<h1 class="myProfile_heading" onclick="openDetails()">ACCOUNT DETAILS &#9992</h1>
+<div id="profileDetailes" class="noprofileDetailes">
+  <h2 class="aboveFieldsets aboveFieldsets--profileDetailes"><img class="plane"src="/plane.png"> TRIMED TRAVEL AGENCY</h2>
+    <div class="nameContainer nameContainer--name">
       <div class="name">
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname" disabled>
@@ -86,8 +107,10 @@
       <label for="covidFile">Your COVID-19 vaccination:</label>
       <input type="file" id="covidFile" name="covidFile">
     </div>
+    <div class="background"><h2>BOARDING PASS</h2></div>
 </div>
-
+<h1 class="myProfile_heading" onclick="openTrip()">DURING YOUR TRIP 	&#128101</h1>
+<div id="myProfile__form" class="nomyProfile__form">
 <h2 class="aboveFieldsets"> Food and Alcohol</h2>
 <div class="preferences">
   <div class="multipleQ multipleQ--myProfile">
@@ -289,13 +312,15 @@
     </fieldset>
   </div>
 </div>
-
+</div>
+<div class="buttonUpload">
 <button id="uploadInfo" class="seeInfo" onclick="upload()" role="button">Upload your information</button>
 <span id="uploadInfo_span" class="noInfo_span">Upload is done.</span>
 <div class="contact">
   <p>
     If you have any troubles, please, contact us on <a href="mailto:freshersweek.lf3@gmail.com ">freshersweek.lf3@gmail.com</a> or <a href="tel:0420608175076">+420 608 175 076</a>
   </p>
+</div>
 </div>
 </div>
 <footer>
@@ -312,6 +337,8 @@
 <!--
   -novy pas bude v novem li
   -js vyhodit skupiny ktere jsou plne
+  -stranka s mapou + responsivni
+  -index + responsivni
 
   CTVRTEK
   1. stranka s mapou

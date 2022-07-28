@@ -146,25 +146,91 @@
 }
 
 //profileDetailes
-.myProfile{
-  padding-left: 40px;
-  @media(max-width:520px){
-    padding-left: 20px;
+// .flightInfo{
+//   display: flex;
+//   justify-content: space-around;
+//   margin-top: 40px;
+//   h1,
+//   h2{
+//     font-weight: 300;
+//     font-family: $font-main;
+//     margin: 0px;
+//     padding-top: 10px;
+//   }
+  
+//   h5{
+//     font-weight: 300;
+//     font-family: $font-second;
+//     margin: 0px;
+//     font-size: 9px;
+//   }
+// }
+.flightInfo{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  flex-wrap: wrap;
+  h1{
+    font-weight: 300;
+    font-family: $font-main;
+    margin: 0px;
+    padding-top: 10px;
+    font-size: 53px;
+    @media (max-width:500px){
+      font-size:40px;
+    }
   }
+  h2{
+    font-size: 20px;
+    font-family: $font-main;
+    margin-top: 0px;
+    @media (max-width:500px){
+      font-size:16px;
+    }
+  }
+  img{
+    height: 84px;
+    width: 219px;
+    margin-top: 16px;
+    @media (max-width:500px){
+      width: 199;
+      height: 64;
+    }
+  }
+  h3{
+    font-size: 14px;
+    font-family: $font-main;
+    margin-top: -11px;
+    @media (max-width:500px){
+      font-size:9px;
+    }
+  }
+  a{
+    color: black;
+  }
+  
 }
-.profileDetailes{
+
+#profileDetailes{
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 30px;
+  margin-top: 15px;
+  background-color: white;
   input{
     margin-left: 10px;
   }
 }
+
 .nameContainer,
 #fileUpload{
   display: flex;
   flex-wrap: wrap;
   padding-top: 30px;
   text-align: left;
+  padding-left: 40px;
   @media(max-width:980px){
     padding-top: 25px;
+    
   }
   @media(max-width:690px){
     label{
@@ -191,6 +257,13 @@
     }
   }
 }
+.plane{
+  height: 20px;
+  position: relative;
+  bottom: -3px;
+  padding-right: 5px;
+}
+
 .seeFW{
   display: flex;
   flex-wrap: wrap;
@@ -314,12 +387,13 @@
 }
 
 .name{
+  padding-top: 0px;
   padding-right: 30px;
   @media(max-width:980px){
     padding-right:18px;
   }
   @media(max-width:790px){
-    padding-top: 20px;
+    padding-top: 0px;
   }
 }
 
@@ -398,8 +472,66 @@
   }
 }
 
-//food and alcohol
+.background{
+  padding-bottom: 2px;
+  margin-top: 10px;
+  background-color:#2196f3;
+  border-radius: 0px 0px 30px 30px;
+  h2{
+    margin-top: 23px;
+    padding-top: 14px;
+  }
+}
 
+//food and alcohol
+.body{
+  background-color: #f1f1f173;
+  padding-bottom: 90px;
+}
+#myProfile__form{
+  position: relative;
+  padding-left: 40px;
+  max-width: 1200px;
+  background-color: white;
+  padding-bottom: 15px;
+  border-radius: 30px 30px 0px 0px;
+  @media(max-width:520px){
+    padding-left: 20px;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 920px;
+    left: 0px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
+    background-size: 84%;
+    margin-top: 14px;
+    @media(max-width:1100px){
+      width: 888px;
+    }
+    @media(max-width:980px){
+      width: 696px;
+    }
+  }
+}
+
+.myProfile_heading{
+  font-size: 20px;
+  width: 30%;
+  max-width: 1200px;
+  border-bottom: 1px solid rgb(225, 225, 225);
+  margin: 0px auto 30px auto;
+  padding-top: 70px;
+  @media (max-width:780px){
+    width: 50%;
+    font-size: 18px;
+  }
+  @media (max-width:500px){
+    width: 70%;
+    font-size:16px;
+  }
+}
 .preferences{
   display: flex;
   justify-content: flex-start;
@@ -434,11 +566,23 @@
   text-align: start;
   font-family: $font-main;
   font-weight: 500;
-  padding-top: 40px;
+  padding-top: 16px;
   margin-bottom: 0px;
   font-weight: 400;
+  &--profileDetailes{
+    background-color: #2196f3;
+    margin-top:0px;
+    border-radius: 30px 30px 0px 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+    padding-left: 40px;
+  }
   @media(max-width:890px){
-    padding-top: 50px;
+    padding-top: 30px;
+    &--profileDetailes{
+      padding: 15px 0px 15px 40px;
+    }
   }
   @media(max-width:690px){
     font-weight: 500;
@@ -773,7 +917,7 @@
   height: 60px;
   line-height: 60px;
   margin-left: -4px;
-  margin-top: 30px;
+  margin-top: 100px;
   margin-bottom: 10px;
   outline: 0;
   text-align: center;
@@ -838,11 +982,15 @@
   }
 }
 
-.seeInfo{
+.seeInfo,
+.seemyProfile__form,
+.seeprofileDetailes{
   display: inline-block;
 }
 .noInfo,
-.noInfo_span{
+.noInfo_span,
+.nomyProfile__form,
+.noprofileDetailes{
   display: none;
 }
 

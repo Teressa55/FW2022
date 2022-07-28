@@ -220,3 +220,14 @@ function openBeanies() {
   hiddenBeanies.classList.toggle("noBeanies")
   hiddenBeanies.classList.toggle("seeBeanies")
 }
+
+function openTrip() {
+  let myProfile__form = document.querySelector("#myProfile__form");
+  myProfile__form.classList.toggle("nomyProfile__form")
+  myProfile__form.classList.toggle("seemyProfile__form")
+}
+function openDetails() {
+  let profileDetailes = document.querySelector("#profileDetailes");
+  profileDetailes.classList.toggle("noprofileDetailes")
+  profileDetailes.classList.toggle("seeprofileDetailes")
+}
