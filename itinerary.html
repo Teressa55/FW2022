@@ -7,6 +7,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Charmonman&family=Ibarra+Real+Nova:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
   <link rel="stylesheet" href="style.css">
   <title>Itinerary</title>
 </head>
@@ -33,10 +37,156 @@
     </div>
   </header>
 
+  <h1 class="itinerary_heading"> Flight TR003 Itinerary</h1>
+  <div class="flightDescription-itinerary">
+    <h2>Flight No.</h2>
+    <h2>Destination</h1> 
+    <h2>When</h2>
+    <h2>Gate</h2>
+    <h2>Check-in</h5>
+    <h3>Remarks</h3>
+  </div>
+  <div class="flight-itinerary">
+    <img src="/Pictures/Generic_turbofan_airplane.svg.png">
+    <h2> TR0003</h2>
+    <h2> PRG &#x2192 WORLD</h1> 
+    <h2> 26.9. 16:45</h2>
+    <h2> LF-3</h2>
+    <h2>Trimed Airlines</h5>
+    <h3>Boarding</h3>
+  </div>
 
-  <img class="map" src="/map.jpg">
+
+  <div class="map">
+    <img src="/map.png">
+    <a href="#pubcrawl-hidden" onclick="openPubcrawl()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="sa"></a>
+    <a href="#daytrip-hidden" onclick="openDaytrip()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="austr"></a>
+    <a href="#boatparty-hidden" onclick="openBoatparty()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="afr"></a>
+    <a href="#sportsday-hidden" onclick="openSportsday()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="as"></a>
+    <a href="#interfaculty-hidden" onclick="openInterfaculty()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="na"></a>
+    <a href="#fooddrinks-hidden" onclick="openFooddrinks()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="eu"></a>
+    <a href="#beanies-hidden" onclick="openBeanies()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="ant"></a> -->
+    
+  </div> 
+
+  <div class="swiper mySwiper list-cards">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide card card--pubcrawl>
+        <a href="#pubcrawl-hidden" onclick="openPubcrawl()">
+          <img src="/Pictures/pubcrawl.jpg">
+          <div class="card-text">
+            <h2>Pubcrawl</h2>
+            <div class="card-details">
+              <p>South America</p>
+              <p class="icon">🍹</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card">
+        <a href="#daytrip-hidden" onclick="openDaytrip()">
+          <img src="/Pictures/daytrip.jpg">
+          <div class="card-text">
+            <h2>Day trip</h2>
+            <div class="card-details">
+              <p>Australia</p>
+              <p class="icon">🦘</p>
+            </div>
+          </div>  
+        </a>
+      </div>
+      <div class="swiper-slide card">
+        <a href="#boatparty-hidden" onclick="openBoatparty()">
+          <img src="/Pictures/boatparty.jpg">
+          <div class="card-text">
+            <h2>Boat party</h2>
+            <div class="card-details">
+              <p>Africa</p>
+              <p class="icon">🚢</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card">
+        <a href="#sportsday-hidden" onclick="openSportsday">
+          <img src="/Pictures/sportsday_ling.jpg">
+          <div class="card-text">
+            <h2>Sports day</h2>
+            <div class="card-details">
+              <p>Asia</p>
+              <p class="icon">🦑</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card">
+        <a href="#paddles-hidden" onclick="openPaddles()">
+        <img src="/Pictures/paddles.jpg">
+        <div class="card-text">
+          <h2>Paddles</h2>
+          <div class="card-details">
+            <p>Asia</p>
+            <p class="icon">🚣</p>
+          </div>
+        </div> 
+        </a>
+      </div>
+      <div class="swiper-slide card">
+        <a href="#interfaculty-hidden" onclick="openInterfaculty()">
+          <img src="/Pictures/interfaculty.jpg">
+          <div class="card-text">
+            <h2>Interfaculty party</h2>
+            <div class="card-details">
+              <p>North America</p>
+              <p class="icon">🎉</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card">
+        <a href="#fooddrinks-hidden" onclick="openFooddrinks()">
+          <img src="/Pictures/food&drinks.jpg">
+          <div class="card-text">
+            <h2>Food & Drinks</h2>
+            <div class="card-details">
+              <p>Europe</p>
+              <p class="icon">🍔🥤</p>
+            </div>
+          </div> 
+        </a>   
+      </div>
+      <div class="swiper-slide card">
+        <a href="#orientation-hidden" onclick="openOrientation()">
+          <img src="/Pictures/orientationday.jpg">
+          <div class="card-text">
+            <h2>Orientation day</h2>
+            <div class="card-details">
+              <p>Antarctica</p>
+              <p class="icon">👋</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card">
+        <a href="#beanies-hidden" onclick="openBeanies()">
+          <img src="/Pictures/beanies.jpg">
+          <div class="card-text">
+            <h2>Beanies</h2>
+            <div class="card-details">
+              <p>Antarctica</p>
+              <p class="icon">🧊</p>
+            </div>
+          </div>  
+        </a>
+      </div>
+  </div>
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- https://codesandbox.io/s/v6tqbh?file=/index.html -->
+
   <div class="eventInformation">
-    <h3></h3>
     <ol>
       <li id="pubcrawl" class="event" onclick="openPubcrawl()">
         <p>26.9. (Mo)</p>
@@ -180,6 +330,7 @@
       For any technical issues email us <a href="mailto:freshersweek.lf3@gmail.com ">freshersweek.lf3@gmail.com</a> or call <a href="tel:0420608175076">+420 608 175 076</a> 
     </p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="registration.js"></script>
 </body>
 </html>

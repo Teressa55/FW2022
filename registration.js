@@ -72,6 +72,17 @@ function addFields(){
 
 //     }
 
+function openTrip() {
+  let myProfile__form = document.querySelector("#myProfile__form");
+  myProfile__form.classList.toggle("nomyProfile__form")
+  myProfile__form.classList.toggle("seemyProfile__form")
+}
+function openDetails() {
+  let profileDetailes = document.querySelector("#profileDetailes");
+  profileDetailes.classList.toggle("noprofileDetailes")
+  profileDetailes.classList.toggle("seeprofileDetailes")
+}
+
 function addFW(){
 
   let profileDetails = document.querySelector(".profileDetailes")
@@ -221,13 +232,18 @@ function openBeanies() {
   hiddenBeanies.classList.toggle("seeBeanies")
 }
 
-function openTrip() {
-  let myProfile__form = document.querySelector("#myProfile__form");
-  myProfile__form.classList.toggle("nomyProfile__form")
-  myProfile__form.classList.toggle("seemyProfile__form")
-}
-function openDetails() {
-  let profileDetailes = document.querySelector("#profileDetailes");
-  profileDetailes.classList.toggle("noprofileDetailes")
-  profileDetailes.classList.toggle("seeprofileDetailes")
-}
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 3,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
+});

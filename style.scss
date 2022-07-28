@@ -5,6 +5,9 @@ $colour-grey:	#FFF2F2F2;
 $colour-blue: #008ECC;
 $colour-neo-blue:#0473e3;
 
+body{
+  background-color: #f1f1f173;
+}
 
 @import "registration";
 

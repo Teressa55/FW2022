@@ -218,6 +218,7 @@
   background-color: white;
   input{
     margin-left: 10px;
+    height: 28px;
   }
 }
 
@@ -516,6 +517,7 @@
   }
 }
 
+
 .myProfile_heading{
   font-size: 20px;
   width: 30%;
@@ -738,6 +740,9 @@
     text-align: start;
     font-weight: 500;
   }
+}
+.questionDouble .checkboxQuestions--myProfile{
+  padding-bottom: 10px;
 }
 
 //groups
