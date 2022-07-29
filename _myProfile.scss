@@ -1,4 +1,4 @@
-//icons in profileDetailes
+//icons in profileDetails
 .gg-add,
 .gg-remove {
   box-sizing: border-box;
@@ -145,26 +145,6 @@
   bottom: 0
 }
 
-//profileDetailes
-// .flightInfo{
-//   display: flex;
-//   justify-content: space-around;
-//   margin-top: 40px;
-//   h1,
-//   h2{
-//     font-weight: 300;
-//     font-family: $font-main;
-//     margin: 0px;
-//     padding-top: 10px;
-//   }
-  
-//   h5{
-//     font-weight: 300;
-//     font-family: $font-second;
-//     margin: 0px;
-//     font-size: 9px;
-//   }
-// }
 .flightInfo{
   display: flex;
   justify-content: space-evenly;
@@ -211,7 +191,7 @@
   
 }
 
-#profileDetailes{
+#profileDetails{
   border: 1px solid rgb(221, 221, 221);
   border-radius: 30px;
   margin-top: 15px;
@@ -575,7 +555,7 @@
   padding-top: 16px;
   margin-bottom: 0px;
   font-weight: 400;
-  &--profileDetailes{
+  &--profileDetails{
     background-color: #2196f3;
     margin-top:0px;
     border-radius: 30px 30px 0px 0px;
@@ -586,7 +566,7 @@
   }
   @media(max-width:890px){
     padding-top: 30px;
-    &--profileDetailes{
+    &--profileDetails{
       padding: 15px 0px 15px 40px;
     }
   }
@@ -620,7 +600,7 @@
 }
 
 .otherDiet,
-.profileDetailes{
+.profileDetails{
   input{
     border: 1px solid 	#E5E5E5;
     border-radius: 6px;
@@ -993,13 +973,13 @@
 
 .seeInfo,
 .seemyProfile__form,
-.seeprofileDetailes{
+.seeprofileDetails{
   display: inline-block;
 }
 .noInfo,
 .noInfo_span,
 .nomyProfile__form,
-.noprofileDetailes{
+.noprofileDetails{
   display: none;
 }
 

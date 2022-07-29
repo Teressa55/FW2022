@@ -631,13 +631,13 @@ h1 {
   color: black;
 }
 
-#profileDetailes {
+#profileDetails {
   border: 1px solid rgb(221, 221, 221);
   border-radius: 30px;
   margin-top: 15px;
   background-color: white;
 }
-#profileDetailes input {
+#profileDetails input {
   margin-left: 10px;
   height: 28px;
 }
@@ -1078,7 +1078,7 @@ h1 {
   margin-bottom: 0px;
   font-weight: 400;
 }
-.aboveFieldsets--profileDetailes {
+.aboveFieldsets--profileDetails {
   background-color: #2196f3;
   margin-top: 0px;
   border-radius: 30px 30px 0px 0px;
@@ -1091,7 +1091,7 @@ h1 {
   .aboveFieldsets {
     padding-top: 30px;
   }
-  .aboveFieldsets--profileDetailes {
+  .aboveFieldsets--profileDetails {
     padding: 15px 0px 15px 40px;
   }
 }
@@ -1136,7 +1136,7 @@ h1 {
 }
 
 .otherDiet input,
-.profileDetailes input {
+.profileDetails input {
   border: 1px solid #E5E5E5;
   border-radius: 6px;
   background-color: rgba(240, 240, 240, 0.832);
@@ -1148,20 +1148,20 @@ h1 {
 }
 @media (max-width: 1100px) {
   .otherDiet input,
-.profileDetailes input {
+.profileDetails input {
     font-size: 12px;
   }
 }
 @media (max-width: 980px) {
   .otherDiet input,
-.profileDetailes input {
+.profileDetails input {
     min-width: 0px;
     font-size: 11px;
   }
 }
 @media (max-width: 650px) {
   .otherDiet input,
-.profileDetailes input {
+.profileDetails input {
     min-width: 0px;
     font-size: 8.5px;
     padding: 3px 4px;
@@ -1169,14 +1169,14 @@ h1 {
 }
 @media (max-width: 500px) {
   .otherDiet input,
-.profileDetailes input {
+.profileDetails input {
     font-size: 9px;
     padding: 3px 4px;
   }
 }
 @media (max-width: 450px) {
   .otherDiet input,
-.profileDetailes input {
+.profileDetails input {
     font-size: 8px;
     padding: 3px 4px;
     width: -webkit-fit-content;
@@ -1186,7 +1186,7 @@ h1 {
 }
 @media (max-width: 380px) {
   .otherDiet input,
-.profileDetailes input {
+.profileDetails input {
     font-size: 8px;
   }
 }
@@ -1604,14 +1604,14 @@ h1 {
 
 .seeInfo,
 .seemyProfile__form,
-.seeprofileDetailes {
+.seeprofileDetails {
   display: inline-block;
 }
 
 .noInfo,
 .noInfo_span,
 .nomyProfile__form,
-.noprofileDetailes {
+.noprofileDetails {
   display: none;
 }
 

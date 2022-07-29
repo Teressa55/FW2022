@@ -78,14 +78,14 @@ function openTrip() {
   myProfile__form.classList.toggle("seemyProfile__form")
 }
 function openDetails() {
-  let profileDetailes = document.querySelector("#profileDetailes");
-  profileDetailes.classList.toggle("noprofileDetailes")
-  profileDetailes.classList.toggle("seeprofileDetailes")
+  let profileDetails = document.querySelector("#profileDetails");
+  profileDetails.classList.toggle("noprofileDetails")
+  profileDetails.classList.toggle("seeprofileDetails")
 }
 
 function addFW(){
 
-  let profileDetails = document.querySelector(".profileDetailes")
+  let profileDetails = document.querySelector(".profileDetails")
   let newDiv = document.createElement("div")
 
   profileDetails.appendChild(newDiv)
@@ -111,7 +111,7 @@ function addFW(){
 
 function removeFW(){
   let hiddenFW = document.querySelector("#hiddenFW")
-  let profileDetails = document.querySelector(".profileDetailes")
+  let profileDetails = document.querySelector(".profileDetails")
 
   profileDetails.removeChild(hiddenFW)
 
