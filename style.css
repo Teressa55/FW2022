@@ -2229,6 +2229,11 @@ body {
   bottom: 39%;
   left: 35.5%;
 }
+@media (min-width: 1400px) {
+  #sa {
+    left: 38.5%;
+  }
+}
 @media (max-width: 1100px) {
   #sa {
     bottom: 36%;
@@ -2251,6 +2256,11 @@ body {
 #eu {
   top: 13%;
   right: 43.5%;
+}
+@media (min-width: 1400px) {
+  #eu {
+    right: 44.5%;
+  }
 }
 @media (max-width: 1100px) {
   #eu {
@@ -2283,6 +2293,16 @@ body {
 #austr {
   bottom: 32%;
   right: 23.5%;
+}
+@media (min-width: 1400px) {
+  #austr {
+    right: 31.5%;
+  }
+}
+@media (min-width: 1300px) {
+  #austr {
+    right: 28.5%;
+  }
 }
 @media (max-width: 1100px) {
   #austr {
@@ -2358,6 +2378,12 @@ body {
   top: 19%;
   right: 29%;
 }
+@media (min-width: 1400px) {
+  #as {
+    top: 22%;
+    right: 33%;
+  }
+}
 @media (max-width: 1100px) {
   #as {
     top: 14%;
@@ -2391,6 +2417,11 @@ body {
   top: 12%;
   left: 26%;
 }
+@media (min-width: 1400px) {
+  #na {
+    left: 30%;
+  }
+}
 @media (max-width: 1100px) {
   #na {
     top: 6%;
@@ -2423,6 +2454,11 @@ body {
 #ant {
   bottom: 7%;
   right: 36%;
+}
+@media (min-width: 1300px) {
+  #ant {
+    right: 40%;
+  }
 }
 @media (max-width: 1100px) {
   #ant {
@@ -2817,6 +2853,17 @@ body {
 .seeBeanies {
   display: block;
 }
+.seePubcrawlInfo p,
+.seeDaytripInfo p,
+.seeBoatparty p,
+.seeSportsday p,
+.seePaddles p,
+.seeInterfaculty p,
+.seeFooddrinks p,
+.seeOrientation p,
+.seeBeanies p {
+  display: block;
+}
 
 #pubcrawl-hidden,
 #daytrip-hidden,
@@ -3012,4 +3059,123 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
+}
+.hidden__text img {
+  height: 136px;
+  padding: 30px 10px 20px 10px;
+}
+
+.index-list {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 500px;
+  margin: 30px auto;
+  justify-content: flex-end;
+}
+
+.index-column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.index-shelf {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+}
+
+.index-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: left;
+  box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.07), 0 -1px 5px 0 rgba(0, 0, 0, 0.07);
+}
+.index-card h2 {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px 0px 50px 0px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  font-size: 28px;
+  display: inline-block;
+  font-weight: 700;
+}
+.index-card h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  background-color: #2196f3;
+  font-size: 18px;
+  padding: 7px 18px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 50px 0px 0px 0px;
+}
+.index-card a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  color: black;
+}
+.index-card--tickets {
+  width: 50%;
+  background-image: url(Pictures/ticket.JPG);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.index-card--tickets h2 {
+  font-size: 30px;
+}
+.index-card--itinerary {
+  height: 50%;
+  background-image: url(Pictures/world_map.svg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.index-card--itinerary h2 {
+  font-size: 25px;
+}
+.index-card--account {
+  width: 50%;
+  background-image: url(Pictures/money_ticket.jpg);
+  background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.index-card--account h2 {
+  color: white;
+  font-size: 25px;
+}
+.index-card--account h5 {
+  margin-top: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.index-card--sponsors {
+  width: 50%;
+  background-image: url(Pictures/sponsors.jpg);
+  background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.index-card--sponsors h2 {
+  color: white;
+  font-size: 25px;
+}
+.index-card--sponsors h5 {
+  margin-top: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }/*# sourceMappingURL=style.css.map */

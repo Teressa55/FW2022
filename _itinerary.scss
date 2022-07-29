@@ -210,6 +210,9 @@ body{
 #sa{
   bottom: 39%;
   left: 35.5%;
+  @media(min-width:1400px){
+    left: 38.5%;
+  }
   @media(max-width:1100px){
     bottom: 36%;
     left: 35%;
@@ -226,6 +229,9 @@ body{
 #eu{
   top: 13%;
   right: 43.5%;
+  @media(min-width:1400px){
+    right: 44.5%;
+  }
   @media(max-width:1100px){
     top: 7%;
     right: 45.5%;
@@ -247,6 +253,12 @@ body{
 #austr{
   bottom: 32%;
   right: 23.5%;
+  @media(min-width:1400px){
+    right: 31.5%;
+  }
+  @media(min-width:1300px){
+    right: 28.5%;
+  }
   @media(max-width:1100px){
     bottom: 29%;
     right: 25.5%;
@@ -300,6 +312,10 @@ body{
 #as{
   top: 19%;
   right: 29%;
+  @media(min-width:1400px){
+    top: 22%;
+    right: 33%;
+  }
   @media(max-width:1100px){
     top: 14%;
     right: 32%;
@@ -322,6 +338,9 @@ body{
 #na{
   top: 12%;
   left: 26%;
+  @media(min-width:1400px){
+    left: 30%;
+  }
   @media(max-width:1100px){
     top: 6%;
     left: 27.5%;
@@ -344,6 +363,9 @@ body{
 #ant{
   bottom: 7%;
   right: 36%;
+  @media(min-width:1300px){
+    right: 40%;
+  }
   @media(max-width:1100px){
     bottom: 3%;
     right: 37%;
@@ -642,6 +664,9 @@ body{
 .seeOrientation,
 .seeBeanies{
   display: block;
+  p{
+    display: block;
+  }
 }
 
 #pubcrawl-hidden,
@@ -659,11 +684,6 @@ body{
   padding-bottom: 10px;
   text-align: start;
   z-index: 0;
-  // background: linear-gradient(
-  // to bottom,
-  // #eeeeee,
-  // #ffffff
-  // );
   @media(max-width:930px){
     font-size: 14px;
   }
@@ -715,4 +735,9 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
+  img{
+    height: 136px;
+    padding: 30px 10px 20px 10px;
+  }
 }
