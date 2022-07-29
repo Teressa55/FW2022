@@ -38,34 +38,37 @@
   </header>
 
   <h1 class="itinerary_heading"> Flight TR003 Itinerary</h1>
-  <div class="flightDescription-itinerary">
-    <h2>Flight No.</h2>
-    <h2>Destination</h1> 
-    <h2>When</h2>
-    <h2>Gate</h2>
-    <h2>Check-in</h5>
-    <h3>Remarks</h3>
-  </div>
   <div class="flight-itinerary">
-    <img src="/Pictures/Generic_turbofan_airplane.svg.png">
-    <h2> TR0003</h2>
-    <h2> PRG &#x2192 WORLD</h1> 
-    <h2> 26.9. 16:45</h2>
-    <h2> LF-3</h2>
-    <h2>Trimed Airlines</h5>
-    <h3>Boarding</h3>
+    <img src="/Pictures/Generic_turbofan_airplane.svg.png" class="flightImg">
+    <div class=" flight__board">
+      <span>Flight No.</span><h2> TR0003</h2>
+    </div>
+    <div class=" flight__board">
+      <span> Destination </span><h2> PRG &#x2192 WORLD</h2> 
+    </div>
+    <div class=" flight__board">
+      <span>When</span><h2 > 26.9. 16:45</h2>
+    </div>
+    <div class=" flight__board">
+      <span>Gate</span><h2 > LF-3</h2>
+    </div>
+    <div class=" flight__board">
+      <span>Check-in</span><h2>Trimed Airlines</h2>
+    </div>
+    <div class=" flight__board">
+    <span>Remarks</span><h3 >Boarding</h3>
+    </div>
   </div>
-
 
   <div class="map">
-    <img src="/map.png">
+    <img src="/map.png" class="map map--continents">
     <a href="#pubcrawl-hidden" onclick="openPubcrawl()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="sa"></a>
     <a href="#daytrip-hidden" onclick="openDaytrip()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="austr"></a>
     <a href="#boatparty-hidden" onclick="openBoatparty()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="afr"></a>
     <a href="#sportsday-hidden" onclick="openSportsday()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="as"></a>
     <a href="#interfaculty-hidden" onclick="openInterfaculty()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="na"></a>
     <a href="#fooddrinks-hidden" onclick="openFooddrinks()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="eu"></a>
-    <a href="#beanies-hidden" onclick="openBeanies()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="ant"></a> -->
+    <a href="#beanies-hidden" onclick="openBeanies()"><img src="/Pictures/Airplane_silhouette_red.svg.png" class="plane" id="ant"></a>
     
   </div> 
 
@@ -78,7 +81,7 @@
             <h2>Pubcrawl</h2>
             <div class="card-details">
               <p>South America</p>
-              <p class="icon">🍹</p>
+              <span class="icon">🍹</span>
             </div>
           </div>
         </a>
@@ -90,7 +93,7 @@
             <h2>Day trip</h2>
             <div class="card-details">
               <p>Australia</p>
-              <p class="icon">🦘</p>
+              <span class="icon">🦘</span>
             </div>
           </div>  
         </a>
@@ -102,7 +105,7 @@
             <h2>Boat party</h2>
             <div class="card-details">
               <p>Africa</p>
-              <p class="icon">🚢</p>
+              <span class="icon">🚢</span>
             </div>
           </div>
         </a>
@@ -114,7 +117,7 @@
             <h2>Sports day</h2>
             <div class="card-details">
               <p>Asia</p>
-              <p class="icon">🦑</p>
+              <span class="icon">🦑</span>
             </div>
           </div>
         </a>
@@ -126,7 +129,7 @@
           <h2>Paddles</h2>
           <div class="card-details">
             <p>Asia</p>
-            <p class="icon">🚣</p>
+            <span class="icon">🚣</span>
           </div>
         </div> 
         </a>
@@ -138,7 +141,7 @@
             <h2>Interfaculty party</h2>
             <div class="card-details">
               <p>North America</p>
-              <p class="icon">🎉</p>
+              <span class="icon">🎉</span>
             </div>
           </div>
         </a>
@@ -150,7 +153,7 @@
             <h2>Food & Drinks</h2>
             <div class="card-details">
               <p>Europe</p>
-              <p class="icon">🍔🥤</p>
+              <span class="icon">🍔🥤</span>
             </div>
           </div> 
         </a>   
@@ -162,7 +165,7 @@
             <h2>Orientation day</h2>
             <div class="card-details">
               <p>Antarctica</p>
-              <p class="icon">👋</p>
+              <span class="icon">👋</span>
             </div>
           </div>
         </a>
@@ -174,7 +177,7 @@
             <h2>Beanies</h2>
             <div class="card-details">
               <p>Antarctica</p>
-              <p class="icon">🧊</p>
+              <span class="icon">🧊</span>
             </div>
           </div>  
         </a>
@@ -187,6 +190,7 @@
   <!-- https://codesandbox.io/s/v6tqbh?file=/index.html -->
 
   <div class="eventInformation">
+    <h2>&#128337 Last Minute Deals</h2>
     <ol>
       <li id="pubcrawl" class="event" onclick="openPubcrawl()">
         <p>26.9. (Mo)</p>
@@ -196,12 +200,16 @@
         <img src="/arrow-down-3101.png">
       </li>
       <li id="pubcrawl-hidden" class="noPubcrawlInfo">
-        <p>
-          Another year, another pubcrawl.<br>
-          <br>
-          📍 Kampa Park, in front of the Kampa Museum<br>
-          🍹Free showt at every pub and drinks on the way.<br>
-          💵 Pubs accept cash only!
+        <div class="hidden__text">
+          <p>
+            Another year, another pubcrawl.<br>  
+            Kampa Park, in front of the Kampa Museum<br>
+            Free showt at every pub and drinks on the way.<br>
+            Pubs accept cash only!
+          </p>
+        </div>
+        <p style="text-align: center;">
+          Travel agents: Christian and Joachim
         </p>
       </li>
       <li id="daytrip" class="event" onclick="openDaytrip()">
@@ -212,11 +220,15 @@
         <img src="/arrow-down-3101.png">
       </li>
       <li id="daytrip-hidden" class="noDaytripInfo">
-        <p>
-          Another year, another day trip.<br>
-          <br>
-          📍 Smichov Main train station.<br>
-          🍹Free snacks and water.<br>
+        <div class="hidden__text">
+          <p>
+            Another year, another day trip.<br>
+            Smichov Main train station.<br>
+            Free snacks and water.<br>
+          </p>
+        </div>
+        <p >
+          Travel agents: Eva
         </p>
       </li>
       <li id="boatparty" class="event" onclick="openBoatparty()">
@@ -227,11 +239,15 @@
         <img src="/arrow-down-3101.png">
       </li>
       <li id="boatparty-hidden" class="noBoatparty">
+        <div class="hidden__text">
+          <p>
+            Another year, another boat party.
+            Smichov Main train station.<br>
+            Free snacks and water.<br>
+          </p>
+        </div>
         <p>
-          Another year, another boat party.<br>
-          <br>
-          📍 Dvořákovo nábřeží, close to Chekhovo bridge<br>
-          🍹Free shot at entrance.<br>
+          Travel agents: Justina and Sandra
         </p>
       </li>
       <li id="sportsday" class="event" onclick="openSportsday()">
@@ -242,11 +258,15 @@
         <img src="/arrow-down-3101.png">
       </li>
       <li id="sportsday-hidden" class="noSportsday">
+        <div class="hidden__text">
+          <p>
+            Another year, another boat party.<br>
+            Smichov Main train station.<br>
+            Free snacks and water.<br>
+          </p>
+        </div>
         <p>
-          Another year, another sports day.<br>
-          <br>
-          📍 Sokol Vinohrady, Riegrovy Sady and Slovansky ostrov<br>
-          🍹Refreshments & Snack bag with a cider or non-alcoholic drink.<br>
+          Travel agents: Mirka and Najeeb
         </p>
       </li>
       <li id="paddles" class="event" onclick="openPaddles()">
@@ -257,11 +277,15 @@
         <img src="/arrow-down-3101.png">
       </li>
       <li id="paddles-hidden" class="noPaddles">
+        <div class="hidden__text">
+          <p>
+            Another year, another boat party.<br>
+            Smichov Main train station.<br>
+            Free snacks and water.<br>
+          </p>
+        </div>
         <p>
-          Another year, another sports day.<br>
-          <br>
-          📍Slovansky ostrov, Vltava<br>
-          🍹Pedal boats.<br>
+           Travel agents: Andrej and Richard
         </p>
       </li>
       <li id="interfaculty" class="event" onclick="openInterfaculty()">
@@ -272,11 +296,15 @@
         <img src="/arrow-down-3101.png">
       </li>
       <li id="interfaculty-hidden" class="noInterfaculty">
+        <div class="hidden__text">
+          <p>
+            Another year, another boat party.<br>
+            Smichov Main train station.<br>
+            Free snacks and water.<br>
+          </p>
+        </div>
         <p>
-          Another year, another sports day.<br>
-          <br>
-          📍Slovansky ostrov, Vltava<br>
-          🍹Pedal boats.<br>
+          Travel agents: Yuliya and Ocean
         </p>
       </li>
       <li id="fooddrinks" class="event" onclick="openFooddrinks()">
@@ -287,11 +315,15 @@
         <img src="/arrow-down-3101.png">
       </li>
       <li id="fooddrinks-hidden" class="noFooddrinks">
+        <div class="hidden__text">
+          <p>
+            Another year, another boat party.<br>
+            Smichov Main train station.<br>
+            Free snacks and water.<br>
+          </p>
+        </div>
         <p>
-          Another year, another sports day.<br>
-          <br>
-          📍Slovansky ostrov, Vltava<br>
-          🍹Pedal boats.<br>
+          Travel agents: Maya and Sandra
         </p>
       </li>
       <li id="orientation" class="event" onclick="openOrientation()">
@@ -302,9 +334,15 @@
         <img src="/arrow-down-3101.png">
       </li>
       <li id="orientation-hidden" class="noOrientation">
+        <div class="hidden__text">
+          <p>
+            Another year, another boat party.<br>
+            Smichov Main train station.<br>
+            Free snacks and water.<br>
+          </p>
+        </div>
         <p>
-          Another year, another sports day.<br>
-          <br>
+          Travel agents: Sara
         </p>
       </li>
       <li id="beanies" class="event" onclick="openBeanies()">
@@ -315,10 +353,13 @@
         <img src="/arrow-down-3101.png">
       </li>
       <li id="beanies-hidden" class="noBeanies">
-        <p>
-          Another year, another sports day.<br>
-          <br>
-        </p>
+        <div class="hidden__text">
+          <p>
+            Another year, another boat party.<br>
+            Smichov Main train station.<br>
+            Free snacks and water.<br>
+          </p>
+        </div>
       </li>
     </ol>
   </div>

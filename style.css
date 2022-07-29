@@ -856,11 +856,17 @@ h1 {
 @media (max-width: 980px) {
   .name {
     padding-right: 18px;
+    padding-top: 25px;
   }
 }
 @media (max-width: 790px) {
   .name {
-    padding-top: 0px;
+    padding-top: 15px;
+  }
+}
+@media (max-width: 620px) {
+  .name {
+    padding-top: 10px;
   }
 }
 
@@ -1920,22 +1926,252 @@ body {
   position: relative;
 }
 
+.itinerary_heading {
+  font-size: 28px;
+  margin-top: 63px;
+  display: inline-block;
+  padding: 10px;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  border-left: 7px solid #2196f3;
+}
+@media (max-width: 1000px) {
+  .itinerary_heading {
+    font-size: 22px;
+  }
+}
+@media (max-width: 800px) {
+  .itinerary_heading {
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .itinerary_heading {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .itinerary_heading {
+    font-size: 15px;
+  }
+}
+
+.flight__board {
+  display: flex;
+  flex-direction: column;
+}
+
+.flight-itinerary {
+  display: grid;
+  grid-template-columns: 140px 82px 274px 174px 62px 135px 173px;
+  justify-content: center;
+  grid-auto-flow: row;
+  margin: 15px 20px 0px 20px;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  .flight-itinerary {
+    grid-template-columns: 85px 82px 228px 139px 62px 135px 118px;
+    margin: 7px 20px 0px 20px;
+  }
+}
+@media (max-width: 890px) {
+  .flight-itinerary {
+    grid-template-columns: 71px 82px 179px 88px 62px 135px 87px;
+    margin-top: 35px;
+  }
+}
+@media (max-width: 730px) {
+  .flight-itinerary {
+    grid-template-columns: 51px 56px 160px 91px 41px 107px 87px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 630px) {
+  .flight-itinerary {
+    grid-template-columns: 51px 56px 126px 66px 41px 93px 87px;
+    margin-top: 25px;
+  }
+}
+@media (max-width: 545px) {
+  .flight-itinerary {
+    grid-template-columns: 29px 56px 117px 66px 41px 93px 63px;
+  }
+}
+@media (max-width: 485px) {
+  .flight-itinerary {
+    grid-template-columns: 19px 44px 73px 56px 30px 63px 53px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .flight-itinerary {
+    grid-template-columns: 12px 41px 73px 47px 22px 63px 53px;
+    margin-top: 15px;
+  }
+}
+.flight-itinerary h2,
+.flight-itinerary h3 {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin-top: 8px;
+}
+@media (max-width: 1100px) {
+  .flight-itinerary h2,
+.flight-itinerary h3 {
+    font-size: 13px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 890px) {
+  .flight-itinerary h2,
+.flight-itinerary h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 730px) {
+  .flight-itinerary h2,
+.flight-itinerary h3 {
+    font-size: 11px;
+  }
+}
+@media (max-width: 630px) {
+  .flight-itinerary h2,
+.flight-itinerary h3 {
+    font-size: 11px;
+  }
+}
+@media (max-width: 490px) {
+  .flight-itinerary h2,
+.flight-itinerary h3 {
+    font-size: 11px;
+  }
+}
+@media (max-width: 490px) {
+  .flight-itinerary h2,
+.flight-itinerary h3 {
+    font-size: 9px;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 360px) {
+  .flight-itinerary h2,
+.flight-itinerary h3 {
+    font-size: 9px;
+    margin-top: 5px;
+  }
+}
+.flight-itinerary img {
+  width: 70%;
+  transform: rotate(0deg);
+}
+@media (max-width: 1100px) {
+  .flight-itinerary img {
+    width: 75px;
+    margin: 0px auto;
+    display: inline;
+  }
+}
+@media (max-width: 730px) {
+  .flight-itinerary img {
+    width: 50px;
+    margin: 0px auto;
+    display: inline;
+  }
+}
+@media (max-width: 630px) {
+  .flight-itinerary img {
+    width: 35px;
+    margin: 0px auto;
+    display: inline;
+  }
+}
+@media (max-width: 482px) {
+  .flight-itinerary img {
+    transform: rotate(-28deg);
+    width: 25px;
+  }
+}
+.flight-itinerary h3 {
+  color: rgb(68, 216, 68);
+  -webkit-animation: peep 1.5s infinite;
+          animation: peep 1.5s infinite;
+}
+@-webkit-keyframes peep {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes peep {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.flight-itinerary span {
+  font-family: "Raleway", sans-serif;
+  color: grey;
+}
+
 .map {
   position: relative;
+  margin: 20px auto 0px auto;
 }
-.map img {
-  margin-top: 25px;
-  max-width: 60%;
+.map--continents {
+  width: 850px;
   padding-bottom: 30px;
 }
+@media (max-width: 1100px) {
+  .map--continents {
+    padding-bottom: 10px;
+    width: 630px;
+    margin-top: 0px;
+  }
+}
 @media (max-width: 900px) {
-  .map img {
-    padding-bottom: 15px;
+  .map--continents {
+    padding-bottom: 10px;
+    width: 535px;
   }
 }
 @media (max-width: 700px) {
-  .map img {
+  .map--continents {
     padding-bottom: 0px;
+    width: 548px;
+  }
+}
+@media (max-width: 600px) {
+  .map {
+    padding-bottom: 0px;
+    width: 460px;
+  }
+}
+@media (max-width: 500px) {
+  .map {
+    padding-bottom: 0px;
+    width: 395px;
+  }
+}
+@media (max-width: 420px) {
+  .map {
+    width: 315px;
+  }
+}
+@media (max-width: 357px) {
+  .map {
+    width: 280px;
   }
 }
 
@@ -1943,18 +2179,33 @@ body {
   position: absolute;
   width: 30px;
   height: auto;
+  padding-bottom: 40px;
   transform: rotate(342deg);
   -webkit-animation: tocit infinite linear 2.5s;
           animation: tocit infinite linear 2.5s;
 }
 @media (max-width: 900px) {
   .plane {
-    width: 20px;
+    width: 30px;
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 700px) {
   .plane {
+    width: 25px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .plane {
+    width: 20px;
+    padding-bottom: 5px;
+  }
+}
+@media (max-width: 357px) {
+  .plane {
     width: 15px;
+    padding-bottom: 0px;
   }
 }
 @-webkit-keyframes tocit {
@@ -1975,49 +2226,275 @@ body {
 }
 
 #sa {
-  bottom: 36%;
-  left: 37.5%;
+  bottom: 39%;
+  left: 35.5%;
+}
+@media (max-width: 1100px) {
+  #sa {
+    bottom: 36%;
+    left: 35%;
+  }
+}
+@media (max-width: 700px) {
+  #sa {
+    bottom: 37%;
+    left: 29.5%;
+  }
+}
+@media (max-width: 357px) {
+  #sa {
+    bottom: 40%;
+    left: 29.5%;
+  }
 }
 
 #eu {
-  top: 5%;
-  right: 45.5%;
+  top: 13%;
+  right: 43.5%;
+}
+@media (max-width: 1100px) {
+  #eu {
+    top: 7%;
+    right: 45.5%;
+  }
+}
+@media (max-width: 900px) {
+  #eu {
+    right: 43.5%;
+  }
+}
+@media (max-width: 700px) {
+  #eu {
+    top: 12%;
+    right: 40.5%;
+  }
+}
+@media (max-width: 420px) {
+  #eu {
+    top: 10%;
+  }
+}
+@media (max-width: 357px) {
+  #eu {
+    top: 14%;
+  }
 }
 
 #austr {
-  bottom: 30%;
-  right: 28.5%;
+  bottom: 32%;
+  right: 23.5%;
+}
+@media (max-width: 1100px) {
+  #austr {
+    bottom: 29%;
+    right: 25.5%;
+  }
+}
+@media (max-width: 900px) {
+  #austr {
+    right: 24.5%;
+  }
+}
+@media (max-width: 700px) {
+  #austr {
+    right: 18.5%;
+    bottom: 33%;
+  }
+}
+@media (max-width: 600px) {
+  #austr {
+    right: 16.5%;
+  }
+}
+@media (max-width: 500px) {
+  #austr {
+    right: 13.5%;
+  }
+}
+@media (max-width: 420px) {
+  #austr {
+    right: 11.5%;
+    bottom: 30%;
+  }
+}
+@media (max-width: 357px) {
+  #austr {
+    right: 12%;
+    bottom: 33%;
+  }
 }
 
 #afr {
-  bottom: 43%;
-  right: 47.5%;
+  bottom: 46%;
+  right: 46.5%;
 }
-
+@media (max-width: 1100px) {
+  #afr {
+    bottom: 44%;
+    right: 46.5%;
+  }
+}
+@media (max-width: 900px) {
+  #afr {
+    bottom: 44%;
+  }
+}
+@media (max-width: 700px) {
+  #afr {
+    bottom: 44%;
+  }
+}
+@media (max-width: 600px) {
+  #afr {
+    right: 43.5%;
+  }
+}
+@media (max-width: 500px) {
+  #afr {
+    bottom: 46%;
+  }
+}
 #as {
-  top: 12%;
-  right: 33%;
+  top: 19%;
+  right: 29%;
+}
+@media (max-width: 1100px) {
+  #as {
+    top: 14%;
+    right: 32%;
+  }
+}
+@media (max-width: 900px) {
+  #as {
+    right: 29%;
+  }
+}
+@media (max-width: 700px) {
+  #as {
+    right: 23%;
+    top: 15%;
+  }
+}
+@media (max-width: 500px) {
+  #as {
+    right: 21%;
+    top: 18%;
+  }
+}
+@media (max-width: 357px) {
+  #as {
+    top: 22%;
+  }
 }
 
 #na {
-  top: 5%;
-  left: 29%;
+  top: 12%;
+  left: 26%;
+}
+@media (max-width: 1100px) {
+  #na {
+    top: 6%;
+    left: 27.5%;
+  }
+}
+@media (max-width: 900px) {
+  #na {
+    left: 28.5%;
+  }
+}
+@media (max-width: 700px) {
+  #na {
+    left: 18.5%;
+    top: 11%;
+  }
+}
+@media (max-width: 500px) {
+  #na {
+    left: 15.5%;
+  }
+}
+@media (max-width: 357px) {
+  #na {
+    top: 14%;
+    left: 17.5px;
+  }
 }
 
 #ant {
-  bottom: 9%;
-  right: 40%;
+  bottom: 7%;
+  right: 36%;
+}
+@media (max-width: 1100px) {
+  #ant {
+    bottom: 3%;
+    right: 37%;
+  }
+}
+@media (max-width: 700px) {
+  #ant {
+    bottom: 2%;
+    right: 34%;
+  }
+}
+@media (max-width: 600px) {
+  #ant {
+    right: 31%;
+    bottom: 1%;
+  }
+}
+@media (max-width: 357px) {
+  #ant {
+    right: 30%;
+    bottom: 4%;
+  }
 }
 
 .list-cards {
   justify-content: center;
   max-width: 865px;
-  width: 80%;
+  width: 850px;
   max-height: 340px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin-top: 80px;
+  margin-top: 20px;
+}
+@media (max-width: 1100px) {
+  .list-cards {
+    width: 630px;
+    margin-top: 19px;
+  }
+}
+@media (max-width: 900px) {
+  .list-cards {
+    width: 535px;
+    margin-top: 19px;
+  }
+}
+@media (max-width: 700px) {
+  .list-cards {
+    width: 548px;
+  }
+}
+@media (max-width: 600px) {
+  .list-cards {
+    width: 460px;
+  }
+}
+@media (max-width: 500px) {
+  .list-cards {
+    width: 395px;
+  }
+}
+@media (max-width: 420px) {
+  .list-cards {
+    width: 315px;
+  }
+}
+@media (max-width: 357px) {
+  .list-cards {
+    width: 280px;
+  }
 }
 
 .card {
@@ -2031,8 +2508,8 @@ body {
   height: fit-content;
 }
 .card img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 .card h2 {
@@ -2048,17 +2525,22 @@ body {
 }
 @media (max-width: 800px) {
   .card h2 {
-    font-size: 15px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .card h2 {
+    text-align: center;
   }
 }
 @media (max-width: 640px) {
   .card h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 550px) {
   .card h2 {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 @media (max-width: 450px) {
@@ -2070,9 +2552,16 @@ body {
   text-align: left;
   font-family: "Open Sans", sans-serif;
 }
+@media (max-width: 1100px) {
+  .card p {
+    font-size: 15px;
+    margin: 0px;
+  }
+}
 @media (max-width: 930px) {
   .card p {
-    font-size: 16px;
+    font-size: 14px;
+    margin: 0px;
   }
 }
 @media (max-width: 800px) {
@@ -2103,29 +2592,101 @@ body {
   font-size: 38px;
   margin: 0px;
 }
+@media (max-width: 1100px) {
+  .icon {
+    font-size: 32px;
+  }
+}
+@media (max-width: 924px) {
+  .icon {
+    font-size: 30px;
+  }
+}
+@media (max-width: 550px) {
+  .icon {
+    font-size: 25px;
+  }
+}
+@media (max-width: 450px) {
+  .icon {
+    font-size: 20px;
+  }
+}
 
 .card-text {
   padding: 20px 20px 10px 20px;
 }
+@media (max-width: 1100px) {
+  .card-text {
+    padding: 20px 5px 10px 15px;
+  }
+}
+@media (max-width: 700px) {
+  .card-text {
+    padding: 15px 5px 0px 5px;
+  }
+}
+@media (max-width: 500px) {
+  .card-text {
+    padding: 15px 5px 0px 5px;
+  }
+}
+@media (max-width: 450px) {
+  .card-text {
+    padding: 15px 0px 0px 0px;
+  }
+}
 
 .card-details {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 10px 0px;
-  flex-wrap: wrap;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .card-details {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: 0px;
+  bottom: 2px;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 6px);
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 5px);
 }
 
 .swiper-pagination-bullet {
   width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
   height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
+}
+@media (max-width: 900px) {
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  }
+}
+@media (max-width: 700px) {
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 7px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 7px));
+  }
+}
+@media (max-width: 500px) {
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 6px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 6px));
+  }
+}
+@media (max-width: 450px) {
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 5px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 5px));
+  }
 }
 
 .swiper {
@@ -2134,8 +2695,14 @@ body {
 
 .eventInformation {
   width: 790px;
-  margin: 50px auto;
+  margin: 80px auto 50px auto;
   font-size: 16px;
+}
+.eventInformation h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .eventInformation ol {
   -webkit-padding-start: 0px;
@@ -2179,6 +2746,7 @@ body {
   grid-template-columns: 170px 176px 207px 218px 18px;
   border-bottom: 1px solid rgb(185, 185, 185);
   align-items: center;
+  margin-top: 10px;
 }
 @media (max-width: 930px) {
   .event {
@@ -2260,10 +2828,11 @@ body {
 #orientation-hidden,
 #beanies-hidden {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.738);
-  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.647);
   font-size: 15px;
   padding-bottom: 10px;
+  text-align: start;
+  z-index: 0;
 }
 @media (max-width: 930px) {
   #pubcrawl-hidden,
@@ -2357,7 +2926,7 @@ body {
 #fooddrinks-hidden::after,
 #orientation-hidden::after,
 #beanies-hidden::after {
-    width: 888px;
+    width: 790px;
   }
 }
 @media (max-width: 980px) {
@@ -2370,224 +2939,77 @@ body {
 #fooddrinks-hidden::after,
 #orientation-hidden::after,
 #beanies-hidden::after {
-    width: 696px;
+    width: 771px;
   }
 }
-
-.flight-itinerary {
-  display: grid;
-  grid-template-columns: 140px 82px 274px 174px 62px 135px 173px;
-  justify-content: center;
-  margin: 0px 20px 0px 20px;
-  align-items: center;
-  grid-template-rows: 40px;
-}
-@media (max-width: 1100px) {
-  .flight-itinerary {
-    grid-template-columns: 85px 82px 228px 139px 62px 135px 118px;
-  }
-}
-@media (max-width: 890px) {
-  .flight-itinerary {
-    grid-template-columns: 71px 82px 179px 88px 62px 135px 87px;
-  }
-}
-@media (max-width: 730px) {
-  .flight-itinerary {
-    grid-template-columns: 51px 56px 160px 91px 41px 107px 87px;
-  }
-}
-@media (max-width: 630px) {
-  .flight-itinerary {
-    grid-template-columns: 51px 56px 126px 66px 41px 93px 87px;
-  }
-}
-@media (max-width: 545px) {
-  .flight-itinerary {
-    grid-template-columns: 29px 56px 117px 66px 41px 93px 63px;
-  }
-}
-@media (max-width: 485px) {
-  .flight-itinerary {
-    grid-template-columns: 29px 47px 104px 56px 30px 83px 51px;
-  }
-}
-.flight-itinerary h2,
-.flight-itinerary h3 {
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
-@media (max-width: 1100px) {
-  .flight-itinerary h2,
-.flight-itinerary h3 {
-    font-size: 16px;
-  }
-}
-@media (max-width: 890px) {
-  .flight-itinerary h2,
-.flight-itinerary h3 {
-    font-size: 15px;
-  }
-}
-@media (max-width: 730px) {
-  .flight-itinerary h2,
-.flight-itinerary h3 {
-    font-size: 13px;
-  }
-}
-@media (max-width: 630px) {
-  .flight-itinerary h2,
-.flight-itinerary h3 {
-    font-size: 12px;
-  }
-}
-@media (max-width: 490px) {
-  .flight-itinerary h2,
-.flight-itinerary h3 {
-    font-size: 11px;
-  }
-}
-.flight-itinerary img {
-  width: 84%;
-}
-@media (max-width: 1100px) {
-  .flight-itinerary img {
-    width: 80px;
-    margin: 0px auto;
-    display: inline;
-  }
-}
-@media (max-width: 730px) {
-  .flight-itinerary img {
-    width: 50px;
-    margin: 0px auto;
-    display: inline;
-  }
-}
-@media (max-width: 630px) {
-  .flight-itinerary img {
-    width: 35px;
-    margin: 0px auto;
-    display: inline;
-  }
-}
-.flight-itinerary h3 {
-  color: rgb(68, 216, 68);
-}
-
-.flightDescription-itinerary {
-  display: grid;
-  grid-template-columns: 94px 276px 162px 62px 135px 180px;
-  grid-template-rows: 40px;
-  justify-content: center;
-  padding-left: 150px;
-  margin: 0px;
-  margin-top: 20px;
-  align-items: center;
-}
-@media (max-width: 1100px) {
-  .flightDescription-itinerary {
-    grid-template-columns: 78px 248px 150px 41px 132px 139px;
-    padding-left: 74px;
-  }
-}
-@media (max-width: 1110px) {
-  .flightDescription-itinerary {
-    grid-template-columns: 78px 248px 150px 41px 132px 139px;
-    padding-left: 74px;
-  }
-}
-@media (max-width: 890px) {
-  .flightDescription-itinerary {
-    grid-template-columns: 127px 160px 85px 71px 84px 155px 0px;
-    padding-left: 78px;
-  }
-}
-@media (max-width: 730px) {
-  .flightDescription-itinerary {
-    grid-template-columns: 95px 127px 92px 55px 86px 87px;
-    padding-left: 17px;
-  }
-}
-@media (max-width: 630px) {
-  .flightDescription-itinerary {
-    grid-template-columns: 96px 99px 70px 55px 86px 87px;
-  }
-}
-@media (max-width: 545px) {
-  .flightDescription-itinerary {
-    grid-template-columns: 96px 99px 70px 55px 86px 87px;
-  }
-}
-@media (max-width: 485px) {
-  .flightDescription-itinerary {
-    grid-template-columns: 29px 47px 104px 56px 30px 83px 51px;
-  }
-}
-.flightDescription-itinerary h2,
-.flightDescription-itinerary h3 {
-  font-size: 16px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  color: grey;
-}
-@media (max-width: 1100) {
-  .flightDescription-itinerary {
-    font-size: 14px;
-  }
-}
-@media (max-width: 890px) {
-  .flightDescription-itinerary {
-    font-size: 13px;
-  }
-}
-@media (max-width: 730px) {
-  .flightDescription-itinerary {
-    font-size: 12px;
-  }
-}
-@media (max-width: 630px) {
-  .flightDescription-itinerary {
-    font-size: 10px;
-  }
-}
-@media (max-width: 545px) {
-  .flightDescription-itinerary {
-    font-size: 9px;
-  }
-}
-
-.itinerary_heading {
-  font-size: 37px;
-  margin-top: 63px;
-  display: inline-block;
-  padding: 10px;
-  background-color: rgb(37, 37, 37);
-  color: white;
-  border-left: 7px solid #2196f3;
-}
-@media (max-width: 1000px) {
-  .itinerary_heading {
-    font-size: 30px;
+@media (max-width: 930px) {
+  #pubcrawl-hidden::after,
+#daytrip-hidden::after,
+#boatparty-hidden::after,
+#sportsday-hidden::after,
+#paddles-hidden::after,
+#interfaculty-hidden::after,
+#fooddrinks-hidden::after,
+#orientation-hidden::after,
+#beanies-hidden::after {
+    width: 717px;
   }
 }
 @media (max-width: 800px) {
-  .itinerary_heading {
-    font-size: 25px;
+  #pubcrawl-hidden::after,
+#daytrip-hidden::after,
+#boatparty-hidden::after,
+#sportsday-hidden::after,
+#paddles-hidden::after,
+#interfaculty-hidden::after,
+#fooddrinks-hidden::after,
+#orientation-hidden::after,
+#beanies-hidden::after {
+    width: 564px;
   }
 }
-@media (max-width: 600px) {
-  .itinerary_heading {
-    font-size: 20px;
+@media (max-width: 640px) {
+  #pubcrawl-hidden::after,
+#daytrip-hidden::after,
+#boatparty-hidden::after,
+#sportsday-hidden::after,
+#paddles-hidden::after,
+#interfaculty-hidden::after,
+#fooddrinks-hidden::after,
+#orientation-hidden::after,
+#beanies-hidden::after {
+    width: 444px;
   }
 }
-@media (max-width: 500px) {
-  .itinerary_heading {
-    font-size: 15px;
+@media (max-width: 550px) {
+  #pubcrawl-hidden::after,
+#daytrip-hidden::after,
+#boatparty-hidden::after,
+#sportsday-hidden::after,
+#paddles-hidden::after,
+#interfaculty-hidden::after,
+#fooddrinks-hidden::after,
+#orientation-hidden::after,
+#beanies-hidden::after {
+    width: 380px;
+  }
+}
+@media (max-width: 450px) {
+  #pubcrawl-hidden::after,
+#daytrip-hidden::after,
+#boatparty-hidden::after,
+#sportsday-hidden::after,
+#paddles-hidden::after,
+#interfaculty-hidden::after,
+#fooddrinks-hidden::after,
+#orientation-hidden::after,
+#beanies-hidden::after {
+    width: 330px;
   }
 }
 
-.eventInformation {
-  margin-top: 80px;
+.hidden__text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
