@@ -85,7 +85,7 @@ function openDetails() {
 
 function addFW(){
 
-  let profileDetails = document.querySelector(".profileDetails")
+  let profileDetails = document.querySelector("#profileDetails")
   let newDiv = document.createElement("div")
 
   profileDetails.appendChild(newDiv)
@@ -111,7 +111,7 @@ function addFW(){
 
 function removeFW(){
   let hiddenFW = document.querySelector("#hiddenFW")
-  let profileDetails = document.querySelector(".profileDetails")
+  let profileDetails = document.querySelector("#profileDetails")
 
   profileDetails.removeChild(hiddenFW)
 

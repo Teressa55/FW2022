@@ -1,5 +1,17 @@
 body {
   background-color: rgba(241, 241, 241, 0.4509803922);
+  margin: 0px;
+}
+
+a {
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: 300;
 }
 
 html {
@@ -48,22 +60,49 @@ body {
   }
 }
 
-h1 {
-  font-family: "Ibarra Real Nova", serif;
+.registration_heading {
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
-  padding-top: 10px;
+  padding-top: 70px;
+  font-size: 29px;
+}
+@media (max-width: 1100px) {
+  .registration_heading {
+    font-size: 26px;
+  }
+}
+@media (max-width: 980px) {
+  .registration_heading {
+    font-size: 24px;
+  }
+}
+@media (max-width: 650px) {
+  .registration_heading {
+    font-size: 22px;
+  }
+}
+@media (max-width: 500) {
+  .registration_heading {
+    font-size: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .registration_heading {
+    font-size: 18px;
+  }
 }
 
 .registrationNote {
-  font-family: "Charmonman", cursive;
-  padding-top: 16px;
-  padding-bottom: 1px;
-  color: #008ECC;
-  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  color: #efd28e;
+  font-size: 18px;
+  font-weight: 500;
 }
 @media (max-width: 830px) {
   .registrationNote {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 @media (max-width: 650px) {
@@ -196,6 +235,7 @@ h1 {
   padding: 10px 13px;
   text-align: center;
   text-decoration: none;
+  background-image: linear-gradient(rgba(234, 144, 107, 0.7411764706) 0, #efd28e 100%);
   display: inline-block;
   font-size: 17px;
   margin: 4px 2px;
@@ -226,8 +266,11 @@ h1 {
 }
 .introForm--button input[type=submit]:hover {
   box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.14), 0 2px 13px 0 rgba(0, 0, 0, 0.14);
-  background-color: #008ECC;
-  color: white;
+  background-image: linear-gradient(#efd28e 0, rgba(234, 144, 107, 0.7411764706) 100%);
+}
+.introForm #fileUpload {
+  padding-left: 0px;
+  padding-top: 4px;
 }
 
 .infoQuestions {
@@ -237,6 +280,7 @@ h1 {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.237), 0 6px 20px 0 rgba(0, 0, 0, 0.242);
   max-width: 580px;
+  margin-bottom: 95px;
 }
 @media (max-width: 850px) {
   .infoQuestions {
@@ -284,7 +328,7 @@ h1 {
   top: -2px;
   left: -1px;
   position: relative;
-  background-color: #008ECC;
+  background-color: #efd28e;
   content: "";
   display: inline-block;
   visibility: visible;
@@ -367,7 +411,7 @@ h1 {
   height: 15px;
   border-radius: 2px;
   position: relative;
-  background-color: #008ECC;
+  background-color: #f9dbd1;
   content: "";
   display: inline-block;
   visibility: visible;
@@ -396,7 +440,7 @@ h1 {
   border: 2px solid;
   transform: scale(var(--ggs, 1));
   border-radius: 22px;
-  color: #008ECC;
+  color: #8cc0f2;
   top: -1px;
   right: 5px;
 }
@@ -689,7 +733,7 @@ h1 {
   }
 }
 
-.plane {
+.planePassport {
   height: 20px;
   position: relative;
   bottom: -3px;
@@ -960,7 +1004,7 @@ h1 {
 .background {
   padding-bottom: 2px;
   margin-top: 10px;
-  background-color: #2196f3;
+  background-image: linear-gradient(#4066ed 0%, #4363d4 100%);
   border-radius: 0px 0px 30px 30px;
 }
 .background h2 {
@@ -1008,12 +1052,14 @@ h1 {
 }
 
 .myProfile_heading {
+  cursor: pointer;
   font-size: 20px;
   width: 30%;
   max-width: 1200px;
   border-bottom: 1px solid rgb(225, 225, 225);
   margin: 0px auto 30px auto;
   padding-top: 70px;
+  font-weight: 400;
 }
 @media (max-width: 780px) {
   .myProfile_heading {
@@ -1079,7 +1125,7 @@ h1 {
   font-weight: 400;
 }
 .aboveFieldsets--profileDetails {
-  background-color: #2196f3;
+  background-image: linear-gradient(#4066ed 0%, #4363d4 100%);
   margin-top: 0px;
   border-radius: 30px 30px 0px 0px;
   padding-top: 20px;
@@ -1507,11 +1553,10 @@ h1 {
 
 #uploadInfo {
   background-color: initial;
-  background-image: linear-gradient(#8614f8 0, #760be0 100%);
+  background-image: linear-gradient(rgba(234, 144, 107, 0.7411764706) 0, #efd28e 100%);
   border-radius: 5px;
   border-style: none;
   box-shadow: rgba(245, 244, 247, 0.25) 0 1px 1px inset;
-  color: #fff;
   cursor: pointer;
   font-family: Inter, sans-serif;
   font-size: 16px;
@@ -1520,7 +1565,7 @@ h1 {
   line-height: 60px;
   margin-left: -4px;
   margin-top: 100px;
-  margin-bottom: 10px;
+  margin-bottom: 80px;
   outline: 0;
   text-align: center;
   transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
@@ -1534,7 +1579,7 @@ h1 {
   border-radius: 31px;
 }
 #uploadInfo:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 @media screen and (max-width: 1000px) {
   #uploadInfo {
@@ -1568,19 +1613,16 @@ h1 {
 
 .seeInfo_span {
   display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: auto;
+  width: 190px;
+  margin: 100px auto 80px auto;
   padding: 14px 10px;
   background-color: initial;
-  background-image: linear-gradient(#14f877 0, #0be06e 100%);
+  background-image: linear-gradient(#efd28e 0, rgba(234, 144, 107, 0.7411764706) 100%);
   border-radius: 5px;
   border-style: none;
   box-shadow: rgba(245, 244, 247, 0.25) 0 1px 1px inset;
-  color: #fff;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   outline: 0;
   text-align: center;
   transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
@@ -1589,6 +1631,7 @@ h1 {
 @media screen and (max-width: 1000px) {
   .seeInfo_span {
     font-size: 14px;
+    width: 180px;
   }
 }
 @media (max-width: 970px) {
@@ -1615,33 +1658,35 @@ h1 {
   display: none;
 }
 
-h1 {
+.forgotten_heading {
   font-family: "Raleway", sans-serif;
-  font-size: 17px;
+  font-weight: 300;
+  font-size: 26px;
+  margin-top: 60px;
 }
-@media (max-width: 1150px) {
-  h1 {
-    font-size: 28px;
+@media (max-width: 1100px) {
+  .forgotten_heading {
+    font-size: 25px;
   }
 }
-@media (max-width: 850px) {
-  h1 {
-    font-size: 16px;
+@media (max-width: 980px) {
+  .forgotten_heading {
+    font-size: 24px;
   }
 }
-@media (max-width: 620px) {
-  h1 {
-    font-size: 15px;
+@media (max-width: 650px) {
+  .forgotten_heading {
+    font-size: 22px;
   }
 }
-@media (max-width: 450px) {
-  h1 {
-    font-size: 14px;
+@media (max-width: 500) {
+  .forgotten_heading {
+    font-size: 20px;
   }
 }
-@media (max-width: 300px) {
-  h1 {
-    font-size: 13px;
+@media (max-width: 380px) {
+  .forgotten_heading {
+    font-size: 18px;
   }
 }
 
@@ -1745,51 +1790,169 @@ h1 {
 
 .optionDetails--forgottenPassword {
   display: block;
-  margin-top: 44px;
-  margin-bottom: 10px;
-  font-size: 13px;
+  margin-top: 22px;
+  margin-bottom: 30px;
+  font-size: 15px;
 }
 @media (max-width: 850px) {
   .optionDetails--forgottenPassword {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 @media (max-width: 620px) {
   .optionDetails--forgottenPassword {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media (max-width: 400px) {
   .optionDetails--forgottenPassword {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 @media (max-width: 300px) {
   .optionDetails--forgottenPassword {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
 header,
 .userLogin {
   display: flex;
+  flex-direction: column;
+}
+
+.pre-header {
+  margin: 0px 20px;
+  font-size: 14px;
+  height: 65px;
+  display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 890px) {
+  .pre-header {
+    font-size: 12px;
+    height: 60px;
+  }
+}
+@media (max-width: 630px) {
+  .pre-header {
+    font-size: 11px;
+    height: 55px;
+  }
+}
+@media (max-width: 545px) {
+  .pre-header {
+    font-size: 10px;
+    height: 50px;
+  }
+}
+@media (max-width: 485px) {
+  .pre-header {
+    font-size: 9px;
+    height: 46px;
+    margin: 0px 8px;
+  }
+}
+@media (max-width: 358px) {
+  .pre-header {
+    font-size: 8px;
+    height: 44px;
+    margin: 0px 3px;
+  }
+}
+
+.symbol {
+  height: 20px;
+  margin-right: 10px;
+}
+@media (max-width: 630px) {
+  .symbol {
+    height: 17px;
+  }
+}
+@media (max-width: 545px) {
+  .symbol {
+    height: 15px;
+  }
+}
+@media (max-width: 485px) {
+  .symbol {
+    height: 13px;
+  }
+}
+.symbol--phone {
+  margin-left: 30px;
+}
+@media (max-width: 545px) {
+  .symbol--phone {
+    margin-left: 25px;
+  }
+}
+@media (max-width: 485px) {
+  .symbol--phone {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 358px) {
+  .symbol--phone {
+    margin-left: 5px;
+  }
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: row;
+}
+.contact-details a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+.contact-details p {
+  margin: 0px;
 }
 
 header {
   justify-content: space-between;
-  border-bottom: 1px solid rgb(186, 186, 186);
+  border-bottom: 2px solid rgb(255, 134, 29);
+  border-top: 2px solid rgb(255, 134, 29);
   box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 31px 0px, rgba(0, 0, 0, 0) 0px 0px 0px -9px;
+  padding: 5px 10px 5px 10px;
+  background-image: linear-gradient(#ea906b 0, rgba(244, 111, 39, 0.78) 100%);
 }
 
 .logo {
-  height: 60px;
+  height: 90px;
 }
-
-.login_img {
-  height: 40px;
-  padding-right: 10px;
-  padding-top: 10px;
+@media (max-width: 890px) {
+  .logo {
+    height: 85px;
+  }
+}
+@media (max-width: 630px) {
+  .logo {
+    height: 80px;
+  }
+}
+@media (max-width: 545px) {
+  .logo {
+    height: 75px;
+  }
+}
+@media (max-width: 485px) {
+  .logo {
+    height: 68px;
+  }
+}
+@media (max-width: 358px) {
+  .logo {
+    height: 60px;
+  }
 }
 
 .userLogin {
@@ -1800,28 +1963,32 @@ header {
 .userLogin:active {
   background-color: rgba(135, 135, 135, 0.458);
 }
-@media (max-width: 850px) {
-  .userLogin p {
-    font-size: 13px;
-  }
-}
-@media (max-width: 620px) {
+@media (max-width: 890px) {
   .userLogin p {
     font-size: 12px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 630px) {
   .userLogin p {
     font-size: 11px;
   }
 }
-
-footer {
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-top: 1px solid rgba(128, 128, 128, 0.678);
-  line-height: 23px;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 31px 0px, rgba(0, 0, 0, 0) 0px 0px 0px -9px;
+@media (max-width: 545px) {
+  .userLogin p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 485px) {
+  .userLogin p {
+    font-size: 9px;
+  }
+}
+@media (max-height: 385px) {
+  .userLogin p {
+    font-size: 9px;
+    height: 46px;
+    margin: 0px 8px;
+  }
 }
 
 .noLogin {
@@ -1833,14 +2000,13 @@ footer {
 }
 
 #loginForm {
-  position: fixed;
+  position: absolute;
   top: 73px;
   right: 23px;
   border: 1px solid #d7d7d7;
   z-index: 9;
 }
 
-/* Add styles to the form container */
 .loginContainer {
   max-width: 300px;
   padding: 0px 10px 10px 10px;
@@ -1875,7 +2041,6 @@ footer {
   }
 }
 
-/* Full-width input fields */
 .loginContainer input[type=email], .loginContainer input[type=password] {
   width: 100%;
   padding: 4px;
@@ -1886,16 +2051,14 @@ footer {
   font-size: 13px;
 }
 
-/* When the inputs get focus, do something */
 .loginContainer input[type=email]:focus, .loginContainer input[type=password]:focus {
   background-color: rgb(236, 236, 236);
   outline: none;
   border-radius: 4px 4px 0px 0px;
 }
 
-/* Set a style for the submit/login button */
 .loginContainer .btn {
-  background-color: #04AA6D;
+  background-color: #4363d4;
   color: white;
   padding: 11px 6px;
   border: none;
@@ -1906,7 +2069,6 @@ footer {
   opacity: 0.8;
 }
 
-/* Add some hover effects to buttons */
 .loginContainer .btn:hover, .open-button:hover {
   opacity: 1;
 }
@@ -1922,6 +2084,64 @@ a {
   text-decoration: none;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-top: 1px solid rgba(128, 128, 128, 0.678);
+  line-height: 23px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 31px 0px, rgba(0, 0, 0, 0) 0px 0px 0px -9px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+footer img {
+  width: 8%;
+}
+footer p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+  color: white;
+  padding: 0px 32px 0px 32px;
+}
+@media (max-width: 930px) {
+  footer p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 800px) {
+  footer p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 640px) {
+  footer p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 550px) {
+  footer p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 450px) {
+  footer p {
+    font-size: 9px;
+  }
+}
+@media (max-width: 380px) {
+  footer p {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+.trimed_logo {
+  width: 6.5%;
+}
+
 body {
   position: relative;
 }
@@ -1931,9 +2151,9 @@ body {
   margin-top: 63px;
   display: inline-block;
   padding: 10px;
-  background-color: rgb(37, 37, 37);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  border-left: 7px solid #2196f3;
+  border-left: 7px solid #8cc0f2;
 }
 @media (max-width: 1000px) {
   .itinerary_heading {
@@ -1963,16 +2183,16 @@ body {
 
 .flight-itinerary {
   display: grid;
-  grid-template-columns: 140px 82px 274px 174px 62px 135px 173px;
+  grid-template-columns: 146px 100px 230px 176px 66px 154px 173px;
   justify-content: center;
   grid-auto-flow: row;
-  margin: 15px 20px 0px 20px;
+  margin: 41px 20px 0px 20px;
   align-items: center;
 }
 @media (max-width: 1100px) {
   .flight-itinerary {
-    grid-template-columns: 85px 82px 228px 139px 62px 135px 118px;
-    margin: 7px 20px 0px 20px;
+    grid-template-columns: 85px 82px 200px 139px 76px 150px 118px;
+    margin: 37px 20px 0px 20px;
   }
 }
 @media (max-width: 890px) {
@@ -1984,13 +2204,13 @@ body {
 @media (max-width: 730px) {
   .flight-itinerary {
     grid-template-columns: 51px 56px 160px 91px 41px 107px 87px;
-    margin-top: 30px;
+    margin-top: 37px;
   }
 }
 @media (max-width: 630px) {
   .flight-itinerary {
     grid-template-columns: 51px 56px 126px 66px 41px 93px 87px;
-    margin-top: 25px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 545px) {
@@ -2001,13 +2221,13 @@ body {
 @media (max-width: 485px) {
   .flight-itinerary {
     grid-template-columns: 19px 44px 73px 56px 30px 63px 53px;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 }
 @media (max-width: 360px) {
   .flight-itinerary {
     grid-template-columns: 12px 41px 73px 47px 22px 63px 53px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
 }
 .flight-itinerary h2,
@@ -2127,7 +2347,7 @@ body {
 
 .map {
   position: relative;
-  margin: 20px auto 0px auto;
+  margin: 8px auto 0px auto;
 }
 .map--continents {
   width: 850px;
@@ -2731,7 +2951,7 @@ body {
 
 .eventInformation {
   width: 790px;
-  margin: 80px auto 50px auto;
+  margin: 80px auto 100px auto;
   font-size: 16px;
 }
 .eventInformation h2 {
@@ -2863,6 +3083,7 @@ body {
 .seeOrientation p,
 .seeBeanies p {
   display: block;
+  width: 60%;
 }
 
 #pubcrawl-hidden,
@@ -3073,6 +3294,8 @@ body {
   height: 500px;
   margin: 30px auto;
   justify-content: flex-end;
+  padding-bottom: 150px;
+  max-width: 840px;
 }
 
 .index-column {
@@ -3098,7 +3321,6 @@ body {
 }
 .index-card h2 {
   font-family: "Open Sans", sans-serif;
-  margin: 0px 0px 50px 0px;
   padding-bottom: 10px;
   padding-left: 18px;
   font-size: 28px;
@@ -3109,8 +3331,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   display: inline-block;
-  background-color: #2196f3;
-  font-size: 18px;
+  background-color: #ea906b;
+  font-size: 16px;
   padding: 7px 18px;
   width: -webkit-fit-content;
   width: -moz-fit-content;

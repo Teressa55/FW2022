@@ -9,7 +9,7 @@
   border: 2px solid;
   transform: scale(var(--ggs,1));
   border-radius: 22px;
-  color: $colour-blue;
+  color: $spectre-blue;
   top: -1px;
   right: 5px;
   @media (max-width:980px){
@@ -238,7 +238,7 @@
   }
 }
 
-.plane{
+.planePassport{
   height: 20px;
   position: relative;
   bottom: -3px;
@@ -460,7 +460,9 @@
 .background{
   padding-bottom: 2px;
   margin-top: 10px;
-  background-color:#2196f3;
+  //background-color: $spectre-dark-blue;
+  background-image: linear-gradient(#4066ed 0%, $spectre-dark-blue 100%);
+  //background-color:#2196f3;
   border-radius: 0px 0px 30px 30px;
   h2{
     margin-top: 23px;
@@ -503,12 +505,14 @@
 
 
 .myProfile_heading{
+  cursor: pointer;
   font-size: 20px;
   width: 30%;
   max-width: 1200px;
   border-bottom: 1px solid rgb(225, 225, 225);
   margin: 0px auto 30px auto;
   padding-top: 70px;
+  font-weight: 400;
   @media (max-width:780px){
     width: 50%;
     font-size: 18px;
@@ -556,7 +560,9 @@
   margin-bottom: 0px;
   font-weight: 400;
   &--profileDetails{
-    background-color: #2196f3;
+    background-image: linear-gradient(#4066ed 0%, $spectre-dark-blue 100%);
+    //background-image: linear-gradient($spectre-dark-blue 0%, $spectre-blue 100%);
+    //background-color: $spectre-dark-blue;
     margin-top:0px;
     border-radius: 30px 30px 0px 0px;
     padding-top: 20px;
@@ -894,11 +900,11 @@
 //upload button
 #uploadInfo {
   background-color: initial;
-  background-image: linear-gradient(#8614f8 0, #760be0 100%);
+  background-image: linear-gradient(#ea906bbd 0, $spectre-yellow 100%);
   border-radius: 5px;
   border-style: none;
   box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
-  color: #fff;
+  //color: #fff;
   cursor: pointer;
   font-family: Inter, sans-serif;
   font-size: 16px;
@@ -907,7 +913,7 @@
   line-height: 60px;
   margin-left: -4px;
   margin-top: 100px;
-  margin-bottom: 10px;
+  margin-bottom: 80px;
   outline: 0;
   text-align: center;
   transition: all .3s cubic-bezier(.05, .03, .35, 1);
@@ -918,7 +924,7 @@
   width: 190px;
   border-radius: 31px;
   &:hover{
-    opacity: .7;
+    opacity: .9;
   }
   @media screen and (max-width: 1000px){
     font-size: 14px;
@@ -945,23 +951,24 @@
 
 .seeInfo_span{
   display: block;
-  width: fit-content;
-  margin: auto;
+  width: 190px;
+  margin: 100px auto 80px auto;
   padding: 14px 10px;
   background-color: initial;
-  background-image: linear-gradient(#14f877 0, #0be06e 100%);
+  background-image: linear-gradient($spectre-yellow 0, #ea906bbd 100%);
   border-radius: 5px;
   border-style: none;
   box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
-  color: #fff;
+  //color: #fff;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   outline: 0;
   text-align: center;
   transition: all .3s cubic-bezier(.05, .03, .35, 1);
   border-radius: 31px;
   @media screen and (max-width: 1000px){
     font-size: 14px;
+    width: 180px;
   }
   @media(max-width:970px){
     font-size: 12px;

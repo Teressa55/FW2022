@@ -5,8 +5,28 @@ $colour-grey:	#FFF2F2F2;
 $colour-blue: #008ECC;
 $colour-neo-blue:#0473e3;
 
+$spectre-blue:#8cc0f2;
+$spectre-dark-blue:#4363d4;
+$spectre-orange:#ea906b;
+$spectre-pink:#f9dbd1;
+$spectre-yellow:#efd28e;
+$spectre-purple:#4e4860;
+$spectre-green:#699483;
+
+
+
 body{
   background-color: #f1f1f173;
+  margin: 0px;
+}
+a{
+  color: black;
+  &:hover{
+    cursor: pointer;
+  }
+}
+h1{
+  font-weight: 300;
 }
 
 @import "registration";

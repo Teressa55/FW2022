@@ -8,9 +8,10 @@ body{
   margin-top: 63px;
   display: inline-block;
   padding: 10px;
-  background-color: rgb(37, 37, 37);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  border-left: 7px solid #2196f3;
+  border-left: 7px solid $spectre-blue;
+  //border-right: 7px solid $spectre-orange;
   @media(max-width:1000px){
     font-size:22px;
   }
@@ -30,14 +31,14 @@ body{
 }
 .flight-itinerary{
   display: grid;
-  grid-template-columns: 140px 82px 274px 174px 62px 135px 173px;
+  grid-template-columns: 146px 100px 230px 176px 66px 154px 173px;
   justify-content: center;
   grid-auto-flow: row;
-  margin: 15px 20px 0px 20px;
+  margin: 41px 20px 0px 20px;
   align-items: center;
   @media(max-width:1100px){
-    grid-template-columns: 85px 82px 228px 139px 62px 135px 118px;
-    margin: 7px 20px 0px 20px;
+    grid-template-columns: 85px 82px 200px 139px 76px 150px 118px;
+    margin: 37px 20px 0px 20px;
   }
   @media(max-width:890px){
     grid-template-columns: 71px 82px 179px 88px 62px 135px 87px;
@@ -45,22 +46,22 @@ body{
   }
   @media(max-width:730px){
     grid-template-columns: 51px 56px 160px 91px 41px 107px 87px;
-    margin-top: 30px;
+    margin-top: 37px;
   }
   @media(max-width:630px){
     grid-template-columns: 51px 56px 126px 66px 41px 93px 87px;
-    margin-top: 25px;
+    margin-top: 30px;
   }
   @media(max-width:545px){
     grid-template-columns: 29px 56px 117px 66px 41px 93px 63px;
   }
   @media(max-width:485px){
     grid-template-columns: 19px 44px 73px 56px 30px 63px 53px;
-    margin-top: 20px;
+    margin-top: 25px;
   }
   @media(max-width:360px){
     grid-template-columns: 12px 41px 73px 47px 22px 63px 53px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
   h2,
   h3{
@@ -140,7 +141,7 @@ body{
 //map
 .map{
   position: relative;
-  margin:20px auto 0px auto;
+  margin:8px auto 0px auto;
   &--continents{
   width: 850px;
   padding-bottom: 30px;
@@ -568,7 +569,7 @@ body{
 //summary
 .eventInformation{
   width: 790px;
-  margin: 80px auto 50px auto;
+  margin: 80px auto 100px auto;
   font-size: 16px;
   h2{
     font-family: $font-main;
@@ -666,6 +667,7 @@ body{
   display: block;
   p{
     display: block;
+    width: 60%;
   }
 }
 

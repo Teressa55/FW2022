@@ -5,11 +5,14 @@
   height: 500px;
   margin:30px auto;
   justify-content: flex-end;
+  padding-bottom: 150px;
+  max-width: 840px;
 }
 .index-column{
   display: flex;
   flex-direction: column;
   width: 50%;
+  //height: 95%;
 }
 .index-shelf{
   display: flex;
@@ -26,7 +29,7 @@
   box-shadow: 0 2px 13px 0 rgb(0 0 0 / 7%), 0 -1px 5px 0 rgb(0 0 0 / 7%);
   h2{
     font-family: $font-second;
-    margin: 0px 0px 50px 0px;
+    //margin: 0px 0px 50px 0px;
     padding-bottom: 10px;
     padding-left: 18px;
     font-size: 28px;
@@ -37,8 +40,9 @@
     font-family: $font-second;
     font-weight: 400;
     display: inline-block;
-    background-color: #2196f3;
-    font-size: 18px;
+    //background-color: #2196f3;
+    background-color: $spectre-orange;
+    font-size: 16px;
     padding: 7px 18px;
     width: fit-content;
     margin: 50px 0px 0px 0px;
