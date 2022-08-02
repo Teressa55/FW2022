@@ -77,12 +77,14 @@ header,
 
 header{
   justify-content: space-between;
-  border-bottom: 2px solid rgb(255 134 29);
-  border-top: 2px solid rgb(255 134 29);
+  //border-bottom: 2px solid rgb(242 209 106);
+  //border-top: 2px solid rgb(242 209 106);
   box-shadow: rgb(0 0 0 / 8%) 0px 10px 31px 0px, rgb(0 0 0 / 0%) 0px 0px 0px -9px;
   padding: 5px 10px 5px 10px;
-  // linear-gradient($spectre-yellow 0, rgb(255, 196, 0) 100%);
-  background-image: linear-gradient($spectre-orange 0, rgb(244 111 39 / 78%) 100%);
+  //background-image: linear-gradient($spectre-yellow 0, rgb(255, 196, 0) 100%);
+  //background-image: linear-gradient($spectre-orange 0, rgb(244 111 39 / 78%) 100%);
+  background-image: linear-gradient($spectre-blue 0, #0082ff 100%);
+  //background-color: #0ABAB5
 }
 
 .logo{

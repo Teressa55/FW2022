@@ -1919,11 +1919,9 @@ header,
 
 header {
   justify-content: space-between;
-  border-bottom: 2px solid rgb(255, 134, 29);
-  border-top: 2px solid rgb(255, 134, 29);
   box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 31px 0px, rgba(0, 0, 0, 0) 0px 0px 0px -9px;
   padding: 5px 10px 5px 10px;
-  background-image: linear-gradient(#ea906b 0, rgba(244, 111, 39, 0.78) 100%);
+  background-image: linear-gradient(#8cc0f2 0, #0082ff 100%);
 }
 
 .logo {
