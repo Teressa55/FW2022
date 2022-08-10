@@ -96,7 +96,7 @@ body {
   font-family: "Raleway", sans-serif;
   padding-top: 0px;
   padding-bottom: 20px;
-  color: #efd28e;
+  color: #ea906b;
   font-size: 18px;
   font-weight: 500;
 }
@@ -440,7 +440,7 @@ body {
   border: 2px solid;
   transform: scale(var(--ggs, 1));
   border-radius: 22px;
-  color: #8cc0f2;
+  color: #4363d4;
   top: -1px;
   right: 5px;
 }
@@ -1004,12 +1004,14 @@ body {
 .background {
   padding-bottom: 2px;
   margin-top: 10px;
-  background-image: linear-gradient(#4066ed 0%, #4363d4 100%);
+  background-color: #4363d4;
+  background-image: linear-gradient(#8cc0f2 0%, #4363d4 100%);
   border-radius: 0px 0px 30px 30px;
 }
 .background h2 {
   margin-top: 23px;
   padding-top: 14px;
+  color: white;
 }
 
 .body {
@@ -1125,13 +1127,14 @@ body {
   font-weight: 400;
 }
 .aboveFieldsets--profileDetails {
-  background-image: linear-gradient(#4066ed 0%, #4363d4 100%);
+  background-image: linear-gradient(#4363d4 0%, #8cc0f2 100%);
   margin-top: 0px;
   border-radius: 30px 30px 0px 0px;
   padding-top: 20px;
   padding-bottom: 10px;
   color: white;
   padding-left: 40px;
+  font-weight: 500;
 }
 @media (max-width: 890px) {
   .aboveFieldsets {
@@ -1511,6 +1514,7 @@ body {
 }
 
 .groupButton {
+  cursor: pointer;
   position: relative;
   border-bottom: 1px solid rgb(177, 177, 177);
   width: 20%;
@@ -1920,8 +1924,6 @@ header,
 header {
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 31px 0px, rgba(0, 0, 0, 0) 0px 0px 0px -9px;
-  padding: 5px 10px 5px 10px;
-  background-image: linear-gradient(#8cc0f2 0, #0082ff 100%);
 }
 
 .logo {
@@ -2095,7 +2097,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
 }
 footer img {
-  width: 8%;
+  width: 5%;
 }
 footer p {
   font-size: 15px;
@@ -2137,7 +2139,11 @@ footer p {
 }
 
 .trimed_logo {
-  width: 6.5%;
+  width: 4%;
+}
+
+.logo_header {
+  width: 100%;
 }
 
 body {
@@ -2151,7 +2157,7 @@ body {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  border-left: 7px solid #8cc0f2;
+  border-left: 7px solid #0ABAB5;
 }
 @media (max-width: 1000px) {
   .itinerary_heading {
@@ -2180,52 +2186,46 @@ body {
 }
 
 .flight-itinerary {
-  display: grid;
-  grid-template-columns: 146px 100px 230px 176px 66px 154px 173px;
+  display: flex;
   justify-content: center;
-  grid-auto-flow: row;
+  gap: 70px;
   margin: 41px 20px 0px 20px;
   align-items: center;
 }
 @media (max-width: 1100px) {
   .flight-itinerary {
-    grid-template-columns: 85px 82px 200px 139px 76px 150px 118px;
     margin: 37px 20px 0px 20px;
+    gap: 65px;
   }
 }
 @media (max-width: 890px) {
   .flight-itinerary {
-    grid-template-columns: 71px 82px 179px 88px 62px 135px 87px;
     margin-top: 35px;
+    gap: 45px;
   }
 }
 @media (max-width: 730px) {
   .flight-itinerary {
-    grid-template-columns: 51px 56px 160px 91px 41px 107px 87px;
     margin-top: 37px;
+    gap: 35px;
   }
 }
 @media (max-width: 630px) {
   .flight-itinerary {
-    grid-template-columns: 51px 56px 126px 66px 41px 93px 87px;
     margin-top: 30px;
-  }
-}
-@media (max-width: 545px) {
-  .flight-itinerary {
-    grid-template-columns: 29px 56px 117px 66px 41px 93px 63px;
+    gap: 20px;
   }
 }
 @media (max-width: 485px) {
   .flight-itinerary {
-    grid-template-columns: 19px 44px 73px 56px 30px 63px 53px;
     margin-top: 25px;
+    gap: 7px;
   }
 }
 @media (max-width: 360px) {
   .flight-itinerary {
-    grid-template-columns: 12px 41px 73px 47px 22px 63px 53px;
     margin-top: 20px;
+    gap: 0px;
   }
 }
 .flight-itinerary h2,
@@ -2281,28 +2281,23 @@ body {
   }
 }
 .flight-itinerary img {
-  width: 70%;
+  width: 90px;
   transform: rotate(0deg);
 }
 @media (max-width: 1100px) {
   .flight-itinerary img {
     width: 75px;
-    margin: 0px auto;
     display: inline;
   }
 }
 @media (max-width: 730px) {
   .flight-itinerary img {
     width: 50px;
-    margin: 0px auto;
-    display: inline;
   }
 }
 @media (max-width: 630px) {
   .flight-itinerary img {
     width: 35px;
-    margin: 0px auto;
-    display: inline;
   }
 }
 @media (max-width: 482px) {
@@ -2945,11 +2940,17 @@ body {
 
 .swiper {
   padding-bottom: 19px;
+  margin-bottom: 100px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #1a8aa5;
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
 }
 
 .eventInformation {
   width: 790px;
-  margin: 80px auto 100px auto;
+  margin: 80px auto 50px auto;
   font-size: 16px;
 }
 .eventInformation h2 {
@@ -3285,117 +3286,126 @@ body {
   padding: 30px 10px 20px 10px;
 }
 
-.index-list {
+.index-list2 {
   display: flex;
   flex-direction: row;
-  width: 70%;
-  height: 500px;
-  margin: 30px auto;
-  justify-content: flex-end;
-  padding-bottom: 150px;
-  max-width: 840px;
+  width: 93%;
+  margin: 40px auto 50px auto;
+  justify-content: space-evenly;
+}
+@media (max-width: 950px) {
+  .index-list2 {
+    margin-top: 20px;
+  }
 }
 
-.index-column {
+.index-card2 {
+  max-width: 310px;
+  aspect-ratio: 1/0.7;
   display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-
-.index-shelf {
-  display: flex;
-  flex-direction: row;
-  height: 50%;
-}
-
-.index-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 10px;
-  margin: 10px;
+  border-radius: 4px;
+  margin: 20px;
   text-align: left;
   box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.07), 0 -1px 5px 0 rgba(0, 0, 0, 0.07);
 }
-.index-card h2 {
+@media (max-width: 950px) {
+  .index-card2 {
+    margin: 10px;
+  }
+}
+.index-card2 h2 {
   font-family: "Open Sans", sans-serif;
-  padding-bottom: 10px;
-  padding-left: 18px;
-  font-size: 28px;
+  padding-left: 9px;
+  margin-bottom: 30px;
+  font-size: 25px;
   display: inline-block;
   font-weight: 700;
 }
-.index-card h5 {
+@media (max-width: 1150px) {
+  .index-card2 h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 950px) {
+  .index-card2 h2 {
+    font-size: 19px;
+    margin: 10px;
+  }
+}
+.index-card2 h5 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   display: inline-block;
-  background-color: #ea906b;
-  font-size: 16px;
+  background-color: #0ABAB5;
+  font-size: 17px;
   padding: 7px 18px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 50px 0px 0px 0px;
+  margin: 30px 0px 30px 0px;
 }
-.index-card a {
+@media (max-width: 1150px) {
+  .index-card2 h5 {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 950px) {
+  .index-card2 h5 {
+    font-size: 11px;
+    margin: 10px 0px;
+    padding: 5px 13px;
+  }
+}
+.index-card2 a {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
   justify-content: space-between;
   color: black;
 }
-.index-card--tickets {
-  width: 50%;
-  background-image: url(Pictures/ticket.JPG);
+.index-card2--tickets {
+  width: 25%;
+  background-image: url(Pictures/boxes_tickets.png);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
-.index-card--tickets h2 {
-  font-size: 30px;
-}
-.index-card--itinerary {
-  height: 50%;
+.index-card2--itinerary {
+  width: 25%;
   background-image: url(Pictures/world_map.svg);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  background-color: white;
 }
-.index-card--itinerary h2 {
-  font-size: 25px;
-}
-.index-card--account {
-  width: 50%;
+.index-card2--account {
+  width: 25%;
   background-image: url(Pictures/money_ticket.jpg);
   background-position: bottom; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
-.index-card--account h2 {
-  color: white;
-  font-size: 25px;
-}
-.index-card--account h5 {
-  margin-top: 20px;
+.index-card2--account h5 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-.index-card--sponsors {
-  width: 50%;
+.index-card2--sponsors {
+  width: 25%;
   background-image: url(Pictures/sponsors.jpg);
   background-position: bottom; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
-.index-card--sponsors h2 {
-  color: white;
-  font-size: 25px;
+.index-card2--sponsors h2 {
+  color: black;
 }
-.index-card--sponsors h5 {
-  margin-top: 20px;
+.index-card2--sponsors h5 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.index_banner {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

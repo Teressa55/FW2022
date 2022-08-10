@@ -77,13 +77,13 @@ header,
 
 header{
   justify-content: space-between;
-  //border-bottom: 2px solid rgb(242 209 106);
-  //border-top: 2px solid rgb(242 209 106);
+  //border-bottom: 2px solid #1c949f;
+  //border-top: 2px solid #44afb8;
   box-shadow: rgb(0 0 0 / 8%) 0px 10px 31px 0px, rgb(0 0 0 / 0%) 0px 0px 0px -9px;
-  padding: 5px 10px 5px 10px;
+  //padding: 5px 10px 5px 10px;
   //background-image: linear-gradient($spectre-yellow 0, rgb(255, 196, 0) 100%);
   //background-image: linear-gradient($spectre-orange 0, rgb(244 111 39 / 78%) 100%);
-  background-image: linear-gradient($spectre-blue 0, #0082ff 100%);
+  //background-image: linear-gradient($spectre-tifany 0, #0099a7 100%);
   //background-color: #0ABAB5
 }
 
@@ -233,7 +233,7 @@ footer{
   //   width: 40%;
   // }
   img{
-    width: 8%;
+    width: 5%;
   }
   padding-top: 13px;
   padding-bottom: 13px;
@@ -269,8 +269,15 @@ footer{
   }
 }
 .trimed_logo{
-  width: 6.5%;
+  width: 4%;
 }
+
+.logo_header{
+  width: 100%;
+}
+
+
+
 
 // footer{
 //   display: flex;

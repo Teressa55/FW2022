@@ -14,15 +14,15 @@
 <body>
   <div class="pre-header">
     <div class="contact-details">
-      <a href="mailto:freshersweek.lf3@gmail.com "><img class="symbol symbol--pen" src="/Pictures/phone-symbol.svg"><p>freshersweek.lf3@gmail.com</p></a> 
-      <a href="tel:0420608175076"><img class="symbol symbol--phone" src="/Pictures/pen-symbol.svg"><p>+420 608 175 076</p></a>
+      <a href="mailto:freshersweek.lf3@gmail.com "><img class="symbol symbol--pen" src="/Pictures/pen-symbol.svg"><p>freshersweek.lf3@gmail.com</p></a> 
+      <a href="tel:0420608175076"><img class="symbol symbol--phone" src="/Pictures/phone-symbol.svg"><p>+420 608 175 076</p></a>
     </div>
     <!-- <div class="userlogin" onclick="openLogin()">
       <p>LOG IN</p>
     </div> -->
   </div>
   <header>
-    <a href="index.html"><img class="logo" src="/Pictures/FW2022_black.png" alt="logo of 2022"></a>
+    <a href="index.html"><img class="logo_header" src="/Pictures/header.png" alt="logo of 2022"></a>
     <!-- <div class="noLogin" id="loginForm">
       <form action="/action_page.php" class="loginContainer">
         <label for="username">Username</label>
@@ -39,8 +39,8 @@
   </header>
 
 
-<h1 class="registration_heading"> Welcome aboard this Fresher's week trip!</h1>
-<h2 class="registrationNote"> Before you check out our itinerary, please, fill this form.</h2>
+<h1 class="registration_heading"> Welcome to your Fresher’s Week trip!</h1>
+<h2 class="registrationNote"> Before you check out your itinerary, please fill in this form.</h2>
 
 
 <form method="post" class="infoQuestions">
@@ -65,7 +65,7 @@
         <input type="password" id="password" name="password" placeholder="min 8 characters" minlength="8" required>
       </li>
       <li id="ticketContainer">
-        <label for="ticketNumber">Number of your ticket number:</label>
+        <label for="ticketNumber">Your ticket number:</label>
         <input class="validInput" type="text" onkeyup="addFields()" id="ticketNumber" name="ticketNumber" placeholder=" 123XY" min="5" max="5" required > 
         <span class="warning">This number was already used.</span>
       </li>
@@ -79,15 +79,15 @@
   <fieldset class="introForm introForm--preferences">
     <legend class="introForm__legend">Your Preferences</legend>
       <div class="multipleQ">
-          <label class="label label--main">Do you have a special diet?</label><br>
+          <label class="label label--main">Do you have a dietary preference?</label><br>
           <input type="radio" name="student_diet" value="1" required>
           <label  class="label" for="student_diet_yes">No, I eat everything.</label><br>
           <input type="radio"  name="student_diet" value="2" required>
-          <label  class="label" for="student_diet_yes">I'm a Vegetarian.</label><br>
+          <label  class="label" for="student_diet_yes">Vegetarian</label><br>
           <input type="radio" name="student_diet" value="3" required>
-          <label class="label" for="student_diet_no">I'm a Vegan.</label><br>
+          <label class="label" for="student_diet_no">Vegan</label><br>
           <input type="radio" name="student_diet" value="4" required>
-          <label class="label" for="student_diet_no">I have other type of diet.</label><br>
+          <label class="label" for="student_diet_no">Other</label><br>
         </div>
       <div class="multipleQ">
         <label class="label label--main">Do you drink alcohol?</label><br>
@@ -131,7 +131,7 @@
           </div>
           <div class="checkboxQuestions">
             <input type="checkbox" id="paddles" name="paddles" disabled>
-            <label for="paddles"> Paddles</label>
+            <label for="paddles"> Pedals</label>
           </div>
         </div>
       </div>
@@ -139,7 +139,7 @@
         <h4>Friday (30.9):</h4>
         <div class="checkboxQuestions">
           <input type="checkbox" id="boat" name="boat" disabled>
-          <label for="boat">Interfaculty Party </label>
+          <label for="boat">Surprise Event </label>
         </div>
       </div>
       <div class="questionsList">

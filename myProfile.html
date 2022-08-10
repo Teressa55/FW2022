@@ -14,15 +14,15 @@
 <body>
   <div class="pre-header">
     <div class="contact-details">
-      <a href="mailto:freshersweek.lf3@gmail.com "><img class="symbol symbol--pen" src="/Pictures/phone-symbol.svg"><p>freshersweek.lf3@gmail.com</p></a> 
-      <a href="tel:0420608175076"><img class="symbol symbol--phone" src="/Pictures/pen-symbol.svg"><p>+420 608 175 076</p></a>
+      <a href="mailto:freshersweek.lf3@gmail.com "><img class="symbol symbol--pen" src="/Pictures/pen-symbol.svg"><p>freshersweek.lf3@gmail.com</p></a> 
+      <a href="tel:0420608175076"><img class="symbol symbol--phone" src="/Pictures/phone-symbol.svg"><p>+420 608 175 076</p></a>
     </div>
     <!-- <div class="userlogin" onclick="openLogin()">
       <p>LOG IN</p>
     </div> -->
   </div>
   <header>
-    <a href="index.html"><img class="logo" src="/Pictures/FW2022_white.png" alt="logo of 2022"></a>
+    <a href="index.html"><img class="logo_header" src="/Pictures/header.png" alt="logo of 2022"></a>
     <!-- <div class="noLogin" id="loginForm">
       <form action="/action_page.php" class="loginContainer">
         <label for="username">Username</label>
@@ -74,7 +74,7 @@
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" minlength="8" disabled><br>
       <button class="optionButton optionButton--password" type="button" onclick="addPassword()">
-        <i class="gg-add"></i>Change the password
+        <i class="gg-add"></i>Change password
       </button>
     </div>
     <div id="hiddenPassword" class="nopassword">
@@ -105,17 +105,17 @@
     </div>
     <div class="background"><h2>BOARDING PASS</h2></div>
 </div>
-<h1 class="myProfile_heading" onclick="openTrip()">DURING YOUR TRIP 	&#128101</h1>
+<h1 class="myProfile_heading" onclick="openTrip()">YOUR TRIP PREFERENCES	&#128101</h1>
 <div id="myProfile__form" class="nomyProfile__form">
 <h2 class="aboveFieldsets"> Food and Alcohol</h2>
 <div class="preferences">
   <div class="multipleQ multipleQ--myProfile">
-    <label class="preferences__legend">Do you have a special diet?</label>
+    <label class="preferences__legend">Do you have a dietary preference</label>
     <select name="diet" id="diet">
       <option value="no-diet">No, I eat everything.</option>
-      <option value="vegetarian">I'm a Vegetarian.</option>
-      <option value="vegan">I'm a Vegan.</option>
-      <option value="other-diet">I have other type of diet.</option>
+      <option value="vegetarian"> Vegetarian</option>
+      <option value="vegan">Vegan</option>
+      <option value="other-diet">Other</option>
     </select> 
   </div>
 
@@ -166,7 +166,7 @@
         </div>
         <div class="checkboxQuestions checkboxQuestions--myProfile">
           <input type="checkbox" id="paddles" name="paddles" disabled>
-          <label for="paddles"> Paddles (groups available)</label>
+          <label for="paddles"> Pedals (groups available)</label>
         </div>
       </div>
     </div>
@@ -176,7 +176,7 @@
       <h4>Friday (30.9):</h4>
       <div class="checkboxQuestions checkboxQuestions--myProfile">
         <input type="checkbox" id="boat" name="boat" disabled>
-        <label for="boat">Interfaculty Party </label>
+        <label for="boat">Surprise Event </label>
       </div>
     </div>
     <div class="questionsList questionsList--myProfile">
@@ -242,7 +242,7 @@
     </form>
   </div>
   <div class="groupButton groupButton--paddles" onclick="addPaddles()">
-    <p>Groups for Paddles<i class="gg-arrows-scroll-v"></i></p>
+    <p>Groups for Pedals<i class="gg-arrows-scroll-v"></i></p>
   </div>
   <div id="hiddenPaddles" class="noPaddles">
     <fieldset class="groupChoose groupChoose--paddles">

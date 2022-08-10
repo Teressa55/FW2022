@@ -18,18 +18,32 @@
 <body>
   <div class="pre-header">
     <div class="contact-details">
-      <a href="mailto:freshersweek.lf3@gmail.com "><img class="symbol symbol--pen" src="/Pictures/phone-symbol.svg"><p>freshersweek.lf3@gmail.com</p></a> 
-      <a href="tel:0420608175076"><img class="symbol symbol--phone" src="/Pictures/pen-symbol.svg"><p>+420 608 175 076</p></a>
+      <a href="mailto:freshersweek.lf3@gmail.com "><img class="symbol symbol--pen" src="/Pictures/pen-symbol.svg"><p>freshersweek.lf3@gmail.com</p></a> 
+      <a href="tel:0420608175076"><img class="symbol symbol--phone" src="/Pictures/phone-symbol.svg"><p>+420 608 175 076</p></a>
     </div>
     <div class="userlogin" onclick="openLogin()">
       <p>LOG IN</p>
     </div>
   </div>
-  <header>
+  <!-- <header>
     <a href="index.html"><img class="logo" src="/Pictures/FW2022_white.png" alt="logo of 2022"></a>
-    <div class="userlogin" onclick="openLogin()">
-      <p>LOG IN</p>
+    <div class="noLogin" id="loginForm">
+      <form action="/action_page.php" class="loginContainer">
+        <label for="username">Username</label>
+        <input type="email" placeholder="jan.novak@gmail.com" name="username" required>
+        <label for="psw">Password</label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit" class="btn">Login</button>
+        <div class="loginIssues">
+          <a href=""><p>Forgotten password</p></a>
+          <a href="mailto:freshersweek.lf3@gmail.com "><p>| Contact email</p></a>
+        </div>
+      </form>
     </div>
+  </header> -->
+
+  <header>
+    <a href="index.html"><img class="logo_header" src="/Pictures/header.png" alt="logo of 2022"></a>
     <div class="noLogin" id="loginForm">
       <form action="/action_page.php" class="loginContainer">
         <label for="username">Username</label>
@@ -54,7 +68,7 @@
       <span> Destination </span><h2> WORLD</h2> 
     </div>
     <div class=" flight__board">
-      <span>When</span><h2 > 26.9. 16:45</h2>
+      <span>Date</span><h2 > 26.9. 16:45</h2>
     </div>
     <div class=" flight__board">
       <span>Gate</span><h2 > LF-3</h2>
@@ -80,125 +94,8 @@
     
   </div> 
 
-  <div class="swiper mySwiper list-cards">
-    <div class="swiper-wrapper ">
-      <div class="swiper-slide card card--pubcrawl>
-        <a href="#pubcrawl-hidden" onclick="openPubcrawl()">
-          <img src="/Pictures/pubcrawl.jpg">
-          <div class="card-text">
-            <h2>Pubcrawl</h2>
-            <div class="card-details">
-              <p>South America</p>
-              <span class="icon">🍹</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="swiper-slide card">
-        <a href="#daytrip-hidden" onclick="openDaytrip()">
-          <img src="/Pictures/daytrip.jpg">
-          <div class="card-text">
-            <h2>Day trip</h2>
-            <div class="card-details">
-              <p>Australia</p>
-              <span class="icon">🦘</span>
-            </div>
-          </div>  
-        </a>
-      </div>
-      <div class="swiper-slide card">
-        <a href="#boatparty-hidden" onclick="openBoatparty()">
-          <img src="/Pictures/boatparty.jpg">
-          <div class="card-text">
-            <h2>Boat party</h2>
-            <div class="card-details">
-              <p>Africa</p>
-              <span class="icon">🚢</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="swiper-slide card">
-        <a href="#sportsday-hidden" onclick="openSportsday">
-          <img src="/Pictures/sportsday_ling.jpg">
-          <div class="card-text">
-            <h2>Sports day</h2>
-            <div class="card-details">
-              <p>Asia</p>
-              <span class="icon">🦑</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="swiper-slide card">
-        <a href="#paddles-hidden" onclick="openPaddles()">
-        <img src="/Pictures/paddles.jpg">
-        <div class="card-text">
-          <h2>Paddles</h2>
-          <div class="card-details">
-            <p>Asia</p>
-            <span class="icon">🚣</span>
-          </div>
-        </div> 
-        </a>
-      </div>
-      <div class="swiper-slide card">
-        <a href="#interfaculty-hidden" onclick="openInterfaculty()">
-          <img src="/Pictures/interfaculty.jpg">
-          <div class="card-text">
-            <h2>Interfaculty party</h2>
-            <div class="card-details">
-              <p>North America</p>
-              <span class="icon">🎉</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="swiper-slide card">
-        <a href="#fooddrinks-hidden" onclick="openFooddrinks()">
-          <img src="/Pictures/food&drinks.jpg">
-          <div class="card-text">
-            <h2>Food & Drinks</h2>
-            <div class="card-details">
-              <p>Europe</p>
-              <span class="icon">🍔🥤</span>
-            </div>
-          </div> 
-        </a>   
-      </div>
-      <div class="swiper-slide card">
-        <a href="#orientation-hidden" onclick="openOrientation()">
-          <img src="/Pictures/orientationday.jpg">
-          <div class="card-text">
-            <h2>Orientation day</h2>
-            <div class="card-details">
-              <p>Antarctica</p>
-              <span class="icon">👋</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="swiper-slide card">
-        <a href="#beanies-hidden" onclick="openBeanies()">
-          <img src="/Pictures/beanies.jpg">
-          <div class="card-text">
-            <h2>Beanies</h2>
-            <div class="card-details">
-              <p>Antarctica</p>
-              <span class="icon">🧊</span>
-            </div>
-          </div>  
-        </a>
-      </div>
-  </div>
-    <!-- <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div> -->
-    <div class="swiper-pagination"></div>
-  </div>
-  <!-- https://codesandbox.io/s/v6tqbh?file=/index.html -->
-
   <div class="eventInformation">
-    <h2>&#128337 Last Minute Deals</h2>
+    <h2>&#128337 Your Trip Details </h2>
     <ol>
       <li id="pubcrawl" class="event" onclick="openPubcrawl()">
         <p>26.9. (Mo)</p>
@@ -267,7 +164,7 @@
       <li id="sportsday" class="event" onclick="openSportsday()">
         <p>29.9. (Th)</p>
         <p>Sports day</p>
-        <p>10:30 & 18:00</p>
+        <p>10:30</p>
         <p>Sokol Vinohrady</p>
         <img src="/Pictures/arrow-down-3101.png">
       </li>
@@ -287,7 +184,7 @@
       </li>
       <li id="paddles" class="event" onclick="openPaddles()">
         <p>29.9. (Th)</p>
-        <p>Paddles</p>
+        <p>Pedals</p>
         <p>18:00</p>
         <p>Slovansky ostrov</p>
         <img src="/Pictures/arrow-down-3101.png">
@@ -308,7 +205,7 @@
       </li>
       <li id="interfaculty" class="event" onclick="openInterfaculty()">
         <p>30.9. (Fr)</p>
-        <p>Interfaculty party</p>
+        <p>Surprise Event</p>
         <p>18:00</p>
         <p>Slovansky ostrov</p>
         <img src="/Pictures/arrow-down-3101.png">
@@ -390,6 +287,125 @@
       </li>
     </ol>
   </div>
+
+  <div class="swiper mySwiper list-cards">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide card card--pubcrawl>
+        <a href="#pubcrawl-hidden" onclick="openPubcrawl()">
+          <img src="/Pictures/pubcrawl.jpg">
+          <div class="card-text">
+            <h2>Pubcrawl</h2>
+            <div class="card-details">
+              <p>South America</p>
+              <span class="icon">🍹</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card">
+        <a href="#daytrip-hidden" onclick="openDaytrip()">
+          <img src="/Pictures/daytrip.jpg">
+          <div class="card-text">
+            <h2>Day trip</h2>
+            <div class="card-details">
+              <p>Australia</p>
+              <span class="icon">🦘</span>
+            </div>
+          </div>  
+        </a>
+      </div>
+      <div class="swiper-slide card">
+        <a href="#boatparty-hidden" onclick="openBoatparty()">
+          <img src="/Pictures/boatparty.jpg">
+          <div class="card-text">
+            <h2>Boat party</h2>
+            <div class="card-details">
+              <p>Africa</p>
+              <span class="icon">🚢</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card">
+        <a href="#sportsday-hidden" onclick="openSportsday">
+          <img src="/Pictures/sportsday_ling.jpg">
+          <div class="card-text">
+            <h2>Sports day</h2>
+            <div class="card-details">
+              <p>Asia</p>
+              <span class="icon">🦑</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card">
+        <a href="#paddles-hidden" onclick="openPaddles()">
+        <img src="/Pictures/paddles.jpg">
+        <div class="card-text">
+          <h2>Pedals</h2>
+          <div class="card-details">
+            <p>Asia</p>
+            <span class="icon">🚣</span>
+          </div>
+        </div> 
+        </a>
+      </div>
+      <div class="swiper-slide card">
+        <a href="#interfaculty-hidden" onclick="openInterfaculty()">
+          <img src="/Pictures/interfaculty.jpg">
+          <div class="card-text">
+            <h2>Surprise Event</h2>
+            <div class="card-details">
+              <p>North America</p>
+              <span class="icon">🎉</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card">
+        <a href="#fooddrinks-hidden" onclick="openFooddrinks()">
+          <img src="/Pictures/food&drinks.jpg">
+          <div class="card-text">
+            <h2>Food & Drinks</h2>
+            <div class="card-details">
+              <p>Europe</p>
+              <span class="icon">🍔🥤</span>
+            </div>
+          </div> 
+        </a>   
+      </div>
+      <div class="swiper-slide card">
+        <a href="#orientation-hidden" onclick="openOrientation()">
+          <img src="/Pictures/orientationday.jpg">
+          <div class="card-text">
+            <h2>Orientation day</h2>
+            <div class="card-details">
+              <p>Antarctica</p>
+              <span class="icon">👋</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card">
+        <a href="#beanies-hidden" onclick="openBeanies()">
+          <img src="/Pictures/beanies.jpg">
+          <div class="card-text">
+            <h2>Beanies</h2>
+            <div class="card-details">
+              <p>Antarctica</p>
+              <span class="icon">🧊</span>
+            </div>
+          </div>  
+        </a>
+      </div>
+  </div>
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- https://codesandbox.io/s/v6tqbh?file=/index.html -->
+
+
 
 
   <footer>
