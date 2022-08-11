@@ -1,0 +1,21 @@
+.sponsors_img{
+  width: 50%;
+  margin: 10px auto;
+  display: block;
+}
+.sponsors_information{
+  width: 50%;
+  margin-bottom: 100px;
+  display: inline-block;
+  text-align: justify;
+  font-size: 18px;
+  @media(max-width:900px){
+    font-size: 15px;
+  }
+  @media(max-width:690px){
+    font-size: 13px;
+  }
+  @media(max-width:400px){
+    font-size: 11px;
+  }
+}
