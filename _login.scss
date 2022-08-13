@@ -1,0 +1,128 @@
+.loginPage__form{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto 100px auto;
+  @media(max-width:800px){
+    width: 50%;
+  }
+  @media(max-width:650px){
+    width: 70%;
+  }
+  @media(max-width:450px){
+    width: 90%;
+  }
+}
+.login_heading{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-left: 7px solid $spectre-tifany;
+  font-family: $font-main;
+  font-weight: 300;
+  font-size: 26px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  padding: 10px 0px;
+  @media (max-width:1100px){
+    font-size: 25px;
+  }
+  @media (max-width:980px){
+    font-size: 24px;
+  }
+  @media (max-width:650px){
+    font-size: 22px;
+  }
+  @media (max-width:500){
+    font-size: 20px;
+  }
+  @media (max-width:380px){
+    font-size: 18px;
+  }
+}
+.loginPage-box{
+  background-color: white;
+  padding: 20px 10px;
+}
+.login_row{
+  padding: 8px 0px;
+  label{
+    font-size: 14px;
+    @media (max-width:850px) {
+      font-size: 13px;
+    }
+    @media(max-width:620px){
+      font-size: 12px;
+    }
+    @media (max-width:450px) {
+      font-size: 11px;
+    }
+  }
+  input{
+    border: 1px solid 	#E5E5E5;
+    border-radius: 6px;
+    background-color: rgba(240, 240, 240, 0.832);
+    box-shadow: 0 2px 13px 0 rgb(0 0 0 / 7%), 0 -1px 5px 0 rgb(0 0 0 / 7%);
+    padding: 3px 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: $font-second;
+    min-width: 186px;
+    // @media (max-width:1100px){
+    //   font-size: 13px;
+    // }
+    @media (max-width: 980px) {
+      min-width: 0px;
+      font-size: 13px;
+    }
+    @media (max-width: 650px) {
+      min-width: 0px;
+      font-size: 12px;
+      padding: 3px 4px;
+    }
+    @media (max-width:500px){
+      font-size:11px;
+      padding: 3px 4px;
+    }
+    @media (max-width:450px){
+      font-size: 10px;
+      padding: 3px 4px;
+      width: fit-content;
+    }
+    @media (max-width:380px){
+      font-size: 9px;
+    }
+  }
+}
+
+.login_button{
+  //justify-content: center;
+  border: none;
+  padding: 6px 25px;
+  text-align: center;
+  text-decoration: none;
+  background-image: linear-gradient(#ea906bbd 0, $spectre-yellow 100%);
+  display: inline-block;
+  width: 62%;
+  font-size: 17px;
+  margin: 37px 0px 3px 0px;
+  border-radius: 6px;
+  font-family: $font-main;
+  font-weight: 400;
+  transition-duration: 0.4s;
+  @media (max-width:1100px){
+    font-size: 15px;
+  }
+  @media (max-width: 980px) {
+    font-size: 14px;  
+  }
+  @media (max-width: 650px) {
+    font-size: 10px;  
+  }
+  @media (max-width:380px){
+    font-size: 8px;
+  }
+  &:hover{
+    background-image: linear-gradient($spectre-yellow 0,#ea906bbd 100%);
+  }
+}
