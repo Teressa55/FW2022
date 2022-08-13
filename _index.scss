@@ -21,7 +21,7 @@
 
 .index-card{
   max-width: 310px;
-  aspect-ratio: 1/0.6;
+  aspect-ratio: 1/0.7;
   display: flex;
   border-radius: 4px;
   margin: 20px;
@@ -91,10 +91,11 @@
     flex-direction: column;
     justify-content: space-between;
     color: black;
+    width: 100%;
   }
   &--tickets{
     width: 25%;
-    background-image: url(Pictures/boxes_tickets.png);
+    background-image: url(Pictures/boxes_tickets_CH.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 

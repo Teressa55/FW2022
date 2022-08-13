@@ -1568,8 +1568,8 @@ body {
   height: 60px;
   line-height: 60px;
   margin-left: -4px;
-  margin-top: 100px;
-  margin-bottom: 80px;
+  margin-top: 60px;
+  margin-bottom: 35px;
   outline: 0;
   text-align: center;
   transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
@@ -1579,8 +1579,8 @@ body {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: bottom;
-  width: 190px;
-  border-radius: 31px;
+  width: 270px;
+  border-radius: 10px;
 }
 #uploadInfo:hover {
   opacity: 0.9;
@@ -1590,7 +1590,7 @@ body {
     font-size: 14px;
     height: 55px;
     line-height: 55px;
-    width: 180px;
+    width: 250px;
   }
 }
 @media (max-width: 970px) {
@@ -1618,7 +1618,7 @@ body {
 .seeInfo_span {
   display: block;
   width: 190px;
-  margin: 100px auto 80px auto;
+  margin: 60px auto 35px auto;
   padding: 14px 10px;
   background-color: initial;
   background-image: linear-gradient(#efd28e 0, rgba(234, 144, 107, 0.7411764706) 100%);
@@ -1630,12 +1630,12 @@ body {
   outline: 0;
   text-align: center;
   transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
-  border-radius: 31px;
+  border-radius: 13px;
 }
 @media screen and (max-width: 1000px) {
   .seeInfo_span {
     font-size: 14px;
-    width: 180px;
+    width: 250px;
   }
 }
 @media (max-width: 970px) {
@@ -1660,6 +1660,66 @@ body {
 .nomyProfile__form,
 .noprofileDetails {
   display: none;
+}
+
+.logout {
+  background-color: initial;
+  background-image: linear-gradient(#0ABAB5 0, #62cbc4 100%);
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: rgba(245, 244, 247, 0.25) 0 1px 1px inset;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 45px;
+  line-height: 45px;
+  margin-left: -4px;
+  margin-top: 65px;
+  margin-bottom: 13px;
+  outline: 0;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+  touch-action: manipulation;
+  vertical-align: bottom;
+  width: 270px;
+  border-radius: 10px;
+}
+.logout:hover {
+  opacity: 0.9;
+}
+@media screen and (max-width: 1000px) {
+  .logout {
+    font-size: 14px;
+    width: 250px;
+  }
+}
+@media (max-width: 970px) {
+  .logout {
+    font-size: 12px;
+    height: 38px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .logout {
+    font-size: 12px;
+    height: 34px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .logout {
+    font-size: 11px;
+    height: 30px;
+    line-height: 15px;
+  }
+}
+.logout img {
+  height: 17px;
+  position: relative;
+  bottom: -3px;
+  padding-right: 15px;
 }
 
 .forgotten_heading {
@@ -1833,7 +1893,6 @@ header,
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 @media (max-width: 890px) {
   .pre-header {
@@ -1865,6 +1924,32 @@ header,
     font-size: 8px;
     height: 44px;
     margin: 0px 3px;
+  }
+}
+
+.language-preferences {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 10%;
+}
+.language-preferences img {
+  width: 96%;
+  padding: 10px;
+}
+@media (min-width: 2000px) {
+  .language-preferences img {
+    width: 40%;
+  }
+}
+@media (min-width: 1100px) {
+  .language-preferences img {
+    width: 50%;
+  }
+}
+@media (max-width: 650px) {
+  .language-preferences img {
+    padding: 5px;
   }
 }
 
@@ -1909,6 +1994,7 @@ header,
 .contact-details {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 .contact-details a {
   display: flex;
@@ -3334,7 +3420,7 @@ body {
 
 .index-card {
   max-width: 310px;
-  aspect-ratio: 1/0.6;
+  aspect-ratio: 1/0.7;
   display: flex;
   border-radius: 4px;
   margin: 20px;
@@ -3426,10 +3512,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   color: black;
+  width: 100%;
 }
 .index-card--tickets {
   width: 25%;
-  background-image: url(Pictures/boxes_tickets.png);
+  background-image: url(Pictures/boxes_tickets_CH.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

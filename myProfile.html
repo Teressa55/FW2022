@@ -17,25 +17,16 @@
       <a href="mailto:freshersweek.lf3@gmail.com "><img class="symbol symbol--pen" src="/Pictures/pen-symbol.svg"><p>freshersweek.lf3@gmail.com</p></a> 
       <a href="tel:0420608175076"><img class="symbol symbol--phone" src="/Pictures/phone-symbol.svg"><p>+420 608 175 076</p></a>
     </div>
-    <!-- <div class="userlogin" onclick="openLogin()">
-      <p>LOG IN</p>
-    </div> -->
+    <div class="language-preferences">
+      <img src="/Pictures/czech_flag.svg">
+      <img src="/Pictures/british_flag.svg">
+    </div>
   </div>
+    <!-- <div class="userlogin" onclick="openLogin()">
+      <p>LOG OUT ⚠</p>
+    </div> -->
   <header>
     <a href="index.html"><img class="logo_header" src="/Pictures/header.png" alt="logo of 2022"></a>
-    <!-- <div class="noLogin" id="loginForm">
-      <form action="/action_page.php" class="loginContainer">
-        <label for="username">Username</label>
-        <input type="email" placeholder="jan.novak@gmail.com" name="username" required>
-        <label for="psw">Password</label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-        <button type="submit" class="btn">Login</button>
-        <div class="loginIssues">
-          <a href=""><p>Forgotten password</p></a>
-          <a href="mailto:freshersweek.lf3@gmail.com "><p>| Contact email</p></a>
-        </div>
-      </form>
-    </div> -->
   </header>
 
 
@@ -51,7 +42,14 @@
     <h3>Get ready!</h3>
   </a>
 </div>
-</div>
+</div> 
+
+<button class="logout"  role="button">
+  <span>
+    Log out
+  </span>
+  <img src="/Pictures/logout_icon.svg">
+</button>
 
 <h1 class="myProfile_heading" onclick="openDetails()">ACCOUNT DETAILS &#9992</h1>
 <div id="profileDetails" class="noprofileDetails">
@@ -311,13 +309,15 @@
 </div>
 <div class="buttonUpload">
 <button id="uploadInfo" class="seeInfo" onclick="upload()" role="button">Upload your information</button>
-<span id="uploadInfo_span" class="noInfo_span">Upload is done</span>
-<!-- <div class="contact">
-  <p>
-    If you have any troubles, please, contact us on <a href="mailto:freshersweek.lf3@gmail.com ">freshersweek.lf3@gmail.com</a> or <a href="tel:0420608175076">+420 608 175 076</a>
-  </p>
-</div> -->
+  <span id="uploadInfo_span" class="noInfo_span">Upload is done</span>
 </div>
+<!-- <button class="logout"  role="button">
+  <span>
+    Log out
+  </span>
+  <img src="/Pictures/logout_icon.svg">
+</button> -->
+
 </div>
 <footer>
   <img src="/Pictures/trimed_logo.png" class="trimed_logo">

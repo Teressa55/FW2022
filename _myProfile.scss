@@ -918,8 +918,8 @@
   height: 60px;
   line-height: 60px;
   margin-left: -4px;
-  margin-top: 100px;
-  margin-bottom: 80px;
+  margin-top: 60px;
+  margin-bottom: 35px;
   outline: 0;
   text-align: center;
   transition: all .3s cubic-bezier(.05, .03, .35, 1);
@@ -927,8 +927,8 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: bottom;
-  width: 190px;
-  border-radius: 31px;
+  width: 270px;
+  border-radius: 10px;
   &:hover{
     opacity: .9;
   }
@@ -936,7 +936,7 @@
     font-size: 14px;
     height: 55px;
     line-height: 55px;
-    width: 180px;
+    width: 250px;
   }
   @media(max-width:970px){
     font-size: 12px;
@@ -958,23 +958,22 @@
 .seeInfo_span{
   display: block;
   width: 190px;
-  margin: 100px auto 80px auto;
+  margin: 60px auto 35px auto;
   padding: 14px 10px;
   background-color: initial;
   background-image: linear-gradient($spectre-yellow 0, #ea906bbd 100%);
   border-radius: 5px;
   border-style: none;
   box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
-  //color: #fff;
   font-size: 16px;
   font-weight: 400;
   outline: 0;
   text-align: center;
   transition: all .3s cubic-bezier(.05, .03, .35, 1);
-  border-radius: 31px;
+  border-radius: 13px;
   @media screen and (max-width: 1000px){
     font-size: 14px;
-    width: 180px;
+    width: 250px;
   }
   @media(max-width:970px){
     font-size: 12px;
@@ -994,6 +993,59 @@
 .nomyProfile__form,
 .noprofileDetails{
   display: none;
+}
+
+.logout{
+  background-color: initial;
+  background-image: linear-gradient($spectre-tifany 0,#62cbc4 100%);
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 45px;
+  line-height: 45px;
+  margin-left: -4px;
+  margin-top: 65px;
+  //margin-bottom: 80px;
+  margin-bottom: 13px;
+  outline: 0;
+  text-align: center;
+  transition: all .3s cubic-bezier(.05, .03, .35, 1);
+  touch-action: manipulation;
+  vertical-align: bottom;
+  width: 270px;
+  border-radius: 10px;
+  &:hover{
+    opacity: .9;
+  }
+  @media screen and (max-width: 1000px){
+    font-size: 14px;
+    width: 250px;
+  }
+  @media(max-width:970px){
+    font-size: 12px;
+    height: 38px;
+    line-height: 20px;
+  }
+  @media(max-width:700px){
+    font-size: 12px;
+    height: 34px;
+    line-height: 16px;
+  }
+  @media(max-width:400px){
+    font-size: 11px;
+    height: 30px;
+    line-height: 15px;
+  }
+  img{
+    height: 17px;
+    position: relative;
+    bottom: -3px;
+    padding-right: 15px;
+  }
 }
 
 
